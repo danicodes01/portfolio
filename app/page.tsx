@@ -8,8 +8,8 @@ export default async function Home() {
     <div>
       hello
 
-      {projects.map(proj => (
-        <img src={proj.media[0]}/>
+      {projects.map(p => (
+        <img key={p.id} src={p.media[0]} alt="hello"/>
       ))}
     </div>
   );
