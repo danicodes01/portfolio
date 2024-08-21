@@ -1,0 +1,55 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 30rem;
+  background-color: #1c1c1e;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1.5rem;
+  color: var(--color-primary-600);
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 0.875rem;
+  color: rgb(177, 177, 177);
+  margin-bottom: 2rem;
+}
+
+.info {
+  font-size: 0.875rem;
+  color: rgb(177, 177, 177);
+}
+
+.link {
+  color: var(--color-primary-600);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover,
+.link:active {
+  opacity: 65%;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .info {
+    font-size: 0.75rem;
+  }
+}
