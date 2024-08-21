@@ -1,0 +1,90 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.post {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  justify-content: center;
+  border: 1px solid rgb(177, 177, 177);
+  overflow: hidden;
+  margin: 1rem auto; /* Ensure consistent spacing at the bottom of each post */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Fira Code", monospace;
+  max-width: 15rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 18rem;
+}
+
+.post hr {
+  display: block;
+  height: 0;
+  border: none;
+  border-top: 6px dotted rgb(177, 177, 177);
+  width: 35%;
+  margin: 2rem auto 0 auto; /* Ensure consistent spacing at the top of each hr */
+  text-align: center;
+  position: relative;
+}
+
+.post a {
+  color: var(--color-grey-100);
+  list-style: none;
+}
+
+.post h1 {
+  margin: .5rem;
+
+}
+
+
+.post img {
+  width: 13rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}
+
+
+.content {
+  padding: .5rem;
+  font-size: 0.50rem;
+  width: 100%;
+  margin: .5rem auto;
+  font-family: "Fira Code", monospace;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem; /* Adjust padding to prevent content from touching the screen edges */
+  }
+
+  .post {
+    max-width: 100%; /* Allow the post to take full width */
+    margin-left: auto; /* Ensure it stays centered */
+    margin-right: auto; /* Ensure it stays centered */
+  }
+
+  .post img {
+    width: auto; /* Keep the image size without stretching */
+    max-width: 100%; /* Ensure the image doesn't exceed the post width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
