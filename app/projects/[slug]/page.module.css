@@ -1,0 +1,133 @@
+
+.header {
+  display: flex;
+  flex-direction: column; 
+  margin: 2rem auto;
+  max-width: 30rem;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color:black;
+  
+
+}
+
+.image {
+  position: relative;
+  width: 100%; 
+  height: 20rem; 
+  margin: 0 auto;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  padding: 0.5rem 1rem 0 1rem;
+  letter-spacing: 0.10rem;
+}
+
+.info p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgb(177, 177, 177);
+  
+}
+
+.title {
+  font-family: "Press Start 2P", system-ui;
+}
+
+.instructions {
+  padding: 1rem;
+  max-width: 60rem;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .header {
+    max-width: 20rem;
+  }
+}
+
+.description {
+  font-size: 0.75rem;
+  padding: 1rem;
+  max-width: 60rem;
+
+}
+
+.description ul {
+  list-style: none;
+  text-align: center;
+  margin: 1;
+  padding: 0;
+}
+
+.description li {
+  text-transform: uppercase;
+}
+
+.description h2 {
+  margin-bottom: auto;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: .5rem;
+}
+
+.description h3 {
+  margin: .5rem;
+  margin: .5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+
+.description a {
+  background: var(--color-primary-600); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+}
+
+.description a:hover,
+.description a:active,
+.description a.active {
+opacity: 50%;
+}
+
+.description p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.description em, 
+.description i {
+      font-family: "Fira Code", monospace;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+}
+
+.description hr {
+  border: dotted var(--color-grey-500) .25rem;
+  border-bottom: none;
+  width: 75%;
+  margin: 1rem auto;
+}
+
+
+.info a:hover,
+.info a:active {
+  color: rgb(177, 177, 177);
+  opacity: 65%;
+}
