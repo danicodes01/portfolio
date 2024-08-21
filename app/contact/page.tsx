@@ -7,7 +7,7 @@ export default function ContactPage() {
       <header className={classes.header}>
         <h1>Contact Daniel Knowles</h1>
         <p>
-          If you have any inquiries about our apps, or if youre looking for engineering or development support, I’d love to connect:
+          If you have any inquiries about my projects, or if youre looking for engineering or development support, I’d love to connect:
         </p>
       </header>
       <main className={classes.info}>
