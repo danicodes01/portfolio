@@ -7,10 +7,6 @@ export default async function Home() {
   return (
     <div>
       hello
-
-      {projects.map(p => (
-        <img key={p.id} src={p.media[0]} alt="hello"/>
-      ))}
     </div>
   );
 }
