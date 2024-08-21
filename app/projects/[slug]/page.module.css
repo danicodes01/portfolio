@@ -89,6 +89,12 @@
   text-transform: uppercase;
 }
 
+.description h4 {
+  margin: .5rem;
+  margin: .5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
 
 .description a {
   background: var(--color-primary-600); 
@@ -106,7 +112,7 @@ opacity: 50%;
 }
 
 .description p {
-  margin: 0;
+  margin: .5rem;
   font-size: 0.75rem;
 }
 
