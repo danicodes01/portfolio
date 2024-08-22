@@ -6,19 +6,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+:root {
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
+  --header-end-rgb: 255, 255, 255;
+  --logo-rgb: var(--color-grey-400);
+  --text: var(--color-grey-400);
+  --box-shadow-rgba: 0, 0, 0, 0.3; 
+  --item-background: var(--color-grey-50);
+  --contact-text: 0, 0, 0;
+  --header-contact: black;
+  --contact-background: white;
+  --foreground-rgb: 0, 0, 0;
+
 }
 
-@media (prefers-color-scheme: dark) { */
+@media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --header-end-rgb: 0, 0, 0;
+    --text: var(--color-grey-100);
+    --box-shadow-rgba: 255, 255, 255, 0.1;
+    --item-background: black;
+    --contact-text: 177, 177, 177;
+    --header-contact: var(--color-primary-600);
+    --contact-background: #1c1c1e;
+    --foreground-rgb: 255, 255, 255;
+
+    
   }
-/* } */
+}
 
 body {
   color: rgb(var(--foreground-rgb));
