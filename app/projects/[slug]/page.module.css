@@ -4,10 +4,10 @@
   flex-direction: column; 
   margin: 2rem auto;
   max-width: 30rem;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 3px rgba(var(--box-shadow-rgba));
   border-radius: 4px;
   overflow: hidden;
-  background-color:black;
+  background-color:var(--item-background);
   
 
 }
