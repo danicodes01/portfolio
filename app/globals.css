@@ -10,11 +10,11 @@
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
   --header-end-rgb: 255, 255, 255;
-  --logo-rgb: var(--color-grey-400);
+  --logo-rgb: 113, 113, 113;
   --text: var(--color-grey-400);
   --box-shadow-rgba: 0, 0, 0, 0.3; 
   --item-background: var(--color-grey-50);
-  --contact-text: 0, 0, 0;
+  --contact-text-rgb: 0, 0, 0;
   --header-contact: black;
   --contact-background: white;
   --foreground-rgb: 0, 0, 0;
@@ -29,7 +29,8 @@
     --text: var(--color-grey-100);
     --box-shadow-rgba: 255, 255, 255, 0.1;
     --item-background: black;
-    --contact-text: 177, 177, 177;
+    --logo-rgb: 177, 177, 177;
+    --contact-text-rgb: 177, 177, 177;
     --header-contact: var(--color-primary-600);
     --contact-background: #1c1c1e;
     --foreground-rgb: 255, 255, 255;

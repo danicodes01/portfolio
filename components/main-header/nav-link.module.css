@@ -1,5 +1,5 @@
 .active {
-    color: rgb(177, 177, 177);
+    color: rgb(var(--logo-rgb));
     opacity: 55%;
     /* background-clip: text;
     -webkit-background-clip: text;
@@ -7,7 +7,7 @@
   }
 
   .active span {
-    color: rgb(177, 177, 177);
+    color: rbg(var(--logo-rpg));
     /* background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -28,5 +28,5 @@
     /* background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    text-shadow: 0 0 18px var(--color-abbgrey-200);
+    text-shadow: 0 0 18px var(--color-grey-200);
   }

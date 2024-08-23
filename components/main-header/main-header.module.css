@@ -51,7 +51,7 @@
 .nav a:active,
 .header a:hover,
 .header a:active {
-  color: rgb(177, 177, 177);
+  color: rgb(var(--logo-rgb));
   opacity: 65%;
 }
 

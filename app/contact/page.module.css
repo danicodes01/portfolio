@@ -19,13 +19,13 @@
 
 .header p {
   font-size: 0.875rem;
-  color: rgb(var(--contact-text));
+  color: rgb(var(--contact-text-rgb));
   margin-bottom: 2rem;
 }
 
 .info {
   font-size: 0.875rem;
-  color: rgb(var(--contact-text));
+  color: rgb(var(--contact-text-rgb));
 
 }
 
