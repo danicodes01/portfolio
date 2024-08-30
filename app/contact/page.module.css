@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
-  padding: 2rem;
+  padding: 5rem;
   max-width: 30rem;
   background-color: var(--contact-background);
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
@@ -42,8 +42,8 @@
 
 @media (max-width: 600px) {
   .contact {
-    padding: 1.5rem;
-    max-width: 100%;
+    padding: 2rem;
+    max-width: 75%;
   }
 
   .header h1 {
