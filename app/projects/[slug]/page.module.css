@@ -2,7 +2,7 @@
 .header {
   display: flex;
   flex-direction: column; 
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: 30rem;
   box-shadow: 0 0 3px rgba(var(--box-shadow-rgba));
   border-radius: 4px;

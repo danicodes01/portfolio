@@ -12,8 +12,9 @@ export default function ProjectItem({ slug, title, media, summary }: Project) {
   const mediaIsVideo = isVideo(media[0]);
   return (
     <div className={classes.container}>
+      <Link href={`/projects/${slug}`} className=''>
       <li className={classes.post}>
-        <Link href={`/projects/${slug}`} className=''>
+        <div className={classes.border}>
           <h1>{title}</h1>
           <div className={classes.images}>
             {mediaIsVideo ? (
@@ -25,9 +26,10 @@ export default function ProjectItem({ slug, title, media, summary }: Project) {
           <div className={classes.content}>
             <p>{summary}</p>
           </div>
-        </Link>
         {/* <hr className={classes.hr}/> */}
+        </div>
       </li>
+        </Link>
     </div>
   );
 }
