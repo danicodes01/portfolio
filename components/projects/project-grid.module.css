@@ -21,6 +21,7 @@
     grid-template-columns: 1fr; 
     gap: 1rem; 
     padding: 1rem; 
+    justify-items: center;
   }
 }
 

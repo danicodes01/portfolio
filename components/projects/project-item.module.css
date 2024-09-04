@@ -2,7 +2,7 @@
 .container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   margin: 0 auto 2rem auto;
   box-sizing: border-box;
@@ -15,19 +15,15 @@
 }
 
 .post {
-  justify-content: center;
-  overflow: hidden;
-  margin: 0 auto 0 auto; /* Ensure consistent spacing at the bottom of each post */
   display: flex;
   flex-direction: column;
-  /* max-width: 15rem; */
-  width: 70%;
-  height: auto;
+  justify-content: center;
+  width: 100%;
+  max-width: 20rem;
   box-sizing: border-box;
   padding: 1rem;
-  max-width: 100%; /* Allow the post to take full width */
-
-
+  margin: 0 auto; 
+  
 }
 
 .post h1 {
@@ -58,17 +54,13 @@
 
 
 .post img {
-  width: 13rem;
-  height: 10rem;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
   display: block;
-  overflow: hidden;
 
-  width: auto; /* Keep the image size without stretching */
-  max-width: 100%; /* Ensure the image doesn't exceed the post width */
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 
@@ -101,9 +93,6 @@
   }
 
   .post img {
-    width: auto; /* Keep the image size without stretching */
-    max-width: 100%; /* Ensure the image doesn't exceed the post width */
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 }
