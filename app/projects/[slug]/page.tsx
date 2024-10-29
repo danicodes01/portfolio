@@ -20,6 +20,7 @@ export default async function ProjectDetailPage({
 }: ProjectDetailParams) {
   const project = await getProject(params.slug);
   const mediaIsVideo = isVideo(project.media[1]);
+  const isDeployed = project.link !== "app store";
 
   if (!project) {
     notFound();
@@ -57,7 +58,7 @@ export default async function ProjectDetailPage({
   return (
     <>
       <header className={classes.header}>
-        <Link href={`${project.link}`} className=''>
+        <Link href={isDeployed ? `${project.link}` : `${project.repo}`} className=''>
           <div className={classes.image}>
             {mediaIsVideo ? (
               <Video media={project.media[1]} />
