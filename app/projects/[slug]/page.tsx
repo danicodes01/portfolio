@@ -29,6 +29,31 @@ export default async function ProjectDetailPage({
     project.info = project.info.replace(/\\n/g, "<br />");
   }
 
+  function projectTitle() {
+    if (project.title == "STARFLEET") {
+      return (
+        <Link href={`${project.link}`} className=''>
+          <p className={"STARFLEET"}>{project.title}</p>
+          <p>play here</p>
+        </Link>
+      );
+    } else if (project.link == "app store") {
+      return (
+        <div>
+          <p>{project.title}</p>
+          <p>Coming Soon to App Store</p>
+        </div>
+      );
+    } else {
+      return (
+        <Link href={`${project.link}`} className=''>
+          <p>{project.title}</p>
+          <p>go to {project.title}</p>
+        </Link>
+      );
+    }
+  }
+
   return (
     <>
       <header className={classes.header}>
@@ -42,20 +67,7 @@ export default async function ProjectDetailPage({
           </div>
         </Link>
         <div className={classes.info}>
-          <Link href={`${project.link}`} className=''>
-            <p
-              className={
-                project.title == "STARFLEET" ? classes.title : undefined
-              }
-            >
-              {project.title}
-            </p>
-            {project.title == "STARFLEET" ? (
-              <p>play here</p>
-            ) : (
-              <p>go to {project.title}</p>
-            )}
-          </Link>
+          {projectTitle()}
           {project.repo.length !== 0 && (
             <Link href={`${project.repo}`} className=''>
               <p>visit the repo</p>
