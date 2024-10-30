@@ -38,7 +38,7 @@ export default async function ProjectDetailPage({
           <p>play here</p>
         </Link>
       );
-    } else if (project.link == "app store") {
+    } else if (project.title == "ODNU") {
       return (
         <div>
           <p>{project.title}</p>
