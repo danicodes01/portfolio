@@ -1,6 +1,6 @@
 import Link from "next/link";
 import classes from "./page.module.css";
-// extra push
+
 export default function ContactPage() {
   return (
     <div className={classes.contact}>
