@@ -32,6 +32,6 @@ export async function getProject(slug: string): Promise<Project> {
     } catch (error) {
       console.error(error);
       await prisma.$disconnect();
-      throw error; // Rethrow the error instead of process.exit
+      throw error; 
     }
   }
