@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import classes from "./page.module.css";
 
 export default function ContactPage() {
@@ -7,7 +8,7 @@ export default function ContactPage() {
       <header className={classes.header}>
         <h1>Contact Daniel Knowles</h1>
         <p>
-          If you have any inquiries about my projects, or if youre looking for engineering or development support, I’d love to connect:
+          If you have any inquiries about my projects, or if you&apos;re looking for engineering or development support, I&apos;d love to connect:
         </p>
       </header>
       <main className={classes.info}>
@@ -24,6 +25,11 @@ export default function ContactPage() {
         <p>GitHub:{" "}
           <Link href="https://github.com/danicodes01" className={classes.link}>
             check out my GitHub
+          </Link>
+        </p>
+        <p>Resume:{" "}
+          <Link href="/resume" className={classes.link}>
+            view my resume
           </Link>
         </p>
       </main>

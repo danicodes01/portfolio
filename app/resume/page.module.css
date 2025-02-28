@@ -1,0 +1,170 @@
+.resumePage {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-color: var(--contact-background);
+    min-height: 100vh;
+  }
+  
+  .resumeContent {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    line-height: 1.6;
+    color: rgb(var(--contact-text-rgb));
+    background-color: var(--contact-background);
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(var(--box-shadow-rgba));
+  }
+  
+  .resumeContent h1 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1.5rem;
+    color: var(--header-contact);
+    text-align: center;
+  }
+  
+  .jobTitle {
+    color: var(--color-primary-500);
+    font-weight: 500;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .contact {
+    margin: 1.5rem 0;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  
+  .contact p {
+    margin: 0.25rem 0;
+  }
+  
+  .link {
+    color: var(--color-primary-500);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .link:hover,
+  .link:active {
+    opacity: 65%;
+  }
+  
+  .section {
+    margin-top: 2rem;
+    border-top: 1px solid var(--color-grey-300);
+    padding-top: 1rem;
+  }
+  
+  .section h2 {
+    margin-top: 0;
+    color: var(--header-contact);
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  
+  .job, .project, .reference {
+    margin-bottom: 2rem;
+  }
+  
+  .job h3, .project h3 {
+    margin-bottom: 0.25rem;
+    color: var(--color-primary-500);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .job h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: rgb(var(--contact-text-rgb));
+  }
+  
+  .duration {
+    color: var(--color-grey-500);
+    font-style: italic;
+    margin-top: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+  }
+  
+  .job ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .job li, .project p {
+    margin-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .project p, .reference p {
+    margin: 0.25rem 0;
+  }
+  
+  .reference {
+    margin-bottom: 1.5rem;
+  }
+  
+  .reference strong {
+    color: var(--color-primary-500);
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  @media print {
+    .resumePage {
+      padding: 0;
+      background-color: white;
+    }
+    
+    .resumeContent {
+      box-shadow: none;
+      padding: 0;
+      color: black;
+    }
+    
+    .section h2, .job h3, .project h3, .resumeContent h1 {
+      color: black;
+    }
+    
+    .jobTitle, .reference strong {
+      color: #333;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .resumeContent {
+      padding: 1rem;
+    }
+    
+    .resumeContent h1 {
+      font-size: 1.2rem;
+    }
+    
+    .section h2 {
+      font-size: 1rem;
+    }
+    
+    .job h3, .project h3 {
+      font-size: 0.9rem;
+    }
+    
+    .job h4 {
+      font-size: 0.85rem;
+    }
+    
+    .job li, .project p, .reference p, .contact p {
+      font-size: 0.85rem;
+    }
+  }
