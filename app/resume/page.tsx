@@ -119,8 +119,8 @@ export default function Resume() {
           </div>
           
           <div className={styles.project}>
-            <h3>RealWorldNews</h3>
-            <p><a href="https://www.realworldnews.org/" target="_blank" rel="noopener noreferrer" className={styles.link}>https://www.realworldnews.org/🌎</a></p>
+            <h3>RealWorldNews🌎</h3>
+            <p><a href="https://www.realworldnews.org/" target="_blank" rel="noopener noreferrer" className={styles.link}>https://www.realworldnews.org/</a></p>
             <p>Real World News is an innovative app that aggregates news from various sources like Al Jazeera, BBC, Democracy Now, and NPR, bringing them all into one searchable place.</p>
           </div>
           
