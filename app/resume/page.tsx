@@ -63,7 +63,7 @@ export default function Resume() {
         <div className={styles.section}>
           <h2>LANGUAGES</h2>
           <p>
-            TypeScript, JavaScript, Python, Java, C#, CSS, HTML, Apex, Sass,
+            TypeScript, JavaScript, Python, Java, Elixir, C#, CSS, HTML, Apex, Sass,
             Liquid, SQL
           </p>
         </div>
@@ -71,9 +71,9 @@ export default function Resume() {
         <div className={styles.section}>
           <h2>FRAMEWORKS/ LIBRARIES</h2>
           <p>
-            Next.js, Spring Boot, React, React Native, Angular, Flask, Node.js,
+            Next.js, Spring Boot, React, React Native, Angular, Phoenix, Flask, Node.js,
             jQuery, .NET, LangGraph, LangChain, FastAPI, ReAct, RAG, Jest,
-            Mocha, Salesforce, Microsoft Dynamics CRM, JUnit, Mockito, NUnit,
+            Mocha, Salesforce, Microsoft Dynamics CRM, ExUnit, JUnit, Mockito, NUnit,
             MsTest, Tailwind, Material UI, daisyUI, Bootstrap, LangSmith
           </p>
         </div>
