@@ -4,13 +4,14 @@ import classes from './project-grid.module.css';
 
 interface ProjectGridProps {
   projects: Project[];
+  lang: string;
 }
 
-export default function ProjectGrid({ projects }: ProjectGridProps) {
+export default function ProjectGrid({ projects, lang }: ProjectGridProps) {
   return (
     <ul className={classes.project}>
       {projects.map((p) => (
-        <ProjectItem key={p.id} {...p} />
+        <ProjectItem key={p.id} {...p} lang={lang} />
       ))}
     </ul>
   );

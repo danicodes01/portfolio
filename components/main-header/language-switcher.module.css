@@ -1,0 +1,28 @@
+.switcher {
+    display: flex;
+    gap: var(--size-1);
+    margin-left: var(--size-3);
+  }
+  
+  .switcher a {
+    text-decoration: none;
+    padding: var(--size-1) var(--size-2);
+    border-radius: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    background: var(--color-primary-600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 0.2s;
+  }
+  
+  .switcher a:hover,
+  .switcher a:active {
+    color: rgb(var(--logo-rgb));
+    opacity: 65%;
+  }
+  
+  .active {
+    font-weight: bold;
+  }
