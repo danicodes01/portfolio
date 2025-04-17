@@ -1,20 +1,42 @@
-import classes from './main-header.module.css'
-import NavLink from "./nav-link";
-export default function MainHeader() {
+import classes from './main-header.module.css';
+import NavLink from './nav-link';
+import LanguageSwitcher from './language-switcher';
+
+type HeaderProps = {
+  lang?: string;
+  dict?: {
+    header?: {
+      name: string;
+      contact: string;
+    };
+  };
+};
+
+export default function MainHeader({ lang, dict }: HeaderProps) {
+  const currentLang = lang || 'en';
+
+  const headerText = dict?.header || {
+    name: 'Daniel Knowles',
+    contact: 'contact',
+  };
 
   return (
     <header className={classes.header}>
-      <NavLink href='/'>
-      <p><span className={classes.highlight}>Daniel Knowles</span></p>
+      <NavLink href={`/${currentLang}`}>
+        <p>
+          <span className={classes.highlight}>{headerText.name}</span>
+        </p>
       </NavLink>
-      
+
       <nav className={classes.nav}>
         <ul>
           <li>
-            <NavLink href='/contact'>contact</NavLink>
+            <NavLink href={`/${currentLang}/contact`}>
+              {headerText.contact}
+            </NavLink>
           </li>
           <li>
-            {/* <NavLink href='/trips/share'>share</NavLink> */}
+            <LanguageSwitcher />
           </li>
         </ul>
       </nav>

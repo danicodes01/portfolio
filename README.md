@@ -2,46 +2,57 @@
 
 ## Project Overview
 
-This is a personal portfolio website built with Next.js 14 and TypeScript. The site showcases projects with a clean, responsive design and includes features like dynamic routing, server-side rendering, and SEO optimization.
+This is a personal portfolio website built with Next.js 15 and TypeScript. The site showcases projects with a clean, responsive design and includes features like dynamic routing, server-side rendering, internationalization, and SEO optimization.
+
+**Live Site**: [danicodes.org](https://www.danicodes.org)
 
 ## Tech Stack
 
-- **Framework**: Next.js 14.2.5
+- **Framework**: Next.js 15.3.0
 - **Language**: TypeScript
 - **Database**: Prisma with SQLite (better-sqlite3)
 - **Styling**: CSS Modules with Tailwind CSS
+- **Internationalization**: Custom implementation with dynamic routing
 - **Dependencies**:
-  - React 18
-  - Next.js
+  - React 19
+  - Next.js 15
   - Prisma ORM
-  - TypeScript
-  - Tailwind CSS 3.4.1
+  - TypeScript 5.8
+  - Tailwind CSS 3.4
   - PostCSS
+  - @formatjs/intl-localematcher
+  - Negotiator
 
 ## Project Structure
 
 ```
 portfolio/
 ├── app/                    # Next.js App Router
-│   ├── contact/            # Contact page
-│   │   ├── page.module.css # Contact page styles
-│   │   └── page.tsx        # Contact page component
-│   ├── projects/           # Projects pages
-│   │   └── [slug]/         # Dynamic project routes
-│   ├── resume/             # Resume page
-│   │   ├── page.module.css # Resume page styles
-│   │   └── page.tsx        # Resume page component
-│   ├── globals.css         # Global styles with dark mode support
-│   ├── layout.tsx          # Root layout
-│   ├── page.module.css     # Home page styles
-│   ├── page.tsx            # Home page
-│   └── sitemap.tsx         # SEO sitemap
+│   ├── [lang]/             # Dynamic language route segment
+│   │   ├── contact/        # Contact page
+│   │   │   ├── page.module.css # Contact page styles
+│   │   │   └── page.tsx    # Contact page component
+│   │   ├── dictionaries/   # Language dictionaries
+│   │   │   ├── en.json     # English translations
+│   │   │   └── es.json     # Spanish translations
+│   │   ├── projects/       # Projects pages
+│   │   │   └── [slug]/     # Dynamic project routes
+│   │   ├── resume/         # Resume page
+│   │   │   ├── page.module.css # Resume page styles
+│   │   │   └── page.tsx    # Resume page component
+│   │   ├── dictionaries.ts # Dictionary utility functions
+│   │   ├── layout.tsx      # Language-aware layout
+│   │   ├── page.module.css # Home page styles
+│   │   └── page.tsx        # Home page
+│   └── globals.css         # Global styles with dark mode support
 ├── components/             # React components
 │   ├── main-header/        # Header component
-│   │   ├── main-header.module.css # Header styles
-│   │   ├── main-header.tsx        # Header component
-│   │   ├── nav-link.module.css    # Navigation link styles
-│   │   └── nav-link.tsx           # Navigation link component
+│   │   ├── language-switcher.module.css # Language switcher styles
+│   │   ├── language-switcher.tsx        # Language switcher component
+│   │   ├── main-header.module.css       # Header styles
+│   │   ├── main-header.tsx              # Header component
+│   │   ├── nav-link.module.css          # Navigation link styles
+│   │   └── nav-link.tsx                 # Navigation link component
 │   ├── projects/           # Project-related components
 │   │   ├── project-grid.module.css # Project grid styles
 │   │   ├── project-grid.tsx        # Project grid component
@@ -50,16 +61,79 @@ portfolio/
 │   └── video/              # Video player component
 ├── lib/                    # Utility functions
 │   └── projects.ts         # Project data fetching logic
+├── middleware.ts           # Language detection middleware
 ├── prisma/                 # Database schema and client
 ├── public/                 # Static assets
 ├── types/                  # TypeScript type definitions
-│   ├── better-sqlite3.d.ts # SQLite type definitions
 │   ├── global.d.ts         # Global type definitions
 │   └── project.ts          # Project type definitions
 ├── next.config.mjs         # Next.js configuration
 ├── postcss.config.mjs      # PostCSS configuration
 └── tailwind.config.ts      # Tailwind CSS configuration
 ```
+
+## Internationalization (i18n)
+
+The portfolio now supports multiple languages using Next.js dynamic routing:
+
+### Language Handling
+
+1. **Dynamic Route Segment**:
+   - All pages are nested under `app/[lang]/` to capture the language parameter
+   - Supported languages: English (en) and Spanish (es)
+
+2. **Dictionary System**:
+   - Translation dictionaries stored in `app/[lang]/dictionaries/`
+   - `en.json` - English translations
+   - `es.json` - Spanish translations
+   - `dictionaries.ts` utility for loading the appropriate dictionary
+
+3. **Middleware**:
+   - `middleware.ts` detects user's preferred language from browser settings
+   - Redirects to appropriate language route if none is specified
+   - Uses `@formatjs/intl-localematcher` and `Negotiator` for language detection
+
+4. **Language Switcher**:
+   - UI component allowing users to manually change languages
+   - Preserves current page path when switching languages
+   - Highlights the currently active language
+
+### Implementation Details
+
+1. **Page Components**:
+   - All page components receive language as a Promise-based param
+   - Example:
+     ```typescript
+     export default async function ContactPage({
+       params
+     }: {
+       params: Promise<{ lang: string }>
+     }) {
+       const { lang } = await params;
+       const dict = await getDictionary(lang);
+       // Component rendering with translated content
+     }
+     ```
+
+2. **Dictionary Usage**:
+   - Content is loaded from dictionaries based on current language
+   - Example:
+     ```typescript
+     // Getting translated content
+     const dict = await getDictionary(lang);
+     
+     // Using translated content
+     <h1>{dict.contact.title}</h1>
+     ```
+
+3. **Link Handling**:
+   - All internal links preserve the language parameter
+   - Example:
+     ```typescript
+     <Link href={`/${lang}/resume`}>
+       {dict.contact.resumeLink}
+     </Link>
+     ```
 
 ## Key Components
 
@@ -69,97 +143,75 @@ portfolio/
    - Renders a grid of projects
    - Takes an array of Project objects as props
    - Maps each project to a ProjectItem component
-   - Uses CSS modules for styling with `project-grid.module.css`
+   - Now language-aware with localized content
 
 2. **ProjectItem** (`components/projects/project-item.tsx`):
    - Displays individual project with title, media, and summary
-   - Detects if media is video or image using the `isVideo()` utility function
-   - Renders videos with a custom Video component or images with standard img tags
-   - Links to detailed project page with dynamic routing
-   - Uses CSS modules for styling with `project-item.module.css`
+   - Uses localized summaries based on current language
+   - Links to detailed project page with proper language routing
 
 ### Layout Components
 
 1. **MainHeader** (`components/main-header/main-header.tsx`):
    - Site navigation header
    - Contains site title and navigation links
-   - Uses NavLink component for styled links
-   - Supports the site owner's branding with highlighted name
-   - Uses CSS modules for styling with `main-header.module.css`
+   - Now includes language switcher component
+   - Receives current language and dictionary as props
 
-2. **NavLink** (`components/main-header/nav-link.tsx`):
-   - Custom link component for navigation
-   - Uses Next.js Link component for client-side navigation
-   - Styled with CSS modules using `nav-link.module.css`
+2. **LanguageSwitcher** (`components/main-header/language-switcher.tsx`):
+   - Allows users to switch between available languages
+   - Preserves current page path when switching
+   - Uses Next.js usePathname hook to determine current path
 
 ### Pages
 
-1. **Home** (`app/page.tsx`):
+1. **Home** (`app/[lang]/page.tsx`):
    - Landing page that displays all projects
-   - Fetches projects using getProjects() function from lib/projects
-   - Renders projects using ProjectGrid component
-   - Uses CSS modules for styling with `page.module.css`
+   - Language-aware, receiving language parameter from URL
+   - Loads appropriate dictionary for translations
 
-2. **Contact** (`app/contact/page.tsx`):
-   - Contact information page
+2. **Contact** (`app/[lang]/contact/page.tsx`):
+   - Contact information page with localized content
    - Displays email, LinkedIn, GitHub, and resume links
-   - Uses CSS modules for styling with `contact/page.module.css`
+   - Link text changes based on selected language
 
-3. **Resume** (`app/resume/page.tsx`):
-   - Comprehensive resume page
+3. **Resume** (`app/[lang]/resume/page.tsx`):
+   - Comprehensive resume page with localized content
    - Includes work experience, projects, skills, and contact information
-   - Uses CSS modules for styling with `resume/page.module.css`
-   - Sets metadata for better SEO
+   - All text content pulled from language dictionaries
 
-4. **Project Detail** (`app/projects/[slug]/page.tsx`):
+4. **Project Detail** (`app/[lang]/projects/[slug]/page.tsx`):
    - Dynamic route for individual project details
-   - Fetches specific project data based on slug parameter
-
-5. **Sitemap** (`app/sitemap.tsx`):
-   - Generates dynamic sitemap for SEO optimization
-   - Includes base URLs (home, contact, resume) with priority levels
-   - Dynamically generates project URLs from database
-   - Sets revalidation time to 3600 seconds (1 hour)
-   - Returns URLs in MetadataRoute.Sitemap format
-
-## Data Flow
-
-1. **Data Fetching**:
-   - Projects data is fetched from the database using Prisma client
-   - `getProjects()` function in `lib/projects.ts` retrieves all projects
-   - Data is passed to components as props
-
-2. **Routing**:
-   - Next.js App Router handles page routing
-   - Dynamic routes for project details using [slug] parameter
-   - Links between pages handled by Next.js Link component
+   - Language-aware, showing localized project descriptions
+   - Handles both language and project slug parameters
 
 ## Project Type Definition
 
-The `Project` type (from `types/project.ts`) includes:
+The `Project` type (from `types/project.ts`) now includes localization fields:
 
 ```typescript
-interface Project {
-  id: string;         // Unique identifier for the project
-  slug: string;       // URL-friendly identifier used in dynamic routes
-  title: string;      // Project title
-  media: string[];    // Array of media URLs (images or videos)
-  summary: string;    // Brief description of the project
-  date: string | Date; // Publication or update date
-  // Additional fields may be present
-}
+export type Project = {
+  id: string;
+  title: string;
+  slug: string;
+  link: string;
+  summary: string;
+  summaryEs: string | null | undefined;  // Spanish summary
+  info: string;
+  infoEs: string | null | undefined;     // Spanish detailed info
+  repo: string;
+  media: string[];
+  date: Date;
+};
 ```
-
-This type is used throughout the application for strong typing and consistency, particularly in:
-- The `getProjects()` function return type
-- Props for the `ProjectGrid` and `ProjectItem` components
-- Parameter destructuring in the `ProjectItem` component
 
 ## Development Workflow
 
 1. **Installation**:
    ```bash
    npm install
+   # or
+   pnpm install
    ```
 
 2. **Database Setup**:
@@ -189,58 +241,55 @@ To add a new project:
 1. Add project data to your database
 2. The project should include:
    - Unique ID and slug
-   - Title and summary
+   - Title and summary (in English)
+   - Optional localized content (summaryEs, infoEs)
    - Media URLs (images or videos)
    - Publication date
 
-New projects will automatically appear on the home page and in the sitemap.
+## Adding New Languages
 
-## Styling and Theming
+To add support for additional languages:
 
-### CSS Modules
+1. Create a new dictionary file in `app/[lang]/dictionaries/`
+   - Example: `fr.json` for French
+   
+2. Add the new locale to the supported locales in middleware.ts:
+   ```typescript
+   const locales = ['en', 'es', 'fr']
+   ```
 
-The project uses CSS Modules for component-specific styling:
-- Each component has its own `.module.css` file
-- Class names are scoped locally to prevent style conflicts
-- Styles are imported and applied using the `classes` or `styles` object
+3. Update the `dictionaries` object in `app/[lang]/dictionaries.ts`:
+   ```typescript
+   const dictionaries = {
+     en: () => import('./dictionaries/en.json').then(module => module.default),
+     es: () => import('./dictionaries/es.json').then(module => module.default),
+     fr: () => import('./dictionaries/fr.json').then(module => module.default),
+   }
+   ```
 
-### Global Styles
-
-The `app/globals.css` file contains:
-- Font imports from Google Fonts (Oswald, Roboto, Source Sans Pro, etc.)
-- Tailwind CSS directives (`@tailwind base`, `@tailwind components`, `@tailwind utilities`)
-- CSS variables for colors, sizes, and spacing
-- Base styling for the body element
-
-### Dark Mode Support
-
-The portfolio includes built-in dark mode support:
-- Uses CSS variables defined in `:root` for light mode
-- Overrides variables with `@media (prefers-color-scheme: dark)` for dark mode
-- Variables include:
-  - Background colors
-  - Text colors
-  - Box shadow effects
-  - UI component colors
-
-### Color Palette
-
-The site uses a consistent color palette defined with CSS variables:
-- Grey scale: `--color-grey-50` through `--color-grey-900`
-- Primary colors: `--color-primary-50` through `--color-primary-700`
-- Special UI elements: `--logo-rgb`, `--text`, `--contact-background`, etc.
+4. Add the new language to the language switcher in `components/main-header/language-switcher.tsx`:
+   ```typescript
+   const languages = [
+     { code: 'en', name: 'EN' },
+     { code: 'es', name: 'ES' },
+     { code: 'fr', name: 'FR' }
+   ];
+   ```
 
 ## SEO & Performance
 
-- The site generates a dynamic sitemap for better search engine indexing
-- Different pages have different priority levels:
-  - Homepage: 1.0 (highest)
-  - Contact and Resume: 0.8
-  - Project pages: 0.7
-- The sitemap is revalidated every hour (3600 seconds)
-- Uses Next.js metadata API for proper page titles and descriptions
-- Implements proper semantic HTML structure
-- Optimizes images with Next.js Image component where appropriate
+- Each page has proper metadata with localized titles and descriptions
+- The site automatically detects and redirects to the user's preferred language
+- URL structure includes language code for better SEO
+- All pages support both English and Spanish content
+
+## Media Handling
+
+The site supports both images and videos for projects:
+
+- Videos are detected using the `isVideo()` utility function
+- Media is displayed in a responsive container with appropriate styling
+- Alt text and accessibility are maintained across languages
 
 ## Deployment
 
@@ -253,28 +302,12 @@ This Next.js application can be deployed to various platforms:
 
 The deployment URL is configured as `https://www.danicodes.org/` in the sitemap.
 
-## Media Handling
-
-The site supports both images and videos for projects:
-
-- Videos are detected by checking for common video file extensions or "video" in the URL
-- The `isVideo()` utility function in `ProjectItem` component determines the media type:
-  ```typescript
-  const isVideo = (media: string): boolean => {
-    const videoIndicators = ["video", ".mp4", ".webm", ".ogg", ".mov"];
-    return videoIndicators.some((indicator) => media.includes(indicator));
-  };
-  ```
-- Videos are rendered using the custom Video component from `@/components/video/video`
-- Images are rendered using standard img tags with the project slug as alt text
-- Media is displayed in a responsive container with appropriate styling
-
 ## Future Enhancements
 
 Potential areas for improvement:
 
 1. Add dark mode support using next-themes
-2. Implement internationalization for multiple languages
+2. Add more languages beyond English and Spanish
 3. Add a blog section with MDX support
 4. Integrate with a CMS for easier content management
 5. Add contact form functionality

@@ -1,0 +1,116 @@
+{
+  "header": {
+    "name": "Daniel Knowles",
+    "contact": "contacto"
+  },
+  "home": {
+    "title": "Proyectos"
+  },
+  "contact": {
+    "title": "Contactar a Daniel Knowles",
+    "intro": "Si tienes alguna consulta sobre mis proyectos, o si estás buscando soporte de ingeniería o desarrollo, me encantaría conectar:",
+    "email": "Correo electrónico:",
+    "linkedin": "LinkedIn:",
+    "linkedinLink": "conéctate conmigo en LinkedIn",
+    "github": "GitHub:",
+    "githubLink": "visita mi GitHub",
+    "resume": "Currículum:",
+    "resumeLink": "ver mi currículum"
+  },
+  "projectPage": {
+    "goToProject": "ir a",
+    "visitRepo": "visitar el repositorio",
+    "playHere": "jugar aquí",
+    "comingSoon": "Próximamente en App Store"
+  },
+  "resume": {
+    "metaTitle": "Currículum",
+    "metaDescription": "Currículum de Daniel Knowles, Ingeniero de Software",
+    "jobTitle": "Ingeniero de Software",
+    "email": "Correo electrónico:",
+    "phone": "Teléfono:",
+    "portfolio": "Portafolio:",
+    "languages": "LENGUAJES DE PROGRAMACIÓN",
+    "frameworks": "FRAMEWORKS / BIBLIOTECAS",
+    "tools": "HERRAMIENTAS",
+    "workExperience": "EXPERIENCIA LABORAL",
+    "projects": "PROYECTOS",
+    "spokenLanguages": "IDIOMAS",
+    "english": "Inglés - Nativo",
+    "spanish": "Español - Fluido",
+    "references": "REFERENCIAS",
+    "referenceTitle": {
+      "david": "Director de Consultoría, CGI"
+    },
+    "job1": {
+      "title": "CGI FEDERAL, Remoto — CONSULTOR",
+      "duration": "Junio 2022 - Diciembre 2023",
+      "role1": {
+        "title": "FSG, Atlas— CONSULTOR (Agosto 2022 - Diciembre 2023)",
+        "bullets": [
+          "Desarrollador activo en un equipo Agile Scrum para un contrato del gobierno de EE. UU. otorgado a CGI.",
+          "Desarrollé un sistema que procesa con éxito más de 15 millones de pasaportes estadounidenses y más de 4 millones de visas en 70 países cada año.",
+          "Optimicé la gestión de casos mejorando una interfaz de React que se comunicaba con Microsoft Dynamics 365, utilizando datos de casos CRM y una API basada en Python para acceder a datos de referencia.",
+          "Implementé machine learning con la biblioteca FastText de Python para mejorar la eficiencia de respuesta en un 40%, mejorando significativamente la capacidad de los trabajadores para gestionar y responder a las solicitudes de visas estadounidenses. Amplié los datos de referencia y agregué ejemplos de entrenamiento para permitir que FastText clasificara tipos de casos basados en entradas de texto con matices. Implementé un ciclo de retroalimentación de usuarios para refinar la precisión del modelo, permitiendo el aprendizaje continuo y la adaptación en la clasificación predictiva de texto.",
+          "Refactoricé el sistema Salesforce existente a Microsoft Dynamics para el gobierno de EE. UU., garantizando el cumplimiento de los estándares de seguridad FedRAMP High, proporcionando encriptación avanzada y control de acceso seguro.",
+          "Optimicé la configuración del entorno de desarrollo mediante la creación de scripts para la importación de certificados, instalación de Azure CLI, Docker, y la realización de configuración y pruebas posteriores a la instalación.",
+          "Documenté procesos completos en Confluence, cubriendo ciclos de vida de despliegue, notas técnicas, guías de uso de herramientas y documentación de alto nivel para varias aplicaciones y flujos de trabajo.",
+          "Realicé tareas de infraestructura, incluyendo control de versiones de bibliotecas de node y Flask, imágenes de Docker, manipulación de recursos de Kubernetes y solución de problemas en pipelines de Jenkins.",
+          "Redacté documentación de ayuda completa y supervisé pruebas de usuarios finales, garantizando una experiencia de usuario amigable.",
+          "Creé y modifiqué tablas personalizadas de Dynamics 365, estableciendo atributos, estructuras de datos, relaciones, formularios de entidades, vistas, reglas de negocio y flujos de trabajo.",
+          "Gestioné roles de seguridad, actualizando privilegios de equipo y controlando el acceso a recursos de datos.",
+          "Implementé configuraciones de pago, recibos dinámicos e instrucciones de visa para varios países. Creé constantes mediante fragmentos de código para garantizar traducciones fluidas para múltiples idiomas."
+        ]
+      },
+      "role2": {
+        "title": "ESG, CAST— CONSULTOR (Junio 2022 – Agosto 2022)",
+        "bullets": [
+          "Colaboré dentro de un pequeño equipo para liderar el desarrollo de una aplicación interna, creada desde cero. Participé en una participación intensiva de dos meses, contribuyendo con experiencia en diversos aspectos, incluyendo diseño visual, diseño e implementación de API REST, modelado de datos y desarrollo front-end.",
+          "Adquirí competencia en Java sobre la marcha, demostrando adaptabilidad para diseñar e implementar una API REST robusta utilizando el framework Spring Boot.",
+          "Implementé Object-Relational Mapping con JPA para optimizar la gestión de datos y mejorar la eficiencia de la aplicación.",
+          "Desarrollé pruebas unitarias completas utilizando Mockito y JUnit para evaluar rigurosamente la lógica de negocio integrada en la capa de Servicio. Establecí clases de prueba y aproveché InjectMocks para la creación de objetos, asegurando una interferencia mínima de dependencias y fomentando una arquitectura débilmente acoplada conducente a pruebas efectivas.",
+          "Utilicé Swagger para la generación de documentación detallada de API REST, mejorando la transparencia y accesibilidad del proyecto.",
+          "Gestioné dependencias a través de un repositorio central de Maven, asegurando actualizaciones fluidas y adquisición de nuevos recursos.",
+          "Desarrollé componentes Angular reutilizables utilizando TypeScript e interfaces, fomentando un entorno de programación robusto y fuertemente tipado.",
+          "Colaboré perfectamente con Material UI para diseñar tablas personalizadas e implementar estilos, mejorando la interfaz de usuario para una experiencia de usuario óptima."
+        ]
+      }
+    },
+    "job2": {
+      "title": "OPERATION SPARK, Remoto — ASISTENTE DE ENSEÑANZA",
+      "duration": "Junio 2021 – Julio 2022",
+      "bullets": [
+        "Asistí a estudiantes que estudiaban Desarrollo de Software.",
+        "Mentoré y tutoré a estudiantes individuales que tenían dificultades para comprender los objetivos de la clase.",
+        "Instruí a estudiantes de diversos orígenes y estilos de aprendizaje empleando una variedad de recursos instructivos."
+      ]
+    },
+    "job3": {
+      "title": "AUTÓNOMO, Remoto — DIBUJANTE",
+      "duration": "Enero 2017 – Febrero 2022",
+      "bullets": [
+        "Colaboré con clientes para diseñar distribuciones de casas personalizadas adaptadas a sus necesidades.",
+        "Creé planos detallados para presentar a ingenieros y funcionarios del condado.",
+        "Utilicé AutoCAD para producir dibujos arquitectónicos precisos, incluyendo renderizados 3D y vistas de elevación.",
+        "Aseguré que todos los diseños cumplieran con las regulaciones locales y requisitos estructurales."
+      ]
+    },
+    "job4": {
+      "title": "RAINBOW GROCERY, San Francisco, CA — TRABAJADOR / PROPIETARIO",
+      "duration": "Enero 2010 – Julio 2016",
+      "bullets": [
+        "Colaboré con agricultores y proveedores locales para mantener un suministro constante de productos frescos.",
+        "Participé en reuniones departamentales y de toda la tienda, discutiendo políticas de la tienda y asegurando que se mantuviera la declaración de misión.",
+        "Asumí responsabilidades completas de propiedad en una cooperativa de trabajadores propietarios, contribuyendo a la operación eficiente de la tienda de comestibles."
+      ]
+    },
+    "projectDescriptions": {
+      "atlas360": "Una solución integral de servicios consulares utilizada por el Departamento de Estado de EE. UU. para procesar más de 15 millones de pasaportes y 4 millones de visas anualmente. Atlas360 proporciona una vista de extremo a extremo del proceso de solicitud de visa, mejorando la seguridad y flexibilidad mientras combate el fraude. Como parte del equipo de desarrollo, contribuí a optimizar el rendimiento del sistema, agilizar la gestión de casos y entregar una plataforma robusta y fácil de usar.",
+      "distortNewYork": "Tu asistente para eventos en vivo en Nueva York. Agregando automáticamente eventos de una variedad de lugares.",
+      "realWorldNews": "Real World News es una aplicación innovadora que agrega noticias de varias fuentes como Al Jazeera, BBC, Democracy Now y NPR, reuniéndolas todas en un solo lugar con capacidad de búsqueda.",
+      "odnu": "ODNU proporciona información diaria de la NASA, con un Space-Bot chat impulsado por un LLM ajustado, ofreciendo a los usuarios actualizaciones e interacciones atractivas centradas en el espacio.",
+      "ica": "Una plataforma educativa innovadora que transforma la educación de codificación en una aventura de exploración espacial. Construida con Next.js, TypeScript y MongoDB, presenta un entorno inmersivo basado en canvas donde los estudiantes navegan entre cuerpos celestes diseñados a medida, cada uno representando diferentes disciplinas de programación con desafíos especializados que desarrollan progresivamente habilidades de desarrollo.",
+      "starfleet": "Un juego 2D con visuales 3D simulados construido usando TypeScript y un motor de renderizado personalizado. ＳＴＡＲＦＬＥＥＴ aprovecha HTML5 Canvas con CanvasRenderingContext2D para crear efectos visuales inmersivos, demostrando habilidades avanzadas de desarrollo front-end y diseño de aplicaciones web interactivas."
+    }
+  }
+}

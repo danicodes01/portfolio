@@ -1,0 +1,116 @@
+{
+  "header": {
+    "name": "Daniel Knowles",
+    "contact": "contact"
+  },
+  "home": {
+    "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact Daniel Knowles",
+    "intro": "If you have any inquiries about my projects, or if you're looking for engineering or development support, I'd love to connect:",
+    "email": "Email:",
+    "linkedin": "LinkedIn:",
+    "linkedinLink": "connect with me on LinkedIn",
+    "github": "GitHub:",
+    "githubLink": "check out my GitHub",
+    "resume": "Resume:",
+    "resumeLink": "view my resume"
+  },
+  "projectPage": {
+    "goToProject": "go to",
+    "visitRepo": "visit the repo",
+    "playHere": "play here",
+    "comingSoon": "Coming Soon to App Store"
+  },
+  "resume": {
+    "metaTitle": "Resume",
+    "metaDescription": "Resume of Daniel Knowles, Software Engineer",
+    "jobTitle": "Software Engineer",
+    "email": "Email:",
+    "phone": "Phone:",
+    "portfolio": "Portfolio:",
+    "languages": "LANGUAGES",
+    "frameworks": "FRAMEWORKS/ LIBRARIES",
+    "tools": "TOOLS",
+    "workExperience": "WORK EXPERIENCE",
+    "projects": "PROJECTS",
+    "spokenLanguages": "SPOKEN LANGUAGES",
+    "english": "English - Native",
+    "spanish": "Spanish - Fluent",
+    "references": "REFERENCES",
+    "referenceTitle": {
+      "david": "Director Consulting, CGI"
+    },
+    "job1": {
+      "title": "CGI FEDERAL, Remote — CONSULTANT",
+      "duration": "June 2022 - December 2023",
+      "role1": {
+        "title": "FSG, Atlas— CONSULTANT (Aug 2022 - December 2023)",
+        "bullets": [
+          "Actively engaged developer on an Agile Scrum team for a US government contract awarded to CGI.",
+          "Developed a system that successfully supports the processing of over 15 million U.S. passports and over 4 million visas in 70 countries each year.",
+          "Streamlined case management by optimizing a React front-end that interfaced with Microsoft Dynamics 365, utilizing CRM case data and a Python-driven API for reference data access.",
+          "Leveraged machine learning with Python's FastText library to enhance response efficiency by 40%, significantly improving caseworkers' ability to manage and respond to U.S. visa applications. Expanded reference data and added training examples to enable FastText to classify case types based on nuanced text inputs. Implemented a user feedback loop to refine model accuracy, allowing for continuous learning and adaptation in predictive text classification.",
+          "Refactored the existing Salesforce system to Microsoft Dynamics for the US government, ensuring compliance with FedRAMP High security standards, providing advanced encryption and secure access control.",
+          "Streamlined development environment setup by scripting the import of certificates, installation of Azure CLI, Docker, and conducting post-installation configuration and testing.",
+          "Documented comprehensive processes in Confluence, covering deployment lifecycles, technical notes, tool usage guidelines, and high-level documentation for various applications and workflows.",
+          "Conducted infrastructure tasks, including version controlling node and Flask libraries, Docker images, manipulating Kubernetes resources, and troubleshooting Jenkins pipelines.",
+          "Authored comprehensive help documentation and supervised end-user testing, ensuring a user-friendly experience.",
+          "Created and modified custom Dynamics 365 tables, establishing attributes, data structures, relationships, entity forms, views, business rules, and workflows.",
+          "Managed security roles, updating team privileges and controlling access to data resources.",
+          "Implemented payment configurations, dynamic receipts, and visa instructions for various countries. Created constants via code snippets to ensure seamless translations for multiple languages."
+        ]
+      },
+      "role2": {
+        "title": "ESG, CAST— CONSULTANT (June 2022 – Aug 2022)",
+        "bullets": [
+          "Collaborated within a small team to spearhead the development of an internal application, crafted from inception. Engaged in a two-month intensive involvement, contributing expertise across diverse facets, including visual design, REST API design and implementation, data modeling, and front-end development.",
+          "Acquired proficiency in Java on-the-fly, demonstrating adaptability to architect and implement a robust REST API using the Spring Boot framework.",
+          "Implemented Object-Relational Mapping with JPA to optimize data management and enhance the application's efficiency.",
+          "Developed comprehensive unit tests using Mockito and JUnit to rigorously evaluate the business logic embedded within the Service layer. Established test classes and leveraged InjectMocks for object creation, ensuring minimal dependency interference and fostering a loosely coupled architecture conducive to effective testing.",
+          "Utilized Swagger for the generation of detailed REST API documentation, enhancing the project's transparency and accessibility.",
+          "Managed dependencies through a central Maven repository, ensuring seamless updates and acquisition of new resources.",
+          "Developed reusable Angular components using TypeScript and interfaces, fostering a robust and strongly typed programming environment.",
+          "Collaborated seamlessly with Material UI to design custom tables and implement styles, enhancing the user interface for an optimal user experience."
+        ]
+      }
+    },
+    "job2": {
+      "title": "OPERATION SPARK, Remote — TEACHING ASSISTANT",
+      "duration": "June 2021 – July 2022",
+      "bullets": [
+        "Assisted students studying Software Development.",
+        "Mentored and tutored individual students struggling to understand lecture objectives.",
+        "Instructed students of various backgrounds and learning styles by employing a variety of instructional resources."
+      ]
+    },
+    "job3": {
+      "title": "SELF EMPLOYED, Remote — DRAFTSMAN",
+      "duration": "January 2017 – February 2022",
+      "bullets": [
+        "Collaborated with clients to design custom home layouts tailored to their needs.",
+        "Created detailed plans for submission to engineers and county officials.",
+        "Utilized AutoCAD to produce precise architectural drawings, including 3D renderings and elevation views.",
+        "Ensured all designs met local regulations and structural requirements."
+      ]
+    },
+    "job4": {
+      "title": "RAINBOW GROCERY, San Francisco, CA — WORKER / OWNER",
+      "duration": "January 2010 – July 2016",
+      "bullets": [
+        "Collaborated with local farmers and vendors to maintain a consistent supply of fresh produce.",
+        "Participated in department and store-wide meetings, discussing store policies and ensuring the mission statement was upheld.",
+        "Took on full ownership responsibilities in a worker-owned cooperative, contributing to the efficient operation of the grocery store."
+      ]
+    },
+    "projectDescriptions": {
+      "atlas360": "A comprehensive consular services solution used by the U.S. Department of State to process over 15 million passports and 4 million visas annually. Atlas360 provides an end-to-end view of the visa application process, enhancing security and flexibility while combating fraud. As part of the development team, I contributed to optimizing the system's performance, streamlining case management, and delivering a robust, user-friendly platform.",
+      "distortNewYork": "Your live event aid in New York. Automatically aggregating events from an array of venues.",
+      "realWorldNews": "Real World News is an innovative app that aggregates news from various sources like Al Jazeera, BBC, Democracy Now, and NPR, bringing them all into one searchable place.",
+      "odnu": "ODNU provides daily NASA insights, with a Space-Bot chat powered by a fine-tuned LLM, offering users engaging, space-focused updates and interactions.",
+      "ica": "An innovative educational platform that transforms coding education into a space exploration adventure. Built with Next.js, TypeScript, and MongoDB, it features an immersive canvas-based environment where learners navigate between custom-designed celestial bodies, each representing different programming disciplines with specialized challenges that progressively build development skills.",
+      "starfleet": "A 2D game with simulated 3D visuals built using TypeScript and a custom rendering engine. ＳＴＡＲＦＬＥＥＴ leverages HTML5 Canvas with CanvasRenderingContext2D to create immersive visual effects, demonstrating advanced front-end development skills and interactive web application design."
+    }
+  }
+}
