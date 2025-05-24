@@ -1,4 +1,3 @@
-
 .container {
   display: flex;
   justify-content: center;
@@ -8,10 +7,20 @@
   box-sizing: border-box;
   width: 100%;
   padding: 0 1rem;
-  box-shadow: 0 0 6px rgba(var(--foreground-rgb));
-  border: .5px solid rgb(177, 177, 177);
-  border-radius: 8px;
-  
+  box-shadow:
+    0 0 32px 8px rgba(var(--card-glow), var(--card-glow-alpha)),
+    0 2px 8px rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(var(--color-grey-500), 0.15);
+  border-radius: 16px;
+  background: var(--item-background);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.container:hover {
+  box-shadow:
+    0 0 48px 12px rgba(var(--card-glow), 0.22),
+    0 4px 16px rgba(0, 0, 0, 0.14);
+  border-color: rgba(var(--color-grey-500), 0.22);
 }
 
 .post {
@@ -23,12 +32,12 @@
   box-sizing: border-box;
   padding: 1rem;
   margin: 0 auto; 
-  
 }
 
 .post h1 {
   font-family: "Fira Code", monospace;
   letter-spacing: 0.15rem;
+  margin: .5rem;
 }
 
 .post hr {
@@ -37,7 +46,7 @@
   border: none;
   border-top: 6px dotted rgb(177, 177, 177);
   width: 35%;
-  margin: 2rem auto 0 auto; /* Ensure consistent spacing at the top of each hr */
+  margin: 2rem auto 0 auto;
   text-align: center;
   position: relative;
 }
@@ -47,22 +56,14 @@
   list-style: none;
 }
 
-.post h1 {
-  margin: .5rem;
-
-}
-
-
 .post img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
   display: block;
-
   margin: 0 auto;
 }
-
 
 .content {
   padding: 1rem;
@@ -80,16 +81,44 @@
   opacity: 65%;
 }
 
+.images {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 0;
+  height: 0;
+  padding-bottom: 75%;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 1rem; /* Adjust padding to prevent content from touching the screen edges */
+    padding: 0 1rem;
   }
 
   .post {
-    max-width: 100%; /* Allow the post to take full width */
-    margin-left: auto; /* Ensure it stays centered */
-    margin-right: auto; /* Ensure it stays centered */
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .post img {

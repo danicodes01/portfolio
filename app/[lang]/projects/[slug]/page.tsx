@@ -44,7 +44,7 @@ export default async function ProjectDetailPage({
   function projectTitle() {
     if (project.title == 'STARFLEET') {
       return (
-        <Link href={`${project.link}`} className=''>
+        <Link href={`${project.link}`} target="_blank" rel="noopener noreferrer" className=''>
           <p className={'STARFLEET'}>{project.title}</p>
           <p>{dict.projectPage.playHere}</p>
         </Link>
@@ -58,7 +58,7 @@ export default async function ProjectDetailPage({
       );
     } else {
       return (
-        <Link href={`${project.link}`} className=''>
+        <Link href={`${project.link}`} target="_blank" rel="noopener noreferrer" className=''>
           <p>{project.title}</p>
           <p>
             {dict.projectPage.goToProject} {project.title}
@@ -73,6 +73,8 @@ export default async function ProjectDetailPage({
       <header className={classes.header}>
         <Link
           href={isDeployed ? `${project.link}` : `${project.repo}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className=''
         >
           <div className={classes.image}>
@@ -86,7 +88,7 @@ export default async function ProjectDetailPage({
         <div className={classes.info}>
           {projectTitle()}
           {project.repo.length !== 0 && (
-            <Link href={`${project.repo}`} className=''>
+            <Link href={`${project.repo}`} target="_blank" rel="noopener noreferrer" className=''>
               <p>{dict.projectPage.visitRepo}</p>
             </Link>
           )}

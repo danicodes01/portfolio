@@ -3,6 +3,7 @@ import { getDictionary } from "@/app/[lang]/dictionaries";
 import classes from "./project-item.module.css";
 import Link from "next/link";
 import Video from "@/components/video/video";
+import Image from "next/image";
 
 const isVideo = (media: string): boolean => {
   const videoIndicators = ["video", ".mp4", ".webm", ".ogg", ".mov"];
@@ -47,7 +48,14 @@ export default async function ProjectItem({
               {mediaIsVideo ? (
                 <Video media={media[0]} />
               ) : (
-                <img src={media[0]} alt={slug} />
+                <Image
+                  src={media[0]}
+                  alt={title}
+                  fill
+                  className={classes.image}
+                  priority={false}
+                  quality={85}
+                />
               )}
             </div>
             <div className={classes.content}>
