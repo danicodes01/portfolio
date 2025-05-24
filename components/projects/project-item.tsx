@@ -39,7 +39,7 @@ export default async function ProjectItem({
   
   return (
     <div className={classes.container}>
-      <Link href={`/projects/${slug}`} className=''>
+      <Link href={`/${lang}/projects/${slug}`} className=''>
         <li className={classes.post}>
           <div className={classes.border}>
             <h1>{title}</h1>
