@@ -1,4 +1,3 @@
-
 .container {
   display: flex;
   justify-content: center;
@@ -80,6 +79,34 @@
   opacity: 65%;
 }
 
+.images {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 8px;
+  min-height: 0;
+  height: 0;
+  padding-bottom: 75%; /* 4:3 aspect ratio fallback for browsers without aspect-ratio */
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 480px) {
   .container {
