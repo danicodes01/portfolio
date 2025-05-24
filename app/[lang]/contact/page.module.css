@@ -5,9 +5,22 @@
   padding: 5rem;
   max-width: 30rem;
   background-color: var(--contact-background);
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  /* Add the same glow effect as project cards */
+  box-shadow:
+    0 0 32px 8px rgba(var(--card-glow), var(--card-glow-alpha)),
+    0 2px 8px rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(var(--card-glow), 0.15);
+  border-radius: 16px;
   text-align: center;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+/* Add hover effect like project cards */
+.contact:hover {
+  box-shadow:
+    0 0 48px 12px rgba(var(--card-glow), 0.22),
+    0 4px 16px rgba(0, 0, 0, 0.14);
+  border-color: rgba(var(--card-glow), 0.22);
 }
 
 .header h1 {
@@ -26,7 +39,6 @@
 .info {
   font-size: 0.875rem;
   color: rgb(var(--contact-text-rgb));
-
 }
 
 .link {
