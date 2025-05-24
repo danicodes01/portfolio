@@ -18,7 +18,10 @@
   --header-contact: black;
   --contact-background: white;
   --foreground-rgb: 0, 0, 0;
-
+  --card-glow: 255, 56, 92; /* soft pinkish glow for project cards */
+  --card-glow-alpha: 0.12;
+  --text-glow: 255, 56, 92; /* subtle for light mode */
+  --text-glow-alpha: 0.15; /* very subtle in light mode */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,8 +37,10 @@
     --header-contact: var(--color-primary-600);
     --contact-background: #1c1c1e;
     --foreground-rgb: 255, 255, 255;
-
-    
+    --card-glow: 255, 56, 92; /* keep same for project cards */
+    --card-glow-alpha: 0.18;
+    --text-glow: 255, 120, 170; /* much brighter for dark mode */
+    --text-glow-alpha: 0.4; /* stronger in dark mode */
   }
 }
 

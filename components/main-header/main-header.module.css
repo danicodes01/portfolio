@@ -38,6 +38,7 @@
   gap: 1rem;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
+  transition: all 0.2s ease;
 }
 
 .highlight {
@@ -45,6 +46,22 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.15rem;
   font-size: 1rem;
+  /* Balanced text glow using alpha variables */
+  text-shadow: 
+    0 0 8px rgba(var(--text-glow), var(--text-glow-alpha)),
+    0 0 16px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 0.7)),
+    0 0 24px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 0.5));
+  transition: text-shadow 0.2s ease;
+}
+
+/* Enhanced but not overwhelming hover effect */
+.header a:hover .highlight,
+.header a:active .highlight {
+  text-shadow: 
+    0 0 12px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 1.3)),
+    0 0 20px rgba(var(--text-glow), var(--text-glow-alpha)),
+    0 0 28px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 0.7)),
+    0 0 36px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 0.5));
 }
 
 .nav a:hover,
@@ -59,4 +76,27 @@
   .header {
     padding: .6rem 10%;
   }
+}
+
+.active {
+  color: rgb(var(--logo-rgb));
+  opacity: 55%;
+}
+
+.active span {
+  color: rgb(var(--logo-rgb));
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.link a:hover,
+.link a:active {
+  color: rgb(177, 177, 177);
+  text-shadow: 0 0 18px var(--color-grey-200);
 }
