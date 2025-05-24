@@ -2,7 +2,6 @@ import { getProject } from '@/lib/projects';
 import { getDictionary } from '../../dictionaries';
 import classes from './page.module.css';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
 import Video from '@/components/video/video';
 import Link from 'next/link';
 
