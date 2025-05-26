@@ -15,7 +15,29 @@
     "github": "GitHub:",
     "githubLink": "visita mi GitHub",
     "resume": "Currículum:",
-    "resumeLink": "ver mi currículum"
+    "resumeLink": "ver mi currículum",
+    "successTitle": "¡Gracias por tu mensaje!",
+    "architectureHeading": "Arquitectura Recomendada",
+    "confidence": "Confianza",
+    "complexityScore": "Puntaje de Complejidad",
+    "nameLabel": "Tu Nombre",
+    "companyLabel": "Nombre de la empresa (opcional)",
+    "preferredContactLabel": "Contacto Preferido (correo, teléfono, etc.)",
+    "whatLabel": "¿Qué quieres construir?",
+    "whyLabel": "¿Por qué quieres construirlo?",
+    "architectureSectionLegend": "Detalles de Arquitectura (opcional)",
+    "archQ1": "¿Lógica de dominio compleja?",
+    "archQ2": "¿Sincronización de múltiples sistemas?",
+    "archQ3": "¿Flujos de trabajo personalizados?",
+    "archQ4": "¿Actualizaciones basadas en eventos?",
+    "archQ5": "¿Fuente de verdad externa?",
+    "archQ6": "¿Necesita almacenamiento local de datos?",
+    "archQ7": "¿Validación de datos compleja?",
+    "archQ8": "¿Necesita integraciones futuras?",
+    "archQ9": "¿Integraciones personalizadas?",
+    "archQ10": "¿Necesita datos históricos?",
+    "archQ11": "¿Requisitos de cumplimiento?",
+    "submitButton": "Enviar"
   },
   "projectPage": {
     "goToProject": "ir a",
@@ -42,6 +64,26 @@
     "referenceTitle": {
       "david": "Director de Consultoría, CGI"
     },
+    "job0": {
+      "title": "EXCLAIM RECOVERY, Remoto",
+      "duration": "Abril 2025 - Presente",
+      "role1": {
+        "title": "LÍDER TÉCNICO | DESARROLLO DE APLICACIONES",
+        "bullets": [
+          "Liderando el desarrollo de una aplicación enfocada en servicios de apoyo para la adicción al juego.",
+          "Diseñando sistemas de análisis de conversaciones impulsados por IA utilizando LangGraph, OpenAI y LangChain para brindar orientación personalizada en la recuperación de adicciones.",
+          "Construyendo sistemas de agentes inteligentes con LangGraph para análisis de conversaciones en tiempo real.",
+          "Desarrollando flujos de procesamiento de IA que analizan sentimientos, detectan indicadores de crisis y rastrean el progreso de recuperación.",
+          "Aprovechando Prisma Vector DB para el almacenamiento y recuperación eficiente de vectores de características para mejorar la comprensión contextual de IA.",
+          "Implementando renderizado del lado del servidor e ISG con Next.js 15 y TypeScript.",
+          "Creando flujos de trabajo de datos con Prisma ORM y PostgreSQL.",
+          "Estableciendo comunicaciones en tiempo real a través de conexiones websocket de Ably.",
+          "Desarrollando interfaces responsivas para una experiencia de usuario óptima.",
+          "Desarrollando aplicaciones tecnológicas innovadoras en el área de salud mental para ayudar a personas a superar la adicción al juego.",
+          "Colaborando con equipos multidisciplinarios de expertos clínicos para desarrollar sistemas de apoyo digital empáticos y efectivos."
+        ]
+      }
+    },
     "job1": {
       "title": "CGI FEDERAL, Remoto — CONSULTOR",
       "duration": "Junio 2022 - Diciembre 2023",
@@ -51,7 +93,7 @@
           "Desarrollador activo en un equipo Agile Scrum para un contrato del gobierno de EE. UU. otorgado a CGI.",
           "Desarrollé un sistema que procesa con éxito más de 15 millones de pasaportes estadounidenses y más de 4 millones de visas en 70 países cada año.",
           "Optimicé la gestión de casos mejorando una interfaz de React que se comunicaba con Microsoft Dynamics 365, utilizando datos de casos CRM y una API basada en Python para acceder a datos de referencia.",
-          "Implementé machine learning con la biblioteca FastText de Python para mejorar la eficiencia de respuesta en un 40%, mejorando significativamente la capacidad de los trabajadores para gestionar y responder a las solicitudes de visas estadounidenses. Amplié los datos de referencia y agregué ejemplos de entrenamiento para permitir que FastText clasificara tipos de casos basados en entradas de texto con matices. Implementé un ciclo de retroalimentación de usuarios para refinar la precisión del modelo, permitiendo el aprendizaje continuo y la adaptación en la clasificación predictiva de texto.",
+          "Implementé machine learning con la biblioteca FastText de Python para mejorar la eficiencia de respuesta en un 40%, mejorando significativamente la capacidad de los trabajadores para gestionar y responder a las solicitudes de visas estadounidenses. Expandí los datos de referencia y agregué ejemplos de entrenamiento para permitir que FastText clasificara tipos de casos basados en entradas de texto matizadas. Implementé un ciclo de retroalimentación de usuarios para refinar la precisión del modelo, permitiendo el aprendizaje continuo y la adaptación en la clasificación predictiva de texto.",
           "Refactoricé el sistema Salesforce existente a Microsoft Dynamics para el gobierno de EE. UU., garantizando el cumplimiento de los estándares de seguridad FedRAMP High, proporcionando encriptación avanzada y control de acceso seguro.",
           "Optimicé la configuración del entorno de desarrollo mediante la creación de scripts para la importación de certificados, instalación de Azure CLI, Docker, y la realización de configuración y pruebas posteriores a la instalación.",
           "Documenté procesos completos en Confluence, cubriendo ciclos de vida de despliegue, notas técnicas, guías de uso de herramientas y documentación de alto nivel para varias aplicaciones y flujos de trabajo.",

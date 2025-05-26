@@ -2,6 +2,7 @@ import type { Metadata } from 'next/dist/lib/metadata/types/metadata-interface';
 import { getDictionary } from "../dictionaries"; 
 import classes from "./page.module.css";
 import Link from "next/link";
+import { submitContactForm } from './actions';
 
 export async function generateMetadata({
   params
@@ -17,14 +18,27 @@ export async function generateMetadata({
 }
 
 export default async function ContactPage({
-  params
+  params,
+  searchParams
 }: {
-  params: Promise<{ lang: string }>
+  params: Promise<{ lang: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const { lang } = await params;
-  
+  const resolvedSearchParams = await searchParams;
   const dict = await getDictionary(lang);
-  
+
+  const showSuccess = resolvedSearchParams?.success === '1';
+  let architectureResult = null;
+  if (showSuccess && resolvedSearchParams?.arch) {
+    try {
+      const archParam = resolvedSearchParams.arch;
+      if (typeof archParam === 'string') {
+        architectureResult = JSON.parse(decodeURIComponent(archParam));
+      }
+    } catch {}
+  }
+
   return (
     <div className={classes.contact}>
       <header className={classes.header}>
@@ -34,26 +48,81 @@ export default async function ContactPage({
         </p>
       </header>
       <main className={classes.info}>
-        <p>{dict.contact.email}{" "}
+        <p><span className={classes.highlight}>{dict.contact.email}</span>{" "}
           <a href="mailto:danielgene.dev@gmail.com" className={classes.link}>
             danielgene.dev@gmail.com
           </a>
         </p>
-        <p>{dict.contact.linkedin}{" "}
+        <p><span className={classes.highlight}>{dict.contact.linkedin}</span>{" "}
           <Link href="https://www.linkedin.com/in/danicodes01/" className={classes.link}>
             {dict.contact.linkedinLink}
           </Link>
         </p>
-        <p>{dict.contact.github}{" "}
+        <p><span className={classes.highlight}>{dict.contact.github}</span>{" "}
           <Link href="https://github.com/danicodes01" className={classes.link}>
             {dict.contact.githubLink}
           </Link>
         </p>
-        <p>{dict.contact.resume}{" "}
+        <p><span className={classes.highlight}>{dict.contact.resume}</span>{" "}
           <Link href={`/${lang}/resume`} className={classes.link}>
             {dict.contact.resumeLink}
           </Link>
         </p>
+        {showSuccess ? (
+          <div className={classes.successMessage}>
+            <h2>{dict.contact.successTitle}</h2>
+            {architectureResult && (
+              <div className={classes.architectureResult}>
+                <h3>{dict.contact.architectureHeading}: {architectureResult.architecture}</h3>
+                <p>{dict.contact.confidence}: {architectureResult.confidence}</p>
+                <ul>
+                  {architectureResult.reasons.map((reason: string, idx: number) => (
+                    <li key={idx}>{reason}</li>
+                  ))}
+                </ul>
+                {architectureResult.complexityScore !== undefined && (
+                  <p>{dict.contact.complexityScore}: {architectureResult.complexityScore}</p>
+                )}
+              </div>
+            )}
+          </div>
+        ) : (
+        <form action={submitContactForm} className={classes.form} style={{marginTop: '2rem'}}>
+          <label htmlFor="name" className={classes.label}>{dict.contact.nameLabel}</label>
+          <input id="name" name="name" required className={classes.input} />
+
+          <label htmlFor="company" className={classes.label}>{dict.contact.companyLabel}</label>
+          <input id="company" name="company" className={classes.input} />
+
+          <label htmlFor="preferredContact" className={classes.label}>{dict.contact.preferredContactLabel}</label>
+          <input id="preferredContact" name="preferredContact" required className={classes.input} />
+
+          <label htmlFor="what" className={classes.label}>{dict.contact.whatLabel}</label>
+          <textarea id="what" name="what" required className={classes.textarea} rows={2} />
+
+          <label htmlFor="why" className={classes.label}>{dict.contact.whyLabel}</label>
+          <textarea id="why" name="why" required className={classes.textarea} rows={2} />
+
+          <fieldset className={classes.architectureSection} style={{marginTop: '1.5rem'}}>
+            <legend>{dict.contact.architectureSectionLegend}</legend>
+            <div className={classes.architectureQuestions}>
+              <label><input type="checkbox" name="hasComplexDomainLogic" /> {dict.contact.archQ1}</label>
+              <label><input type="checkbox" name="hasMultipleSystemSync" /> {dict.contact.archQ2}</label>
+              <label><input type="checkbox" name="hasCustomWorkflows" /> {dict.contact.archQ3}</label>
+              <label><input type="checkbox" name="isEventDriven" /> {dict.contact.archQ4}</label>
+              <label><input type="checkbox" name="hasExternalSourceOfTruth" /> {dict.contact.archQ5}</label>
+              <label><input type="checkbox" name="needsLocalDataStore" /> {dict.contact.archQ6}</label>
+              <label><input type="checkbox" name="hasComplexDataValidation" /> {dict.contact.archQ7}</label>
+              <label><input type="checkbox" name="needsFutureIntegrations" /> {dict.contact.archQ8}</label>
+              <label><input type="checkbox" name="hasCustomIntegrations" /> {dict.contact.archQ9}</label>
+              <label><input type="checkbox" name="needsHistoricalData" /> {dict.contact.archQ10}</label>
+              <label><input type="checkbox" name="hasComplianceRequirements" /> {dict.contact.archQ11}</label>
+            </div>
+          </fieldset>
+
+          <button type="submit" className={classes.button}>{dict.contact.submitButton}</button>
+        </form>
+        )}
       </main>
     </div>
   );

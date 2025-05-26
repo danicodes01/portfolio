@@ -109,6 +109,27 @@ export default async function Resume({
         <div className={styles.section}>
           <h2>{dict.resume.workExperience}</h2>
 
+          {/* NEW JOB - Exclaim Recovery */}
+          <div className={styles.job}>
+            <h3>{dict.resume.job0.title}</h3>
+            <p className={styles.duration}>{dict.resume.job0.duration}</p>
+
+            <h4>{dict.resume.job0.role1.title}</h4>
+            <ul>
+              <li>{dict.resume.job0.role1.bullets[0]}</li>
+              <li>{dict.resume.job0.role1.bullets[1]}</li>
+              <li>{dict.resume.job0.role1.bullets[2]}</li>
+              <li>{dict.resume.job0.role1.bullets[3]}</li>
+              <li>{dict.resume.job0.role1.bullets[4]}</li>
+              <li>{dict.resume.job0.role1.bullets[5]}</li>
+              <li>{dict.resume.job0.role1.bullets[6]}</li>
+              <li>{dict.resume.job0.role1.bullets[7]}</li>
+              <li>{dict.resume.job0.role1.bullets[8]}</li>
+              <li>{dict.resume.job0.role1.bullets[9]}</li>
+              <li>{dict.resume.job0.role1.bullets[10]}</li>
+            </ul>
+          </div>
+
           <div className={styles.job}>
             <h3>{dict.resume.job1.title}</h3>
             <p className={styles.duration}>{dict.resume.job1.duration}</p>
@@ -266,7 +287,7 @@ export default async function Resume({
                 className={styles.link}
               >
                 https://ica-app-teal.vercel.app
-              </a>
+            </a>
             </p>
             <p>{dict.resume.projectDescriptions.ica}</p>
           </div>
