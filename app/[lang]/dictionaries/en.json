@@ -42,6 +42,26 @@
     "referenceTitle": {
       "david": "Director Consulting, CGI"
     },
+    "job0": {
+      "title": "EXCLAIM RECOVERY, Remote",
+      "duration": "April 2025 - Present",
+      "role1": {
+        "title": "TECHNICAL LEAD | APPLICATION DEVELOPMENT",
+        "bullets": [
+          "Leading development of an application focused on gambling addiction support services.",
+          "Architecting AI-driven conversation analysis systems using LangGraph, OpenAI, and LangChain to provide personalized addiction recovery guidance.",
+          "Building intelligent agent systems with LangGraph for real-time conversation analysis.",
+          "Developing AI pipelines that analyze sentiment, detect crisis indicators, and track recovery progress.",
+          "Leveraging Prisma Vector DB for efficient storage and retrieval of embeddings to enhance AI contextual understanding.",
+          "Implementing server-side rendering and ISG with Next.js 15 and TypeScript.",
+          "Creating data workflows with Prisma ORM and PostgreSQL.",
+          "Establishing real-time communications via Ably websockets.",
+          "Crafting responsive interfaces for optimal user experience.",
+          "Pioneering technology applications in the mental health space to help individuals overcome gambling addiction.",
+          "Collaborating cross-functionally with clinical experts to develop empathetic, effective digital support systems."
+        ]
+      }
+    },
     "job1": {
       "title": "CGI FEDERAL, Remote — CONSULTANT",
       "duration": "June 2022 - December 2023",

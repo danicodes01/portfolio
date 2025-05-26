@@ -22,6 +22,8 @@
   --card-glow-alpha: 0.12;
   --text-glow: 255, 56, 92; /* subtle for light mode */
   --text-glow-alpha: 0.15; /* very subtle in light mode */
+  --contact-header-glow: 255, 56, 92; /* pink for light mode */
+  --contact-header-glow-alpha: 0.35;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +43,8 @@
     --card-glow-alpha: 0.18;
     --text-glow: 255, 120, 170; /* much brighter for dark mode */
     --text-glow-alpha: 0.4; /* stronger in dark mode */
+    --contact-header-glow: 255, 0, 60; /* more red for dark mode */
+    --contact-header-glow-alpha: 0.55;
   }
 }
 

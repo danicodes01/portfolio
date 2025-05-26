@@ -14,7 +14,18 @@
   text-align: center;
   transition: box-shadow 0.2s, border-color 0.2s;
 }
-
+.highlight {
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
+  /* Balanced text glow using alpha variables */
+  text-shadow: 
+    0 0 8px rgba(var(--text-glow), var(--text-glow-alpha)),
+    0 0 16px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 0.7)),
+    0 0 24px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 0.5));
+  transition: text-shadow 0.2s ease;
+}
 /* Add hover effect like project cards */
 .contact:hover {
   box-shadow:
@@ -25,15 +36,21 @@
 
 .header h1 {
   font-family: "Press Start 2P", system-ui;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   color: var(--header-contact);
   margin-bottom: 1rem;
+  text-shadow:
+    0 0 12px rgba(var(--contact-header-glow), var(--contact-header-glow-alpha)),
+    0 0 32px rgba(var(--contact-header-glow), calc(var(--contact-header-glow-alpha) * 0.5));
+  transition: text-shadow 0.2s;
 }
 
 .header p {
-  font-size: 0.875rem;
+  font-size: 1.03rem;
   color: rgb(var(--contact-text-rgb));
   margin-bottom: 2rem;
+  font-weight: 500;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.08);
 }
 
 .info {
@@ -42,14 +59,19 @@
 }
 
 .link {
-  color: var(--color-primary-600);
+  background: var(--color-primary-600);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--color-primary-500); /* fallback */
   text-decoration: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, color 0.2s;
 }
 
 .link:hover,
 .link:active {
-  opacity: 65%;
+  opacity: 0.85;
+  text-shadow: 0 0 8px var(--color-primary-500), 0 0 16px var(--color-primary-500);
 }
 
 @media (max-width: 600px) {

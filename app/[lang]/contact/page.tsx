@@ -34,22 +34,22 @@ export default async function ContactPage({
         </p>
       </header>
       <main className={classes.info}>
-        <p>{dict.contact.email}{" "}
+        <p><span className={classes.highlight}>{dict.contact.email}</span>{" "}
           <a href="mailto:danielgene.dev@gmail.com" className={classes.link}>
             danielgene.dev@gmail.com
           </a>
         </p>
-        <p>{dict.contact.linkedin}{" "}
+        <p><span className={classes.highlight}>{dict.contact.linkedin}</span>{" "}
           <Link href="https://www.linkedin.com/in/danicodes01/" className={classes.link}>
             {dict.contact.linkedinLink}
           </Link>
         </p>
-        <p>{dict.contact.github}{" "}
+        <p><span className={classes.highlight}>{dict.contact.github}</span>{" "}
           <Link href="https://github.com/danicodes01" className={classes.link}>
             {dict.contact.githubLink}
           </Link>
         </p>
-        <p>{dict.contact.resume}{" "}
+        <p><span className={classes.highlight}>{dict.contact.resume}</span>{" "}
           <Link href={`/${lang}/resume`} className={classes.link}>
             {dict.contact.resumeLink}
           </Link>
