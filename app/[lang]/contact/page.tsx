@@ -114,7 +114,9 @@ export default async function ContactPage({
                 <ul>
                   {architectureResult.reasons.map(
                     (reason: string, idx: number) => (
-                      <li key={idx}>{reason}</li>
+                      <li key={idx}>
+                      {(dict.architectureBullets as Record<string, string>)[reason] || reason}
+                    </li>
                     ),
                   )}
                 </ul>

@@ -178,5 +178,25 @@
       "ica": "An innovative educational platform that transforms coding education into a space exploration adventure. Built with Next.js, TypeScript, and MongoDB, it features an immersive canvas-based environment where learners navigate between custom-designed celestial bodies, each representing different programming disciplines with specialized challenges that progressively build development skills.",
       "starfleet": "A 2D game with simulated 3D visuals built using TypeScript and a custom rendering engine. ＳＴＡＲＦＬＥＥＴ leverages HTML5 Canvas with CanvasRenderingContext2D to create immersive visual effects, demonstrating advanced front-end development skills and interactive web application design."
     }
+  },
+  "architectureBullets": {
+    "eventDriven1": "Real-time features require event-driven design",
+    "eventDriven2": "Event-driven updates align with system requirements",
+    "eventDriven3": "Multiple system integration benefits from event architecture",
+    "layered1": "Balanced approach suitable for current complexity",
+    "layered2": "Traditional layered structure provides good foundation",
+    "layered3": "Can evolve to more complex patterns as needs grow",
+    "serverless1": "Small team benefits from reduced operational overhead",
+    "serverless2": "Rapid development needs suit serverless deployment",
+    "serverless3": "Simple business logic works well with function-based architecture",
+    "clean1": "Complex domain logic requires strong separation of concerns",
+    "clean2": "Multiple system integration benefits from layered approach",
+    "clean3": "Complex workflows require robust orchestration",
+    "clean4": "Complex validation rules need strong domain modeling",
+    "clean5": "Future integrations require flexible, extensible architecture",
+    "hex1": "External systems as source of truth suits ports and adapters pattern",
+    "hex2": "Event-driven updates align well with hexagonal approach",
+    "hex3": "Simple domain logic suits Hexagonal Architecture simplicity",
+    "hex4": "Event-driven integrations work well with ports and adapters"
   }
 }

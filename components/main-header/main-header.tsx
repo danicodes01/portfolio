@@ -1,6 +1,7 @@
 import classes from './main-header.module.css';
 import NavLink from './nav-link';
 import LanguageSwitcher from './language-switcher';
+import LanguageDropdown from './language-dropdown';
 
 type HeaderProps = {
   lang?: string;
@@ -36,7 +37,7 @@ export default function MainHeader({ lang, dict }: HeaderProps) {
             </NavLink>
           </li>
           <li>
-            <LanguageSwitcher />
+            <LanguageDropdown currentLang={currentLang} />
           </li>
         </ul>
       </nav>

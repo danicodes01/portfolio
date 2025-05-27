@@ -213,9 +213,9 @@ function createServerlessArchitectureDecision(
     platform: determinePlatform(responses),
     techStack: determineTechStack(responses, 'Serverless Architecture'),
     reasons: [
-      'Small team benefits from reduced operational overhead',
-      'Rapid development needs suit serverless deployment',
-      'Simple business logic works well with function-based architecture',
+      'serverless1',
+      'serverless2',
+      'serverless3',
     ],
   };
 }
@@ -229,9 +229,9 @@ function createEventDrivenArchitectureDecision(
     platform: determinePlatform(responses),
     techStack: determineTechStack(responses, 'Event-Driven Architecture'),
     reasons: [
-      'Real-time features require event-driven design',
-      'Event-driven updates align with system requirements',
-      'Multiple system integration benefits from event architecture',
+      'eventDriven1',
+      'eventDriven2',
+      'eventDriven3',
     ],
   };
 }
@@ -245,9 +245,9 @@ function createLayeredArchitectureDecision(
     platform: determinePlatform(responses),
     techStack: determineTechStack(responses, 'Layered Architecture'),
     reasons: [
-      'Balanced approach suitable for current complexity',
-      'Traditional layered structure provides good foundation',
-      'Can evolve to more complex patterns as needs grow',
+      'layered1',
+      'layered2',
+      'layered3',
     ],
   };
 }
@@ -283,21 +283,19 @@ function getCleanArchitectureReasons(
 ): string[] {
   const reasons: string[] = [];
   if (responses.hasComplexDomainLogic) {
-    reasons.push('Complex domain logic requires strong separation of concerns');
+    reasons.push('clean1');
   }
   if (responses.hasMultipleSystemSync) {
-    reasons.push('Multiple system integration benefits from layered approach');
+    reasons.push('clean2');
     if (responses.hasCustomWorkflows) {
-      reasons.push('Complex workflows require robust orchestration');
+      reasons.push('clean3');
     }
   }
   if (responses.hasComplexDataValidation) {
-    reasons.push('Complex validation rules need strong domain modeling');
+    reasons.push('clean4');
   }
   if (responses.needsFutureIntegrations && responses.needsMaintainability) {
-    reasons.push(
-      'Future integrations require flexible, extensible architecture',
-    );
+    reasons.push('clean5');
   }
   return reasons;
 }
@@ -307,18 +305,16 @@ function getHexagonalArchitectureReasons(
 ): string[] {
   const reasons: string[] = [];
   if (responses.hasExternalSourceOfTruth) {
-    reasons.push(
-      'External systems as source of truth suits ports and adapters pattern',
-    );
+    reasons.push('hex1');
     if (responses.isEventDriven) {
-      reasons.push('Event-driven updates align well with hexagonal approach');
+      reasons.push('hex2');
     }
   }
   if (!responses.hasComplexDomainLogic && !responses.hasCustomWorkflows) {
-    reasons.push('Simple domain logic suits Hexagonal Architecture simplicity');
+    reasons.push('hex3');
   }
   if (responses.isEventDriven) {
-    reasons.push('Event-driven integrations work well with ports and adapters');
+    reasons.push('hex4');
   }
   return reasons;
 }
