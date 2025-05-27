@@ -27,7 +27,7 @@
     "whyLabel": "¿Por qué quieres construirlo?",
     "architectureSectionLegend": "Detalles de Arquitectura (opcional)",
     "archQ1": "¿Lógica de dominio compleja?",
-    "archQ2": "¿Sincronización de múltiples sistemas?",
+    "archQ2": "¿Sincronización multi-sistema?",
     "archQ3": "¿Flujos de trabajo personalizados?",
     "archQ4": "¿Actualizaciones basadas en eventos?",
     "archQ5": "¿Fuente de verdad externa?",
