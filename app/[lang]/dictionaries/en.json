@@ -7,7 +7,7 @@
     "title": "Projects"
   },
   "contact": {
-    "title": "Contact Daniel Knowles",
+    "title": "Contact",
     "intro": "If you have any inquiries about my projects, or if you're looking for engineering or development support, I'd love to connect:",
     "email": "Email:",
     "linkedin": "LinkedIn:",
@@ -20,23 +20,43 @@
     "architectureHeading": "Recommended Architecture",
     "confidence": "Confidence",
     "complexityScore": "Complexity Score",
+    "platform": "Platform",
+    "techStack": "Technology Stack",
     "nameLabel": "Your Name",
     "companyLabel": "Company Name (optional)",
     "preferredContactLabel": "Preferred Contact (email, phone, etc.)",
     "whatLabel": "What do you want to build?",
     "whyLabel": "Why do you want to build it?",
-    "architectureSectionLegend": "Architecture Details (optional)",
+    "architectureSectionLegend": "Tell us about your project",
+    "businessRequirementsGroup": "Business Requirements",
+    "platformGroup": "What are you building?",
+    "userExperienceGroup": "User Experience",
+    "scaleGroup": "Expected Usage",
+    "developmentGroup": "Development Preferences",
+    
     "archQ1": "Complex domain logic?",
     "archQ2": "Multi-system sync?",
     "archQ3": "Custom workflows?",
     "archQ4": "Event-driven updates?",
     "archQ5": "External source of truth?",
-    "archQ6": "Needs local data store?",
-    "archQ7": "Complex data validation?",
-    "archQ8": "Needs future integrations?",
-    "archQ9": "Custom integrations?",
-    "archQ10": "Needs historical data?",
-    "archQ11": "Compliance requirements?",
+    "archQ6": "Complex data validation?",
+    "archQ7": "Needs future integrations?",
+    "archQ8": "Long-term maintenance?",
+    
+    "archQ9": "Website or web application?",
+    "archQ10": "Mobile app (iOS/Android)?",
+    "archQ11": "Cross-platform support?",
+    
+    "archQ12": "Users work offline?",
+    "archQ13": "Real-time features needed?",
+    
+    "archQ14": "Expecting high traffic?",
+    "archQ15": "Large amounts of data?",
+    "archQ16": "Global user base?",
+    
+    "archQ17": "Small team/budget?",
+    "archQ18": "Need to launch quickly?",
+    
     "submitButton": "Submit"
   },
   "projectPage": {
@@ -141,7 +161,7 @@
       "title": "RAINBOW GROCERY, San Francisco, CA — WORKER / OWNER",
       "duration": "January 2010 – July 2016",
       "bullets": [
-        "Collaborated with local farmers and vendors to maintain a consistent supply of fresh produce.",
+        "Collaborated with local farmers and vendors to maintain a consistent supply of fresh, produce.",
         "Participated in department and store-wide meetings, discussing store policies and ensuring the mission statement was upheld.",
         "Took on full ownership responsibilities in a worker-owned cooperative, contributing to the efficient operation of the grocery store."
       ]

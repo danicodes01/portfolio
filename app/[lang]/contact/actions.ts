@@ -11,38 +11,72 @@ export async function submitContactForm(formData: FormData) {
   const why = formData.get('why') as string;
 
   const responses: CoreArchitectureResponses = {
+    // Core Business Requirements (8 questions)
     hasComplexDomainLogic: !!formData.get('hasComplexDomainLogic'),
     hasMultipleSystemSync: !!formData.get('hasMultipleSystemSync'),
     hasCustomWorkflows: !!formData.get('hasCustomWorkflows'),
     isEventDriven: !!formData.get('isEventDriven'),
     hasExternalSourceOfTruth: !!formData.get('hasExternalSourceOfTruth'),
-    needsLocalDataStore: !!formData.get('needsLocalDataStore'),
     hasComplexDataValidation: !!formData.get('hasComplexDataValidation'),
     needsFutureIntegrations: !!formData.get('needsFutureIntegrations'),
-    hasCustomIntegrations: !!formData.get('hasCustomIntegrations'),
-    needsHistoricalData: !!formData.get('needsHistoricalData'),
-    hasComplianceRequirements: !!formData.get('hasComplianceRequirements'),
+    needsMaintainability: !!formData.get('needsMaintainability'),
+    
+    // Platform (3 questions)
+    isMobileApp: !!formData.get('isMobileApp'),
+    needsCrossPlatform: !!formData.get('needsCrossPlatform'),
+    isWebsite: !!formData.get('isWebsite'),
+    
+    // Scale (3 questions)
+    expectsHighTraffic: !!formData.get('expectsHighTraffic'),
+    hasLargeDatasets: !!formData.get('hasLargeDatasets'),
+    hasGlobalUsers: !!formData.get('hasGlobalUsers'),
+    
+    // User Experience (2 questions)
+    needsOfflineSupport: !!formData.get('needsOfflineSupport'),
+    hasRealtimeFeatures: !!formData.get('hasRealtimeFeatures'),
+    
+    // Development (2 questions)
+    hasSmallTeam: !!formData.get('hasSmallTeam'),
+    needsRapidDevelopment: !!formData.get('needsRapidDevelopment'),
   };
 
   // Run architecture analysis
   const architectureDecision = determineArchitecture(responses);
 
-  // Send email using Resend
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const result = await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: 'danielgene.dev@gmail.com',
-      subject: 'New Contact Form Submission',
+      subject: 'New Architecture Analysis Submission',
       html: `
-        <h2>Contact Form Submission</h2>
+        <h2>Architecture Analysis Submission</h2>
         <p><b>Name:</b> ${name}</p>
         <p><b>Company:</b> ${company || ''}</p>
         <p><b>Preferred Contact:</b> ${preferredContact}</p>
         <p><b>What:</b> ${what}</p>
         <p><b>Why:</b> ${why}</p>
-        <h3>Architecture Decision</h3>
-        <pre>${JSON.stringify(architectureDecision, null, 2)}</pre>
+        
+        <h3>Architecture Recommendation</h3>
+        <p><b>Architecture:</b> ${architectureDecision.architecture}</p>
+        <p><b>Platform:</b> ${architectureDecision.platform}</p>
+        <p><b>Confidence:</b> ${architectureDecision.confidence}</p>
+        
+        <h4>Tech Stack:</h4>
+        <ul>
+          ${architectureDecision.techStack?.map(tech => `<li>${tech}</li>`).join('') || '<li>Not specified</li>'}
+        </ul>
+        
+        <h4>Reasons:</h4>
+        <ul>
+          ${architectureDecision.reasons.map(reason => `<li>${reason}</li>`).join('')}
+        </ul>
+        
+        <h4>Complexity Score:</h4>
+        <p>${architectureDecision.complexityScore || 'Not calculated'}</p>
+        
+        <h4>Full Response Data:</h4>
+        <pre>${JSON.stringify(responses, null, 2)}</pre>
       `
     });
     console.log('Resend email result:', result);
@@ -55,7 +89,6 @@ export async function submitContactForm(formData: FormData) {
     throw error;
   }
 
-  // Redirect to show success message and pass architecture result in query param
   const encodedArch = encodeURIComponent(JSON.stringify(architectureDecision));
   redirect(`/contact?success=1&arch=${encodedArch}`);
-} 
+}
