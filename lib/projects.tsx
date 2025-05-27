@@ -5,6 +5,7 @@ export async function getProjects(): Promise<Project[]> {
     try {
         const projects = await prisma.project.findMany({
             orderBy: {
+               
                 id: "desc"
             }
         });
