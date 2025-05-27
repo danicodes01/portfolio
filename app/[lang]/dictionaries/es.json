@@ -172,5 +172,25 @@
       "ica": "Una plataforma educativa innovadora que transforma la educación de codificación en una aventura de exploración espacial. Construida con Next.js, TypeScript y MongoDB, presenta un entorno inmersivo basado en canvas donde los estudiantes navegan entre cuerpos celestes diseñados a medida, cada uno representando diferentes disciplinas de programación con desafíos especializados que desarrollan progresivamente habilidades de desarrollo.",
       "starfleet": "Un juego 2D con visuales 3D simulados construido usando TypeScript y un motor de renderizado personalizado. ＳＴＡＲＦＬＥＥＴ aprovecha HTML5 Canvas con CanvasRenderingContext2D para crear efectos visuales inmersivos, demostrando habilidades avanzadas de desarrollo front-end y diseño de aplicaciones web interactivas."
     }
+  },
+  "architectureBullets": {
+    "eventDriven1": "Las funciones en tiempo real requieren un diseño orientado a eventos",
+    "eventDriven2": "Las actualizaciones orientadas a eventos se alinean con los requisitos del sistema",
+    "eventDriven3": "La integración de múltiples sistemas se beneficia de la arquitectura orientada a eventos",
+    "layered1": "Enfoque equilibrado adecuado para la complejidad actual",
+    "layered2": "La estructura en capas tradicional proporciona una buena base",
+    "layered3": "Puede evolucionar a patrones más complejos según sea necesario",
+    "serverless1": "Un equipo pequeño se beneficia de una menor carga operativa",
+    "serverless2": "Las necesidades de desarrollo rápido se adaptan al despliegue sin servidor",
+    "serverless3": "La lógica de negocio simple funciona bien con una arquitectura basada en funciones",
+    "clean1": "La lógica de dominio compleja requiere una fuerte separación de preocupaciones",
+    "clean2": "La integración de múltiples sistemas se beneficia de un enfoque en capas",
+    "clean3": "Los flujos de trabajo complejos requieren una orquestación robusta",
+    "clean4": "Las reglas de validación complejas necesitan un modelado de dominio sólido",
+    "clean5": "Las futuras integraciones requieren una arquitectura flexible y extensible",
+    "hex1": "Los sistemas externos como fuente de verdad se adaptan al patrón de puertos y adaptadores",
+    "hex2": "Las actualizaciones orientadas a eventos se alinean bien con el enfoque hexagonal",
+    "hex3": "La lógica de dominio simple se adapta a la simplicidad de la Arquitectura Hexagonal",
+    "hex4": "Las integraciones orientadas a eventos funcionan bien con puertos y adaptadores"
   }
 }

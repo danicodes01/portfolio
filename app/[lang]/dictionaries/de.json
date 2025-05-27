@@ -1,0 +1,197 @@
+{
+  "header": {
+    "name": "Daniel Knowles",
+    "contact": "kontakt"
+  },
+  "home": {
+    "title": "Projekte"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Wenn Sie Fragen zu meinen Projekten haben oder Unterstützung in der Entwicklung oder im Engineering suchen, würde ich mich gerne mit Ihnen verbinden:",
+    "email": "E-Mail:",
+    "linkedin": "LinkedIn:",
+    "linkedinLink": "verbinden Sie sich mit mir auf LinkedIn",
+    "github": "GitHub:",
+    "githubLink": "schauen Sie sich mein GitHub an",
+    "resume": "Lebenslauf:",
+    "resumeLink": "meinen Lebenslauf ansehen",
+    "successTitle": "Vielen Dank für Ihre Anfrage!",
+    "architectureHeading": "Empfohlene Architektur",
+    "confidence": "Vertrauen",
+    "confidenceHigh": "Hoch",
+    "confidenceMedium": "Mittel",
+    "confidenceLow": "Niedrig",
+    "complexityScore": "Komplexitätswert",
+    "platform": "Plattform",
+    "techStack": "Technologie-Stack",
+    "nameLabel": "Ihr Name",
+    "companyLabel": "Firmenname (optional)",
+    "preferredContactLabel": "Bevorzugter Kontakt (E-Mail, Telefon, etc.)",
+    "whatLabel": "Was möchten Sie entwickeln?",
+    "whyLabel": "Warum möchten Sie es entwickeln?",
+    "architectureSectionLegend": "Erzählen Sie uns von Ihrem Projekt",
+    "businessRequirementsGroup": "Geschäftsanforderungen",
+    "platformGroup": "Was entwickeln Sie?",
+    "userExperienceGroup": "Benutzererfahrung",
+    "scaleGroup": "Erwartete Nutzung",
+    "developmentGroup": "Entwicklungspräferenzen",
+    "archQ1": "Komplexe Geschäftslogik?",
+    "archQ2": "Multi-System-Synchronisation?",
+    "archQ3": "Benutzerdefinierte Workflows?",
+    "archQ4": "Ereignisgesteuerte Updates?",
+    "archQ5": "Externe Datenquelle?",
+    "archQ6": "Komplexe Datenvalidierung?",
+    "archQ7": "Zukünftige Integrationen erforderlich?",
+    "archQ8": "Langfristige Wartung?",
+    "archQ9": "Website oder Webanwendung?",
+    "archQ10": "Mobile App (iOS/Android)?",
+    "archQ11": "Plattformübergreifende Unterstützung?",
+    "archQ12": "Benutzer arbeiten offline?",
+    "archQ13": "Echtzeit-Funktionen erforderlich?",
+    "archQ14": "Hoher Traffic erwartet?",
+    "archQ15": "Große Datenmengen?",
+    "archQ16": "Globale Nutzerbasis?",
+    "archQ17": "Kleines Team/Budget?",
+    "archQ18": "Schnell starten müssen?",
+    "submitButton": "Absenden",
+    "submittingButton": "Architektur wird analysiert..."
+  },
+  "projectPage": {
+    "goToProject": "gehe zu",
+    "visitRepo": "Repository besuchen",
+    "playHere": "hier spielen",
+    "comingSoon": "Bald im App Store"
+  },
+  "resume": {
+    "metaTitle": "Lebenslauf",
+    "metaDescription": "Lebenslauf von Daniel Knowles, Software-Ingenieur",
+    "jobTitle": "Software-Ingenieur",
+    "email": "E-Mail:",
+    "phone": "Telefon:",
+    "portfolio": "Portfolio:",
+    "languages": "SPRACHEN",
+    "frameworks": "FRAMEWORKS / BIBLIOTHEKEN",
+    "tools": "WERKZEUGE",
+    "workExperience": "BERUFSERFAHRUNG",
+    "projects": "PROJEKTE",
+    "spokenLanguages": "GESPROCHENE SPRACHEN",
+    "english": "Englisch - Muttersprache",
+    "spanish": "Spanisch - Fließend",
+    "references": "REFERENZEN",
+    "referenceTitle": {
+      "david": "Direktor Beratung, CGI"
+    },
+    "job0": {
+      "title": "EXCLAIM RECOVERY, Remote",
+      "duration": "April 2025 - Gegenwärtig",
+      "role1": {
+        "title": "TECHNISCHER LEITER | ANWENDUNGSENTWICKLUNG",
+        "bullets": [
+          "Leitung der Entwicklung einer Anwendung mit Fokus auf Unterstützungsdienste für Spielsucht.",
+          "Architektur von KI-gesteuerten Gesprächsanalysesystemen mit LangGraph, OpenAI und LangChain zur Bereitstellung personalisierter Suchtbehandlungsberatung.",
+          "Aufbau intelligenter Agentensysteme mit LangGraph für Echtzeit-Gesprächsanalyse.",
+          "Entwicklung von KI-Pipelines zur Analyse von Stimmungen, Erkennung von Krisenereignissen und Verfolgung des Genesungsfortschritts.",
+          "Nutzung von Prisma Vector DB für effiziente Speicherung und Abruf von Embeddings zur Verbesserung des KI-Kontextverständnisses.",
+          "Implementierung von serverseitigem Rendering und ISG mit Next.js 15 und TypeScript.",
+          "Erstellung von Datenworkflows mit Prisma ORM und PostgreSQL.",
+          "Einrichtung von Echtzeit-Kommunikation über Ably Websockets.",
+          "Gestaltung responsiver Benutzeroberflächen für optimale Benutzererfahrung.",
+          "Pionierarbeit bei Technologieanwendungen im Bereich der psychischen Gesundheit zur Unterstützung von Menschen bei der Überwindung von Spielsucht.",
+          "Funktionsübergreifende Zusammenarbeit mit klinischen Experten zur Entwicklung einfühlsamer, effektiver digitaler Unterstützungssysteme."
+        ]
+      }
+    },
+    "job1": {
+      "title": "CGI FEDERAL, Remote — BERATER",
+      "duration": "Juni 2022 - Dezember 2023",
+      "role1": {
+        "title": "FSG, Atlas— BERATER (Aug 2022 - Dezember 2023)",
+        "bullets": [
+          "Aktiver Entwickler in einem Agile Scrum-Team für einen US-Regierungsauftrag an CGI.",
+          "Entwicklung eines Systems, das erfolgreich die Bearbeitung von über 15 Millionen US-Pässen und über 4 Millionen Visa in 70 Ländern jährlich unterstützt.",
+          "Optimierung des Case-Managements durch Verbesserung eines React-Front-Ends, das mit Microsoft Dynamics 365 verbunden war und CRM-Case-Daten sowie eine Python-gesteuerte API für Referenzdatenzugriff nutzte.",
+          "Nutzung von maschinellem Lernen mit Pythons FastText-Bibliothek zur Verbesserung der Reaktionseffizienz um 40%, was die Fähigkeit der Sachbearbeiter zur Verwaltung und Bearbeitung von US-Visa-Anträgen erheblich verbesserte.",
+          "Refaktorierung des bestehenden Salesforce-Systems zu Microsoft Dynamics für die US-Regierung unter Einhaltung der FedRAMP High-Sicherheitsstandards.",
+          "Optimierung der Entwicklungsumgebung durch Skripterstellung für den Import von Zertifikaten, Installation von Azure CLI, Docker und Durchführung von Post-Installations-Konfiguration und -Tests.",
+          "Umfassende Dokumentation von Prozessen in Confluence, einschließlich Deployment-Lebenszyklen, technischen Notizen, Werkzeugnutzungsrichtlinien und hochrangiger Dokumentation.",
+          "Durchführung von Infrastrukturaufgaben, einschließlich Versionskontrolle von Node- und Flask-Bibliotheken, Docker-Images, Manipulation von Kubernetes-Ressourcen und Fehlerbehebung bei Jenkins-Pipelines.",
+          "Erstellung umfassender Hilfsdokumentation und Überwachung von Endbenutzer-Tests zur Gewährleistung einer benutzerfreundlichen Erfahrung.",
+          "Erstellung und Modifikation benutzerdefinierter Dynamics 365-Tabellen, Festlegung von Attributen, Datenstrukturen, Beziehungen, Entitätsformularen, Ansichten, Geschäftsregeln und Workflows.",
+          "Verwaltung von Sicherheitsrollen, Aktualisierung von Team-Privilegien und Kontrolle des Zugriffs auf Datenressourcen.",
+          "Implementierung von Zahlungskonfigurationen, dynamischen Quittungen und Visa-Anweisungen für verschiedene Länder."
+        ]
+      },
+      "role2": {
+        "title": "ESG, CAST— BERATER (Juni 2022 – Aug 2022)",
+        "bullets": [
+          "Zusammenarbeit in einem kleinen Team zur Führung der Entwicklung einer internen Anwendung von Grund auf.",
+          "Zweimonatige intensive Beteiligung mit Expertise in verschiedenen Bereichen, einschließlich visueller Gestaltung, REST-API-Design und -Implementierung, Datenmodellierung und Front-End-Entwicklung.",
+          "Erlernung von Java im laufenden Betrieb, um eine robuste REST-API mit dem Spring Boot-Framework zu architekturieren und zu implementieren.",
+          "Implementierung von Object-Relational Mapping mit JPA zur Optimierung des Datenmanagements und Verbesserung der Anwendungseffizienz.",
+          "Entwicklung umfassender Unit-Tests mit Mockito und JUnit zur rigorosen Bewertung der Geschäftslogik in der Service-Schicht.",
+          "Nutzung von Swagger zur Generierung detaillierter REST-API-Dokumentation.",
+          "Verwaltung von Abhängigkeiten über ein zentrales Maven-Repository.",
+          "Entwicklung wiederverwendbarer Angular-Komponenten mit TypeScript und Interfaces.",
+          "Nahtlose Zusammenarbeit mit Material UI zur Gestaltung benutzerdefinierter Tabellen und Implementierung von Stilen."
+        ]
+      }
+    },
+    "job2": {
+      "title": "OPERATION SPARK, Remote — UNTERRICHTSASSISTENT",
+      "duration": "Juni 2021 – Juli 2022",
+      "bullets": [
+        "Unterstützung von Studenten beim Studium der Softwareentwicklung.",
+        "Mentoring und Nachhilfe für einzelne Studenten, die Schwierigkeiten beim Verstehen der Vorlesungsziele hatten.",
+        "Unterrichtung von Studenten verschiedener Hintergründe und Lernstile durch Einsatz verschiedener Unterrichtsressourcen."
+      ]
+    },
+    "job3": {
+      "title": "SELBSTSTÄNDIG, Remote — ZEICHNER",
+      "duration": "Januar 2017 – Februar 2022",
+      "bullets": [
+        "Zusammenarbeit mit Kunden zur Gestaltung maßgeschneiderter Hauslayouts entsprechend ihren Bedürfnissen.",
+        "Erstellung detaillierter Pläne zur Vorlage bei Ingenieuren und Kreisverwaltungen.",
+        "Nutzung von AutoCAD zur Erstellung präziser architektonischer Zeichnungen, einschließlich 3D-Renderings und Höhenansichten.",
+        "Sicherstellung, dass alle Entwürfe lokalen Vorschriften und strukturellen Anforderungen entsprechen."
+      ]
+    },
+    "job4": {
+      "title": "RAINBOW GROCERY, San Francisco, CA — ARBEITER / EIGENTÜMER",
+      "duration": "Januar 2010 – Juli 2016",
+      "bullets": [
+        "Zusammenarbeit mit lokalen Landwirten und Verkäufern zur Aufrechterhaltung einer konstanten Versorgung mit frischen Produkten.",
+        "Teilnahme an Abteilungs- und gesamtgeschäftlichen Besprechungen, Diskussion über Geschäftsrichtlinien und Sicherstellung der Einhaltung des Leitbilds.",
+        "Übernahme vollständiger Eigentumsverantwortlichkeiten in einer arbeitergeführten Genossenschaft, Beitrag zum effizienten Betrieb des Lebensmittelgeschäfts."
+      ]
+    },
+    "projectDescriptions": {
+      "atlas360": "Eine umfassende konsularische Dienstleistungslösung, die vom US-Außenministerium zur Bearbeitung von über 15 Millionen Pässen und 4 Millionen Visa jährlich verwendet wird. Atlas360 bietet eine End-to-End-Sicht auf den Visa-Antragsprozess, verbessert Sicherheit und Flexibilität und bekämpft Betrug. Als Teil des Entwicklungsteams trug ich zur Optimierung der Systemleistung, Rationalisierung des Case-Managements und Bereitstellung einer robusten, benutzerfreundlichen Plattform bei.",
+      "distortNewYork": "Ihre Live-Event-Hilfe in New York. Automatische Aggregation von Events aus einer Vielzahl von Veranstaltungsorten.",
+      "realWorldNews": "Real World News ist eine innovative App, die Nachrichten aus verschiedenen Quellen wie Al Jazeera, BBC, Democracy Now und NPR aggregiert und sie alle an einem durchsuchbaren Ort zusammenbringt.",
+      "odnu": "ODNU bietet tägliche NASA-Einblicke mit einem Space-Bot-Chat, der von einem feinabgestimmten LLM angetrieben wird und Benutzern ansprechende, weltraumbezogene Updates und Interaktionen bietet.",
+      "ica": "Eine innovative Bildungsplattform, die Programmierausbildung in ein Weltraumerkundungsabenteuer verwandelt. Gebaut mit Next.js, TypeScript und MongoDB, bietet sie eine immersive canvas-basierte Umgebung, in der Lernende zwischen benutzerdefinierten Himmelskörpern navigieren, die verschiedene Programmierdisziplinen mit spezialisierten Herausforderungen repräsentieren, die progressiv Entwicklungsfähigkeiten aufbauen.",
+      "starfleet": "Ein 2D-Spiel mit simulierten 3D-Visuals, gebaut mit TypeScript und einer benutzerdefinierten Rendering-Engine. ＳＴＡＲＦＬＥＥＴ nutzt HTML5 Canvas mit CanvasRenderingContext2D zur Erstellung immersiver visueller Effekte und demonstriert fortgeschrittene Front-End-Entwicklungsfähigkeiten und interaktives Webanwendungsdesign."
+    }
+  },
+  "architectureBullets": {
+    "eventDriven1": "Echtzeitfunktionen erfordern ein ereignisgesteuertes Design",
+    "eventDriven2": "Ereignisgesteuerte Updates entsprechen den Systemanforderungen",
+    "eventDriven3": "Die Integration mehrerer Systeme profitiert von einer ereignisgesteuerten Architektur",
+    "layered1": "Ausgewogener Ansatz, geeignet für die aktuelle Komplexität",
+    "layered2": "Traditionelle Schichtenstruktur bietet eine gute Grundlage",
+    "layered3": "Kann sich zu komplexeren Mustern entwickeln, wenn der Bedarf wächst",
+    "serverless1": "Kleines Team profitiert von reduziertem Betriebsaufwand",
+    "serverless2": "Schnelle Entwicklungsanforderungen eignen sich für serverloses Deployment",
+    "serverless3": "Einfache Geschäftslogik funktioniert gut mit funktionsbasierter Architektur",
+    "clean1": "Komplexe Geschäftslogik erfordert eine starke Trennung der Anliegen",
+    "clean2": "Integration mehrerer Systeme profitiert von einem Schichtenansatz",
+    "clean3": "Komplexe Workflows erfordern eine robuste Orchestrierung",
+    "clean4": "Komplexe Validierungsregeln benötigen starke Domänenmodellierung",
+    "clean5": "Zukünftige Integrationen erfordern eine flexible, erweiterbare Architektur",
+    "hex1": "Externe Systeme als Quelle der Wahrheit eignen sich für das Ports-und-Adapter-Muster",
+    "hex2": "Ereignisgesteuerte Updates passen gut zum hexagonalen Ansatz",
+    "hex3": "Einfache Geschäftslogik passt zur Einfachheit der hexagonalen Architektur",
+    "hex4": "Ereignisgesteuerte Integrationen funktionieren gut mit Ports und Adaptern"
+  }
+}

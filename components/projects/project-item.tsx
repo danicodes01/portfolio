@@ -27,6 +27,8 @@ export default async function ProjectItem({
   media, 
   summary, 
   summaryEs,
+  summaryDe, // Add German summary
+  summaryFr, // Add French summary
   lang = 'en' 
 }: ProjectItemProps) {
   const dict = await getDictionary(lang);
@@ -34,9 +36,22 @@ export default async function ProjectItem({
   const mediaIsVideo = isVideo(media[0]);
   const mediapath = getAbsolutePath(media[0]);
   
-  const displaySummary = lang === 'es' 
-    ? (summaryEs || summary) 
-    : summary;
+  // Multi-language summary selection
+  const getLocalizedSummary = (): string => {
+    switch (lang) {
+      case 'es':
+        return summaryEs || summary;
+      case 'de':
+        return summaryDe || summary;
+      case 'fr':
+        return summaryFr || summary;
+      case 'en':
+      default:
+        return summary;
+    }
+  };
+
+  const displaySummary = getLocalizedSummary();
   
   return (
     <div className={classes.container}>

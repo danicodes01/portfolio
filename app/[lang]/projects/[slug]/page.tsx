@@ -38,8 +38,22 @@ export default async function ProjectDetailPage({
   const mediaIsVideo = isVideo(project.media[1]);
   const isDeployed = project.link !== 'app store';
 
-  const projectInfo =
-    lang === 'es' ? project.infoEs || project.info : project.info;
+  // Multi-language project info selection
+  const getLocalizedProjectInfo = (): string => {
+    switch (lang) {
+      case 'es':
+        return project.infoEs || project.info;
+      case 'de':
+        return project.infoDe || project.info;
+      case 'fr':
+        return project.infoFr || project.info;
+      case 'en':
+      default:
+        return project.info;
+    }
+  };
+
+  const projectInfo = getLocalizedProjectInfo();
 
   function projectTitle() {
     if (project.title == 'STARFLEET') {

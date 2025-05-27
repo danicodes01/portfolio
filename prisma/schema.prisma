@@ -16,9 +16,13 @@ model Project {
   // Localized content fields
   summary       String
   summaryEs     String?    @map("summary_es")
+  summaryDe     String?    @map("summary_de")
+  summaryFr     String?    @map("summary_fr")
   
   info          String
   infoEs        String?    @map("info_es")
+  infoDe        String?    @map("info_de")
+  infoFr        String?    @map("info_fr")
   
   link          String
   repo          String
