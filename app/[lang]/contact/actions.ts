@@ -1,9 +1,14 @@
-"use server";
-import { determineArchitecture, CoreArchitectureResponses } from '@/lib/architecture';
+'use server';
+import {
+  determineArchitecture,
+  CoreArchitectureResponses,
+} from '@/lib/architecture';
 import { Resend } from 'resend';
 import { redirect } from 'next/navigation';
 
 export async function submitContactForm(formData: FormData) {
+  const lang = (formData.get('lang') as string) || 'en';
+
   const name = formData.get('name') as string;
   const company = formData.get('company') as string | null;
   const preferredContact = formData.get('preferredContact') as string;
@@ -20,21 +25,21 @@ export async function submitContactForm(formData: FormData) {
     hasComplexDataValidation: !!formData.get('hasComplexDataValidation'),
     needsFutureIntegrations: !!formData.get('needsFutureIntegrations'),
     needsMaintainability: !!formData.get('needsMaintainability'),
-    
+
     // Platform (3 questions)
     isMobileApp: !!formData.get('isMobileApp'),
     needsCrossPlatform: !!formData.get('needsCrossPlatform'),
     isWebsite: !!formData.get('isWebsite'),
-    
+
     // Scale (3 questions)
     expectsHighTraffic: !!formData.get('expectsHighTraffic'),
     hasLargeDatasets: !!formData.get('hasLargeDatasets'),
     hasGlobalUsers: !!formData.get('hasGlobalUsers'),
-    
+
     // User Experience (2 questions)
     needsOfflineSupport: !!formData.get('needsOfflineSupport'),
     hasRealtimeFeatures: !!formData.get('hasRealtimeFeatures'),
-    
+
     // Development (2 questions)
     hasSmallTeam: !!formData.get('hasSmallTeam'),
     needsRapidDevelopment: !!formData.get('needsRapidDevelopment'),
@@ -64,12 +69,18 @@ export async function submitContactForm(formData: FormData) {
         
         <h4>Tech Stack:</h4>
         <ul>
-          ${architectureDecision.techStack?.map(tech => `<li>${tech}</li>`).join('') || '<li>Not specified</li>'}
+          ${
+            architectureDecision.techStack
+              ?.map(tech => `<li>${tech}</li>`)
+              .join('') || '<li>Not specified</li>'
+          }
         </ul>
         
         <h4>Reasons:</h4>
         <ul>
-          ${architectureDecision.reasons.map(reason => `<li>${reason}</li>`).join('')}
+          ${architectureDecision.reasons
+            .map(reason => `<li>${reason}</li>`)
+            .join('')}
         </ul>
         
         <h4>Complexity Score:</h4>
@@ -77,7 +88,7 @@ export async function submitContactForm(formData: FormData) {
         
         <h4>Full Response Data:</h4>
         <pre>${JSON.stringify(responses, null, 2)}</pre>
-      `
+      `,
     });
     console.log('Resend email result:', result);
     if (result.error) {
@@ -90,5 +101,5 @@ export async function submitContactForm(formData: FormData) {
   }
 
   const encodedArch = encodeURIComponent(JSON.stringify(architectureDecision));
-  redirect(`/contact?success=1&arch=${encodedArch}`);
+  redirect(`/${lang}/contact?success=1&arch=${encodedArch}`);
 }

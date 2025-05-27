@@ -3,6 +3,7 @@ import { getDictionary } from '../dictionaries';
 import classes from './page.module.css';
 import Link from 'next/link';
 import { submitContactForm } from './actions';
+import SubmitButton from './submit-button';
 
 export async function generateMetadata({
   params,
@@ -88,7 +89,12 @@ export default async function ContactPage({
                   </p>
                 )}
                 <p>
-                  {dict.contact.confidence}: {architectureResult.confidence}
+                  {dict.contact.confidence}:{' '}
+                  {architectureResult.confidence === 'High'
+                    ? dict.contact.confidenceHigh
+                    : architectureResult.confidence === 'Medium'
+                    ? dict.contact.confidenceMedium
+                    : dict.contact.confidenceLow}
                 </p>
                 {architectureResult.techStack &&
                   architectureResult.techStack.length > 0 && (
@@ -127,6 +133,9 @@ export default async function ContactPage({
             className={classes.form}
             style={{ marginTop: '2rem' }}
           >
+            {/* Add this line */}
+            <input type='hidden' name='lang' value={lang} />
+
             <label htmlFor='name' className={classes.label}>
               {dict.contact.nameLabel}
             </label>
@@ -293,9 +302,9 @@ export default async function ContactPage({
               </details>
             </fieldset>
 
-            <button type='submit' className={classes.button}>
+            <SubmitButton submittingText={dict.contact.submittingButton}>
               {dict.contact.submitButton}
-            </button>
+            </SubmitButton>
           </form>
         )}
       </main>
