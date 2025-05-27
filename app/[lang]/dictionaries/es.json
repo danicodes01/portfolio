@@ -19,6 +19,9 @@
     "successTitle": "¡Gracias por tu mensaje!",
     "architectureHeading": "Arquitectura Recomendada",
     "confidence": "Confianza",
+    "confidenceHigh": "Alta",
+    "confidenceMedium": "Media",
+    "confidenceLow": "Baja",
     "complexityScore": "Puntaje de Complejidad",
     "nameLabel": "Tu Nombre",
     "companyLabel": "Nombre de la empresa (opcional)",
@@ -51,7 +54,8 @@
     "archQ16": "¿Base de usuarios global?",
     "archQ17": "¿Equipo/presupuesto pequeño?",
     "archQ18": "¿Necesita lanzar rápidamente?",
-    "submitButton": "Enviar"
+    "submitButton": "Enviar",
+    "submittingButton": "Analizando Arquitectura..."
   },
   "projectPage": {
     "goToProject": "ir a",

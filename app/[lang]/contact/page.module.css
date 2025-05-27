@@ -264,6 +264,7 @@
   opacity: 0.85;
 }
 
+
 /* Success message styling */
 .successMessage {
   margin: 2rem 0;
@@ -469,4 +470,25 @@
   .link {
     font-size: 0.8rem;
   }
+}
+
+
+.input:focus,
+.textarea:focus,
+.architectureQuestions input[type="checkbox"]:focus,
+.groupHeader:focus {
+  outline: none;
+}
+.input:focus,
+.textarea:focus {
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 2px rgba(var(--card-glow), 0.3);
+}
+
+.architectureQuestions input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 2px rgba(var(--card-glow), 0.4);
+}
+
+.groupHeader:focus {
+  background: rgba(var(--card-glow), 0.15);
 }

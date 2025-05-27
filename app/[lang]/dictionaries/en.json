@@ -19,6 +19,9 @@
     "successTitle": "Thank you for your submission!",
     "architectureHeading": "Recommended Architecture",
     "confidence": "Confidence",
+    "confidenceHigh": "High",
+    "confidenceMedium": "Medium",
+    "confidenceLow": "Low",
     "complexityScore": "Complexity Score",
     "platform": "Platform",
     "techStack": "Technology Stack",
@@ -33,7 +36,7 @@
     "userExperienceGroup": "User Experience",
     "scaleGroup": "Expected Usage",
     "developmentGroup": "Development Preferences",
-    
+
     "archQ1": "Complex domain logic?",
     "archQ2": "Multi-system sync?",
     "archQ3": "Custom workflows?",
@@ -42,22 +45,23 @@
     "archQ6": "Complex data validation?",
     "archQ7": "Needs future integrations?",
     "archQ8": "Long-term maintenance?",
-    
+
     "archQ9": "Website or web application?",
     "archQ10": "Mobile app (iOS/Android)?",
     "archQ11": "Cross-platform support?",
-    
+
     "archQ12": "Users work offline?",
     "archQ13": "Real-time features needed?",
-    
+
     "archQ14": "Expecting high traffic?",
     "archQ15": "Large amounts of data?",
     "archQ16": "Global user base?",
-    
+
     "archQ17": "Small team/budget?",
     "archQ18": "Need to launch quickly?",
-    
-    "submitButton": "Submit"
+
+    "submitButton": "Submit",
+    "submittingButton": "Analyzing Architecture..."
   },
   "projectPage": {
     "goToProject": "go to",
