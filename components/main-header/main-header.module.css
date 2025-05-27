@@ -28,6 +28,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  
 }
 
 .header a {
@@ -36,9 +38,9 @@
   border-radius: 0.5rem;
   display: flex;
   gap: 1rem;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
   transition: all 0.2s ease;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .highlight {
