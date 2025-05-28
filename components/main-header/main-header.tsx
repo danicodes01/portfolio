@@ -1,6 +1,5 @@
 import classes from './main-header.module.css';
 import NavLink from './nav-link';
-import LanguageSwitcher from './language-switcher';
 import LanguageDropdown from './language-dropdown';
 
 type HeaderProps = {
