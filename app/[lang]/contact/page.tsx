@@ -184,10 +184,10 @@ export default async function ContactPage({
               className={classes.architectureSection}
               style={{ marginTop: '1.5rem' }}
             >
-              <legend>{dict.contact.architectureSectionLegend}</legend>
+              <div className={classes.legend}>{dict.contact.architectureSectionLegend}</div>
 
               {/* Business Requirements */}
-              <details className={classes.questionGroup} open>
+              <details className={classes.questionGroup}>
                 <summary className={classes.groupHeader}>
                   {dict.contact.businessRequirementsGroup}
                 </summary>

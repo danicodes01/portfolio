@@ -114,7 +114,7 @@
 .input {
   border: 1px solid var(--color-grey-300);
   border-radius: 8px;
-  padding: 0.75rem;
+  padding: 0.3rem;
   font-size: 1rem;
   background: var(--item-background);
   color: rgb(var(--foreground-rgb));
@@ -123,6 +123,9 @@
   box-sizing: border-box;
   transition: border-color 0.2s, box-shadow 0.2s;
   width: 100%;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .input::placeholder {
@@ -133,13 +136,16 @@
 .textarea {
   border: 1px solid var(--color-grey-300);
   border-radius: 8px;
-  padding: 0.75rem;
+  padding: 3rem;
   font-size: 1rem;
   resize: vertical;
   background: var(--item-background);
   color: var(--foreground-rgb);
   min-height: 80px;
   width: 100%;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Architecture section styling */
@@ -419,9 +425,11 @@
   }
 
   /* Form inputs on mobile */
-  .input,
+  .input {
+    padding: 0.25rem;
+  }
   .textarea {
-    padding: 1rem;
+    padding: 3rem;
     font-size: 16px; /* Prevents zoom on iOS */
   }
 
@@ -461,6 +469,7 @@
     padding: 0.75rem 0.5rem;
   }
 
+
   .architectureSection {
     padding: 1rem;
   }
@@ -493,4 +502,10 @@
 
 .groupHeader:focus {
   background: rgba(var(--card-glow), 0.15);
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    max-width: 60rem;
+  }
 }
