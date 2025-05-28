@@ -47,6 +47,12 @@ export default async function ProjectDetailPage({
         return project.infoDe || project.info;
       case 'fr':
         return project.infoFr || project.info;
+      case 'zh':
+        return project.infoZh || project.info;
+      case 'ar':
+        return project.infoAr || project.info;
+      case 'ja':
+        return project.infoJa || project.info;
       case 'en':
       default:
         return project.info;

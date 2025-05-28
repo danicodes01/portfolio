@@ -18,15 +18,19 @@ model Project {
   summaryEs     String?    @map("summary_es")
   summaryDe     String?    @map("summary_de")
   summaryFr     String?    @map("summary_fr")
-  
+  summaryZh     String?    @map("summary_zh")
+  summaryAr     String?    @map("summary_ar") 
+  summaryJa     String?    @map("summary_ja")
   info          String
   infoEs        String?    @map("info_es")
   infoDe        String?    @map("info_de")
   infoFr        String?    @map("info_fr")
+  infoZh        String?    @map("info_zh") 
+  infoAr        String?    @map("info_ar")
+  infoJa        String?    @map("info_ja")
   
   link          String
   repo          String
   media         String[]
-  
   date          DateTime
 }
