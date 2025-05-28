@@ -12,6 +12,7 @@ export type Project = {
   summaryZh?: string | null;
   summaryAr?: string | null;
   summaryJa?: string | null;
+  summaryRu?: string | null;
   info: string;
   infoEs: string | null | undefined;
   infoDe: string | null | undefined;
@@ -19,6 +20,7 @@ export type Project = {
   infoZh?: string | null;
   infoAr?: string | null;
   infoJa: string | null | undefined;
+  infoRu: string | null | undefined;
   repo: string;
   media: string[];
   date: Date;

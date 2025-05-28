@@ -32,6 +32,7 @@ export default async function ProjectItem({
   summaryZh,
   summaryAr,
   summaryJa,
+  summaryRu,
   lang = 'en' 
 }: ProjectItemProps) {
   const dict = await getDictionary(lang);
@@ -54,6 +55,8 @@ export default async function ProjectItem({
         return summaryAr || summary;
       case 'ja':
         return summaryJa || summary;
+      case 'ru':
+        return summaryRu || summary;
       case 'en':
       default:
         return summary;
