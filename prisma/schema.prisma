@@ -21,6 +21,7 @@ model Project {
   summaryZh     String?    @map("summary_zh")
   summaryAr     String?    @map("summary_ar") 
   summaryJa     String?    @map("summary_ja")
+  summaryRu     String?    @map("summary_ru")
   info          String
   infoEs        String?    @map("info_es")
   infoDe        String?    @map("info_de")
@@ -28,6 +29,7 @@ model Project {
   infoZh        String?    @map("info_zh") 
   infoAr        String?    @map("info_ar")
   infoJa        String?    @map("info_ja")
+  infoRu        String?    @map("info_ru")
   
   link          String
   repo          String
