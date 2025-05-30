@@ -10,15 +10,18 @@ interface Language {
   flag: string;
 }
 
-const languages: Language[] = [
+const mainLanguages: Language[] = [
   { code: 'en', label: 'English', flag: '🇺🇸' },
   { code: 'es', label: 'Español', flag: '🇪🇸' },
-  { code: 'ja', label: '日本語', flag: '🇯🇵' },
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
+];
+
+const additionalLanguages: Language[] = [
+  { code: 'ja', label: '日本語', flag: '🇯🇵' },
   { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
   { code: 'zh', label: '中文', flag: '🇨🇳' },
   { code: 'ar', label: 'العربية', flag: '🇸🇦' },
-  { code: 'ru', label: 'Русский', flag: '🇷🇺' }, 
+  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
 ];
 
 interface LanguageDropdownProps {
@@ -27,16 +30,19 @@ interface LanguageDropdownProps {
 
 export default function LanguageDropdown({ currentLang }: LanguageDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [showMore, setShowMore] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const pathname = usePathname();
 
-  const currentLanguage = languages.find(lang => lang.code === currentLang) || languages[0];
+  const allLanguages = [...mainLanguages, ...additionalLanguages];
+  const currentLanguage = allLanguages.find(lang => lang.code === currentLang) || mainLanguages[0];
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
+        setShowMore(false);
       }
     }
 
@@ -44,20 +50,20 @@ export default function LanguageDropdown({ currentLang }: LanguageDropdownProps)
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-const handleLanguageChange = (langCode: string) => {
-  // Always use the pathname to get the current language, not the prop
-  const segments = pathname.split('/').filter(Boolean); // removes empty strings
-  const currentPathLang = segments[0]; // first segment is always the language
-  const remainingPath = segments.slice(1); // everything after the language
-  
-  // Construct new path
-  const newPath = `/${langCode}${remainingPath.length > 0 ? '/' + remainingPath.join('/') : ''}`;
-  
-  console.log('Navigating from', pathname, 'to', newPath);
-  
-  router.push(newPath);
-  setIsOpen(false);
-};
+  const handleLanguageChange = (langCode: string) => {
+    const segments = pathname.split('/').filter(Boolean);
+    const remainingPath = segments.slice(1);
+    const newPath = `/${langCode}${remainingPath.length > 0 ? '/' + remainingPath.join('/') : ''}`;
+    
+    router.push(newPath);
+    setIsOpen(false);
+    setShowMore(false);
+  };
+
+  const handleMoreClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setShowMore(!showMore);
+  };
 
   return (
     <div className={classes.dropdown} ref={dropdownRef}>
@@ -75,21 +81,52 @@ const handleLanguageChange = (langCode: string) => {
 
       {isOpen && (
         <div className={classes.menu} role="listbox">
-          {languages.map((language) => (
-            <button
-              key={language.code}
-              className={`${classes.option} ${
-                language.code === currentLang ? classes.active : ''
-              }`}
-              onClick={() => handleLanguageChange(language.code)}
-              role="option"
-              aria-selected={language.code === currentLang}
-            >
-              <span className={classes.flag}>{language.flag}</span>
-              <span className={classes.label}>{language.label}</span>
-              <span className={classes.code}>{language.code.toUpperCase()}</span>
-            </button>
-          ))}
+          {!showMore ? (
+            <>
+              {mainLanguages.map((language) => (
+                <button
+                  key={language.code}
+                  className={`${classes.option} ${
+                    language.code === currentLang ? classes.active : ''
+                  }`}
+                  onClick={() => handleLanguageChange(language.code)}
+                  role="option"
+                  aria-selected={language.code === currentLang}
+                >
+                  <span className={classes.flag}>{language.flag}</span>
+                  <span className={classes.label}>{language.label}</span>
+                  <span className={classes.code}>{language.code.toUpperCase()}</span>
+                </button>
+              ))}
+              <button
+                className={`${classes.option} ${classes.moreOption}`}
+                onClick={handleMoreClick}
+                role="button"
+                aria-haspopup="true"
+                aria-expanded={showMore}
+              >
+                <span className={classes.flag}>🌐</span>
+                <span className={classes.label}>...</span>
+                <span className={`${classes.arrow} ${showMore ? classes.arrowUp : ''}`}>▶</span>
+              </button>
+            </>
+          ) : (
+            [...mainLanguages, ...additionalLanguages].map((language) => (
+              <button
+                key={language.code}
+                className={`${classes.option} ${
+                  language.code === currentLang ? classes.active : ''
+                }`}
+                onClick={() => handleLanguageChange(language.code)}
+                role="option"
+                aria-selected={language.code === currentLang}
+              >
+                <span className={classes.flag}>{language.flag}</span>
+                <span className={classes.label}>{language.label}</span>
+                <span className={classes.code}>{language.code.toUpperCase()}</span>
+              </button>
+            ))
+          )}
         </div>
       )}
     </div>

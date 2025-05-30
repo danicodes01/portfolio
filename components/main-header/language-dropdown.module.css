@@ -113,9 +113,36 @@
   opacity: 0.8;
 }
 
+.moreOption {
+  border-top: 1px solid rgba(var(--card-glow), 0.15);
+}
+
+.moreOption .arrow {
+  margin-left: auto;
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.moreOption .arrowUp {
+  transform: rotate(90deg);
+}
+
+.submenu {
+  background: var(--dropdown-background);
+  border-top: 1px solid rgba(var(--card-glow), 0.15);
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   .menu {
+    border-color: #333;
+  }
+  
+  .moreOption {
+    border-color: #333;
+  }
+  
+  .submenu {
     border-color: #333;
   }
   
