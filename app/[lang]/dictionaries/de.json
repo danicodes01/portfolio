@@ -13,7 +13,7 @@
     "linkedin": "LinkedIn:",
     "linkedinLink": "verbinden Sie sich mit mir auf LinkedIn",
     "github": "GitHub:",
-    "githubLink": "schauen Sie sich mein GitHub an",
+    "githubLink": "besuchen Sie mein GitHub",
     "resume": "Lebenslauf:",
     "resumeLink": "meinen Lebenslauf ansehen",
     "successTitle": "Vielen Dank für Ihre Anfrage!",
@@ -30,7 +30,7 @@
     "preferredContactLabel": "Bevorzugter Kontakt (E-Mail, Telefon, etc.)",
     "whatLabel": "Was möchten Sie entwickeln?",
     "whyLabel": "Warum möchten Sie es entwickeln?",
-    "architectureSectionLegend": "Erzählen Sie uns von Ihrem Projekt",
+    "architectureSectionLegend": "Teilen Sie Ihre Projektdetails mit (optional)",
     "businessRequirementsGroup": "Geschäftsanforderungen",
     "platformGroup": "Was entwickeln Sie?",
     "userExperienceGroup": "Benutzererfahrung",
@@ -95,7 +95,7 @@
           "Nutzung von Prisma Vector DB für effiziente Speicherung und Abruf von Embeddings zur Verbesserung des KI-Kontextverständnisses.",
           "Implementierung von serverseitigem Rendering und ISG mit Next.js 15 und TypeScript.",
           "Erstellung von Datenworkflows mit Prisma ORM und PostgreSQL.",
-          "Einrichtung von Echtzeit-Kommunikation über Ably Websockets.",
+          "Einrichtung von Echtzeit-Kommunikation über Ably websockets.",
           "Gestaltung responsiver Benutzeroberflächen für optimale Benutzererfahrung.",
           "Pionierarbeit bei Technologieanwendungen im Bereich der psychischen Gesundheit zur Unterstützung von Menschen bei der Überwindung von Spielsucht.",
           "Funktionsübergreifende Zusammenarbeit mit klinischen Experten zur Entwicklung einfühlsamer, effektiver digitaler Unterstützungssysteme."
@@ -111,29 +111,28 @@
           "Aktiver Entwickler in einem Agile Scrum-Team für einen US-Regierungsauftrag an CGI.",
           "Entwicklung eines Systems, das erfolgreich die Bearbeitung von über 15 Millionen US-Pässen und über 4 Millionen Visa in 70 Ländern jährlich unterstützt.",
           "Optimierung des Case-Managements durch Verbesserung eines React-Front-Ends, das mit Microsoft Dynamics 365 verbunden war und CRM-Case-Daten sowie eine Python-gesteuerte API für Referenzdatenzugriff nutzte.",
-          "Nutzung von maschinellem Lernen mit Pythons FastText-Bibliothek zur Verbesserung der Reaktionseffizienz um 40%, was die Fähigkeit der Sachbearbeiter zur Verwaltung und Bearbeitung von US-Visa-Anträgen erheblich verbesserte.",
-          "Refaktorierung des bestehenden Salesforce-Systems zu Microsoft Dynamics für die US-Regierung unter Einhaltung der FedRAMP High-Sicherheitsstandards.",
+          "Nutzung von maschinellem Lernen mit Pythons FastText-Bibliothek zur Verbesserung der Reaktionseffizienz um 40%, was die Fähigkeit der Sachbearbeiter zur Verwaltung und Bearbeitung von US-Visa-Anträgen erheblich verbesserte. Erweiterung der Referenzdaten und Hinzufügung von Trainingsbeispielen, um FastText zu befähigen, Case-Typen basierend auf nuancierten Texteingaben zu klassifizieren. Implementierung einer Benutzerfeedback-Schleife zur Verfeinerung der Modellgenauigkeit, die kontinuierliches Lernen und Anpassung in der prädiktiven Textklassifikation ermöglicht.",
+          "Refaktorierung des bestehenden Salesforce-Systems zu Microsoft Dynamics für die US-Regierung unter Einhaltung der FedRAMP High-Sicherheitsstandards mit fortschrittlicher Verschlüsselung und sicherer Zugriffskontrolle.",
           "Optimierung der Entwicklungsumgebung durch Skripterstellung für den Import von Zertifikaten, Installation von Azure CLI, Docker und Durchführung von Post-Installations-Konfiguration und -Tests.",
-          "Umfassende Dokumentation von Prozessen in Confluence, einschließlich Deployment-Lebenszyklen, technischen Notizen, Werkzeugnutzungsrichtlinien und hochrangiger Dokumentation.",
+          "Umfassende Dokumentation von Prozessen in Confluence, einschließlich Deployment-Lebenszyklen, technischen Notizen, Werkzeugnutzungsrichtlinien und hochrangiger Dokumentation für verschiedene Anwendungen und Workflows.",
           "Durchführung von Infrastrukturaufgaben, einschließlich Versionskontrolle von Node- und Flask-Bibliotheken, Docker-Images, Manipulation von Kubernetes-Ressourcen und Fehlerbehebung bei Jenkins-Pipelines.",
           "Erstellung umfassender Hilfsdokumentation und Überwachung von Endbenutzer-Tests zur Gewährleistung einer benutzerfreundlichen Erfahrung.",
           "Erstellung und Modifikation benutzerdefinierter Dynamics 365-Tabellen, Festlegung von Attributen, Datenstrukturen, Beziehungen, Entitätsformularen, Ansichten, Geschäftsregeln und Workflows.",
           "Verwaltung von Sicherheitsrollen, Aktualisierung von Team-Privilegien und Kontrolle des Zugriffs auf Datenressourcen.",
-          "Implementierung von Zahlungskonfigurationen, dynamischen Quittungen und Visa-Anweisungen für verschiedene Länder."
+          "Implementierung von Zahlungskonfigurationen, dynamischen Quittungen und Visa-Anweisungen für verschiedene Länder. Erstellung von Konstanten über Code-Snippets zur Gewährleistung nahtloser Übersetzungen für mehrere Sprachen."
         ]
       },
       "role2": {
         "title": "ESG, CAST— BERATER (Juni 2022 – Aug 2022)",
         "bullets": [
-          "Zusammenarbeit in einem kleinen Team zur Führung der Entwicklung einer internen Anwendung von Grund auf.",
-          "Zweimonatige intensive Beteiligung mit Expertise in verschiedenen Bereichen, einschließlich visueller Gestaltung, REST-API-Design und -Implementierung, Datenmodellierung und Front-End-Entwicklung.",
-          "Erlernung von Java im laufenden Betrieb, um eine robuste REST-API mit dem Spring Boot-Framework zu architekturieren und zu implementieren.",
+          "Zusammenarbeit in einem kleinen Team zur Führung der Entwicklung einer internen Anwendung von Grund auf. Zweimonatige intensive Beteiligung mit Expertise in verschiedenen Bereichen, einschließlich visueller Gestaltung, REST-API-Design und -Implementierung, Datenmodellierung und Front-End-Entwicklung.",
+          "Erlernung von Java im laufenden Betrieb, um Anpassungsfähigkeit zu demonstrieren und eine robuste REST-API mit dem Spring Boot-Framework zu architekturieren und zu implementieren.",
           "Implementierung von Object-Relational Mapping mit JPA zur Optimierung des Datenmanagements und Verbesserung der Anwendungseffizienz.",
-          "Entwicklung umfassender Unit-Tests mit Mockito und JUnit zur rigorosen Bewertung der Geschäftslogik in der Service-Schicht.",
-          "Nutzung von Swagger zur Generierung detaillierter REST-API-Dokumentation.",
-          "Verwaltung von Abhängigkeiten über ein zentrales Maven-Repository.",
-          "Entwicklung wiederverwendbarer Angular-Komponenten mit TypeScript und Interfaces.",
-          "Nahtlose Zusammenarbeit mit Material UI zur Gestaltung benutzerdefinierter Tabellen und Implementierung von Stilen."
+          "Entwicklung umfassender Unit-Tests mit Mockito und JUnit zur rigorosen Bewertung der Geschäftslogik in der Service-Schicht. Einrichtung von Testklassen und Nutzung von InjectMocks für Objekterstellung, um minimale Abhängigkeitsinterferenz sicherzustellen und eine lose gekoppelte Architektur zu fördern, die effektives Testen begünstigt.",
+          "Nutzung von Swagger zur Generierung detaillierter REST-API-Dokumentation und Verbesserung der Projekttransparenz und -zugänglichkeit.",
+          "Verwaltung von Abhängigkeiten über ein zentrales Maven-Repository zur Gewährleistung nahtloser Updates und Beschaffung neuer Ressourcen.",
+          "Entwicklung wiederverwendbarer Angular-Komponenten mit TypeScript und Interfaces zur Förderung einer robusten und stark typisierten Programmierumgebung.",
+          "Nahtlose Zusammenarbeit mit Material UI zur Gestaltung benutzerdefinierter Tabellen und Implementierung von Stilen zur Verbesserung der Benutzeroberfläche für eine optimale Benutzererfahrung."
         ]
       }
     },

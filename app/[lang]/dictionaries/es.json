@@ -7,7 +7,7 @@
     "title": "Proyectos"
   },
   "contact": {
-    "title": "Conectemos",
+    "title": "Contacto",
     "intro": "Si tienes alguna consulta sobre mis proyectos, o si estás buscando soporte de ingeniería o desarrollo, me encantaría conectar:",
     "email": "Correo electrónico:",
     "linkedin": "LinkedIn:",
@@ -23,19 +23,20 @@
     "confidenceMedium": "Media",
     "confidenceLow": "Baja",
     "complexityScore": "Puntaje de Complejidad",
+    "platform": "Plataforma",
+    "techStack": "Stack Tecnológico",
     "nameLabel": "Tu Nombre",
     "companyLabel": "Nombre de la empresa (opcional)",
     "preferredContactLabel": "Contacto Preferido (correo, teléfono, etc.)",
     "whatLabel": "¿Qué quieres construir?",
     "whyLabel": "¿Por qué quieres construirlo?",
-    "platform": "Plataforma",
-    "techStack": "Stack Tecnológico",
-    "architectureSectionLegend": "Cuéntanos sobre tu proyecto",
+    "architectureSectionLegend": "Comparte los detalles de tu proyecto (opcional)",
     "businessRequirementsGroup": "Requisitos del Negocio",
     "platformGroup": "¿Qué estás construyendo?",
     "userExperienceGroup": "Experiencia del Usuario",
     "scaleGroup": "Uso Esperado",
     "developmentGroup": "Preferencias de Desarrollo",
+
     "archQ1": "¿Lógica de dominio compleja?",
     "archQ2": "¿Sincronización multi-sistema?",
     "archQ3": "¿Flujos de trabajo personalizados?",
@@ -44,18 +45,23 @@
     "archQ6": "¿Validación de datos compleja?",
     "archQ7": "¿Necesita integraciones futuras?",
     "archQ8": "¿Mantenimiento a largo plazo?",
+
     "archQ9": "¿Sitio web o aplicación web?",
     "archQ10": "¿Aplicación móvil (iOS/Android)?",
     "archQ11": "¿Soporte multiplataforma?",
+
     "archQ12": "¿Usuarios trabajan sin conexión?",
     "archQ13": "¿Funciones en tiempo real necesarias?",
+
     "archQ14": "¿Esperando alto tráfico?",
     "archQ15": "¿Grandes cantidades de datos?",
     "archQ16": "¿Base de usuarios global?",
-    "archQ17": "¿Equipo/presupuesto pequeño?",
-    "archQ18": "¿Necesita lanzar rápidamente?",
+
+    "archQ17": "¿Equipo o presupuesto limitado?",
+    "archQ18": "¿Necesita lanzamiento rápido?",
+
     "submitButton": "Enviar",
-    "submittingButton": "Analizando Arquitectura..."
+    "submittingButton": "Analizando arquitectura..."
   },
   "projectPage": {
     "goToProject": "ir a",
@@ -71,8 +77,8 @@
     "phone": "Teléfono:",
     "portfolio": "Portafolio:",
     "languages": "LENGUAJES DE PROGRAMACIÓN",
-    "frameworks": "FRAMEWORKS / BIBLIOTECAS",
-    "tools": "HERRAMIENTAS",
+    "frameworks": "FRAMEWORKS/BIBLIOTECAS",
+    "tools": "HERRAMIENTAS Y TECNOLOGÍAS",
     "workExperience": "EXPERIENCIA LABORAL",
     "projects": "PROYECTOS",
     "spokenLanguages": "IDIOMAS",

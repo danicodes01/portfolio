@@ -30,12 +30,13 @@
     "preferredContactLabel": "Contact Préféré (email, téléphone, etc.)",
     "whatLabel": "Que voulez-vous construire ?",
     "whyLabel": "Pourquoi voulez-vous le construire ?",
-    "architectureSectionLegend": "Parlez-nous de votre projet",
+    "architectureSectionLegend": "Partagez les détails de votre projet (optionnel)",
     "businessRequirementsGroup": "Exigences Métier",
     "platformGroup": "Que construisez-vous ?",
     "userExperienceGroup": "Expérience Utilisateur",
     "scaleGroup": "Usage Attendu",
     "developmentGroup": "Préférences de Développement",
+
     "archQ1": "Logique métier complexe ?",
     "archQ2": "Synchronisation multi-système ?",
     "archQ3": "Flux de travail personnalisés ?",
@@ -44,18 +45,23 @@
     "archQ6": "Validation de données complexe ?",
     "archQ7": "Besoin d'intégrations futures ?",
     "archQ8": "Maintenance à long terme ?",
+
     "archQ9": "Site web ou application web ?",
     "archQ10": "Application mobile (iOS/Android) ?",
     "archQ11": "Support multi-plateforme ?",
+
     "archQ12": "Les utilisateurs travaillent hors ligne ?",
     "archQ13": "Fonctionnalités temps réel nécessaires ?",
+
     "archQ14": "Trafic élevé attendu ?",
     "archQ15": "Grandes quantités de données ?",
     "archQ16": "Base d'utilisateurs mondiale ?",
-    "archQ17": "Petite équipe/budget ?",
-    "archQ18": "Besoin de lancer rapidement ?",
+
+    "archQ17": "Équipe ou budget limité ?",
+    "archQ18": "Besoin de lancement rapide ?",
+
     "submitButton": "Soumettre",
-    "submittingButton": "Analyse de l'Architecture..."
+    "submittingButton": "Analyse de l'architecture..."
   },
   "projectPage": {
     "goToProject": "aller à",
@@ -70,9 +76,9 @@
     "email": "Email :",
     "phone": "Téléphone :",
     "portfolio": "Portfolio :",
-    "languages": "LANGAGES",
-    "frameworks": "FRAMEWORKS / BIBLIOTHÈQUES",
-    "tools": "OUTILS",
+    "languages": "LANGAGES DE PROGRAMMATION",
+    "frameworks": "FRAMEWORKS/BIBLIOTHÈQUES",
+    "tools": "OUTILS ET TECHNOLOGIES",
     "workExperience": "EXPÉRIENCE PROFESSIONNELLE",
     "projects": "PROJETS",
     "spokenLanguages": "LANGUES PARLÉES",
@@ -83,7 +89,7 @@
       "david": "Directeur Conseil, CGI"
     },
     "job0": {
-      "title": "EXCLAIM RECOVERY, Remote",
+      "title": "EXCLAIM RECOVERY, Télétravail",
       "duration": "Avril 2025 - Présent",
       "role1": {
         "title": "RESPONSABLE TECHNIQUE | DÉVELOPPEMENT D'APPLICATIONS",
@@ -97,13 +103,13 @@
           "Création de flux de travail de données avec Prisma ORM et PostgreSQL.",
           "Établissement de communications en temps réel via les websockets Ably.",
           "Création d'interfaces réactives pour une expérience utilisateur optimale.",
-          "Pionnier des applications technologiques dans l'espace de la santé mentale pour aider les individus à surmonter l'addiction au jeu.",
+          "Développement pionnier d'applications technologiques dans l'espace de la santé mentale pour aider les individus à surmonter l'addiction au jeu.",
           "Collaboration inter-fonctionnelle avec des experts cliniques pour développer des systèmes de soutien numérique empathiques et efficaces."
         ]
       }
     },
     "job1": {
-      "title": "CGI FEDERAL, Remote — CONSULTANT",
+      "title": "CGI FEDERAL, Télétravail — CONSULTANT",
       "duration": "Juin 2022 - Décembre 2023",
       "role1": {
         "title": "FSG, Atlas— CONSULTANT (Août 2022 - Décembre 2023)",
@@ -111,34 +117,33 @@
           "Développeur actif dans une équipe Agile Scrum pour un contrat du gouvernement américain attribué à CGI.",
           "Développement d'un système qui prend en charge avec succès le traitement de plus de 15 millions de passeports américains et plus de 4 millions de visas dans 70 pays chaque année.",
           "Rationalisation de la gestion des cas en optimisant un front-end React qui s'interfaçait avec Microsoft Dynamics 365, utilisant les données de cas CRM et une API pilotée par Python pour l'accès aux données de référence.",
-          "Utilisation de l'apprentissage automatique avec la bibliothèque FastText de Python pour améliorer l'efficacité de réponse de 40%, améliorant considérablement la capacité des agents à gérer et répondre aux demandes de visa américaines.",
-          "Refactorisation du système Salesforce existant vers Microsoft Dynamics pour le gouvernement américain, garantissant la conformité aux normes de sécurité FedRAMP High.",
+          "Utilisation de l'apprentissage automatique avec la bibliothèque FastText de Python pour améliorer l'efficacité de réponse de 40%, améliorant considérablement la capacité des agents de traitement à gérer et répondre aux demandes de visa américaines. Extension des données de référence et ajout d'exemples d'entraînement pour permettre à FastText de classifier les types de cas basés sur des entrées textuelles nuancées. Implémentation d'une boucle de rétroaction utilisateur pour affiner la précision du modèle, permettant l'apprentissage continu et l'adaptation dans la classification prédictive de texte.",
+          "Refactorisation du système Salesforce existant vers Microsoft Dynamics pour le gouvernement américain, garantissant la conformité aux normes de sécurité FedRAMP High, fournissant un chiffrement avancé et un contrôle d'accès sécurisé.",
           "Rationalisation de la configuration de l'environnement de développement en scriptant l'importation de certificats, l'installation d'Azure CLI, Docker et la configuration et test post-installation.",
-          "Documentation de processus complets dans Confluence, couvrant les cycles de vie de déploiement, les notes techniques, les directives d'utilisation d'outils et la documentation de haut niveau.",
+          "Documentation de processus complets dans Confluence, couvrant les cycles de vie de déploiement, les notes techniques, les directives d'utilisation d'outils et la documentation de haut niveau pour diverses applications et flux de travail.",
           "Exécution de tâches d'infrastructure, incluant le contrôle de version des bibliothèques node et Flask, les images Docker, la manipulation des ressources Kubernetes et le dépannage des pipelines Jenkins.",
           "Rédaction de documentation d'aide complète et supervision des tests d'utilisateurs finaux, garantissant une expérience conviviale.",
           "Création et modification de tables Dynamics 365 personnalisées, établissement d'attributs, structures de données, relations, formulaires d'entité, vues, règles métier et flux de travail.",
           "Gestion des rôles de sécurité, mise à jour des privilèges d'équipe et contrôle de l'accès aux ressources de données.",
-          "Implémentation de configurations de paiement, reçus dynamiques et instructions de visa pour divers pays."
+          "Implémentation de configurations de paiement, reçus dynamiques et instructions de visa pour divers pays. Création de constantes via des extraits de code pour assurer des traductions fluides pour plusieurs langues."
         ]
       },
       "role2": {
         "title": "ESG, CAST— CONSULTANT (Juin 2022 – Août 2022)",
         "bullets": [
-          "Collaboration au sein d'une petite équipe pour diriger le développement d'une application interne, créée dès le départ.",
-          "Engagement intensif de deux mois, apportant une expertise dans divers aspects, incluant la conception visuelle, la conception et l'implémentation d'API REST, la modélisation de données et le développement front-end.",
+          "Collaboration au sein d'une petite équipe pour diriger le développement d'une application interne, créée dès le départ. Engagement dans une implication intensive de deux mois, apportant une expertise dans divers aspects, incluant la conception visuelle, la conception et l'implémentation d'API REST, la modélisation de données et le développement front-end.",
           "Acquisition de compétences en Java à la volée, démontrant l'adaptabilité pour architecturer et implémenter une API REST robuste utilisant le framework Spring Boot.",
           "Implémentation du mapping objet-relationnel avec JPA pour optimiser la gestion des données et améliorer l'efficacité de l'application.",
-          "Développement de tests unitaires complets utilisant Mockito et JUnit pour évaluer rigoureusement la logique métier intégrée dans la couche Service.",
-          "Utilisation de Swagger pour la génération de documentation détaillée d'API REST.",
-          "Gestion des dépendances via un dépôt Maven central.",
-          "Développement de composants Angular réutilisables utilisant TypeScript et des interfaces.",
-          "Collaboration transparente avec Material UI pour concevoir des tables personnalisées et implémenter des styles."
+          "Développement de tests unitaires complets utilisant Mockito et JUnit pour évaluer rigoureusement la logique métier intégrée dans la couche Service. Établissement de classes de test et utilisation d'InjectMocks pour la création d'objets, assurant une interférence minimale des dépendances et favorisant une architecture faiblement couplée propice aux tests efficaces.",
+          "Utilisation de Swagger pour la génération de documentation détaillée d'API REST, améliorant la transparence et l'accessibilité du projet.",
+          "Gestion des dépendances via un dépôt Maven central, assurant des mises à jour fluides et l'acquisition de nouvelles ressources.",
+          "Développement de composants Angular réutilisables utilisant TypeScript et des interfaces, favorisant un environnement de programmation robuste et fortement typé.",
+          "Collaboration transparente avec Material UI pour concevoir des tables personnalisées et implémenter des styles, améliorant l'interface utilisateur pour une expérience utilisateur optimale."
         ]
       }
     },
     "job2": {
-      "title": "OPERATION SPARK, Remote — ASSISTANT ENSEIGNANT",
+      "title": "OPERATION SPARK, Télétravail — ASSISTANT ENSEIGNANT",
       "duration": "Juin 2021 – Juillet 2022",
       "bullets": [
         "Assistance aux étudiants étudiant le développement logiciel.",
@@ -147,7 +152,7 @@
       ]
     },
     "job3": {
-      "title": "TRAVAILLEUR AUTONOME, Remote — DESSINATEUR",
+      "title": "TRAVAILLEUR AUTONOME, Télétravail — DESSINATEUR",
       "duration": "Janvier 2017 – Février 2022",
       "bullets": [
         "Collaboration avec les clients pour concevoir des agencements de maisons personnalisés adaptés à leurs besoins.",
