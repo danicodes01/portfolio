@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="sphereGrad" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="60%" stop-color="#1e1e1e"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </radialGradient>
+    <clipPath id="globeClip">
+      <circle cx="400" cy="275" r="158"/>
+    </clipPath>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="14" cy="14" r="0.8" fill="#222222"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#dots)"/>
+
+  <!-- Globe sphere -->
+  <circle cx="400" cy="275" r="158" fill="url(#sphereGrad)"/>
+
+  <!-- Globe latitude lines -->
+  <g clip-path="url(#globeClip)" fill="none" stroke="#777777" stroke-width="0.8" opacity="0.7">
+    <ellipse cx="400" cy="275" rx="158" ry="20"/>
+    <ellipse cx="400" cy="223" rx="143" ry="17"/>
+    <ellipse cx="400" cy="171" rx="103" ry="13"/>
+    <ellipse cx="400" cy="327" rx="143" ry="17"/>
+    <ellipse cx="400" cy="379" rx="103" ry="13"/>
+    <ellipse cx="400" cy="130" rx="48" ry="8"/>
+    <ellipse cx="400" cy="420" rx="48" ry="8"/>
+  </g>
+
+  <!-- Globe longitude lines -->
+  <g clip-path="url(#globeClip)" fill="none" stroke="#777777" stroke-width="0.8" opacity="0.7">
+    <line x1="400" y1="117" x2="400" y2="433"/>
+    <ellipse cx="400" cy="275" rx="63" ry="158"/>
+    <ellipse cx="400" cy="275" rx="115" ry="158"/>
+    <ellipse cx="400" cy="275" rx="148" ry="158"/>
+  </g>
+
+  <!-- Globe outer ring -->
+  <circle cx="400" cy="275" r="158" fill="none" stroke="#888888" stroke-width="1.5"/>
+
+  <!-- Subtle highlight sheen -->
+  <ellipse cx="355" cy="210" rx="50" ry="30" fill="none" stroke="#aaaaaa" stroke-width="1" opacity="0.2" transform="rotate(-30, 355, 210)"/>
+
+  <!-- Corner brackets -->
+  <g stroke="#666666" stroke-width="1.5" fill="none">
+    <path d="M 65 55 L 65 78 L 88 78"/>
+    <path d="M 735 55 L 735 78 L 712 78"/>
+    <path d="M 65 545 L 65 522 L 88 522"/>
+    <path d="M 735 545 L 735 522 L 712 522"/>
+  </g>
+
+  <!-- Top rule -->
+  <line x1="100" y1="102" x2="700" y2="102" stroke="#555555" stroke-width="0.8"/>
+
+  <!-- Top label -->
+  <text
+    x="400" y="92"
+    text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="20"
+    letter-spacing="4"
+    fill="#888888"
+  >— EST. 2024 —</text>
+
+  <!-- Main title -->
+  <text
+    x="400" y="498"
+    text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="33"
+    letter-spacing="7"
+    fill="#f0f0f0"
+    font-weight="700"
+    filter="url(#textGlow)"
+  >REAL WORLD NEWS</text>
+
+  <!-- Tagline -->
+  <text
+    x="400" y="528"
+    text-anchor="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-size="20"
+    letter-spacing="3"
+    fill="#888888"
+  >real news · no ads · only facts</text>
+
+  <!-- Bottom rule -->
+  <line x1="100" y1="544" x2="700" y2="544" stroke="#555555" stroke-width="0.8"/>
+</svg>

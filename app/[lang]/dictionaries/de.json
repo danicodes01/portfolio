@@ -66,111 +66,97 @@
   "resume": {
     "metaTitle": "Lebenslauf",
     "metaDescription": "Lebenslauf von Daniel Knowles, Software-Ingenieur",
-    "jobTitle": "Software-Ingenieur",
+    "jobTitle": "Senior Software-Ingenieur | KI-Systeme | Full-Stack | Analytik",
     "email": "E-Mail:",
     "phone": "Telefon:",
     "portfolio": "Portfolio:",
-    "languages": "SPRACHEN",
-    "frameworks": "FRAMEWORKS / BIBLIOTHEKEN",
-    "tools": "WERKZEUGE",
-    "workExperience": "BERUFSERFAHRUNG",
+    "summary": "Software-Ingenieur mit Erfahrung im Aufbau skalierbarer, produktionsreifer Systeme in den Bereichen KI, Backend-Infrastruktur und benutzerorientierte Anwendungen. Nachgewiesene Fähigkeit, komplexe Systeme von Anfang bis Ende zu entwerfen und bereitzustellen, mit messbarem Einfluss auf Leistung, Skalierbarkeit und Benutzererfahrung.",
+    "education": "AUSBILDUNG",
+    "coreSkills": "KERNKOMPETENZEN",
+    "keyAchievementsTitle": "WESENTLICHE ERFOLGE",
+    "keyAchievements": [
+      "Improved ML-driven customer service response accuracy by ~70% using FastText at enterprise scale",
+      "Increased AI system performance by ~90%, enabling real-time LLM-powered interactions in production",
+      "Contributed to distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries",
+      "Built and scaled a real-time peer-support platform handling thousands of messages with moderation and AI systems"
+    ],
+    "workExperience": "ERFAHRUNG",
     "projects": "PROJEKTE",
-    "spokenLanguages": "GESPROCHENE SPRACHEN",
-    "english": "Englisch - Muttersprache",
-    "spanish": "Spanisch - Fließend",
-    "references": "REFERENZEN",
-    "referenceTitle": {
-      "david": "Direktor Beratung, CGI"
-    },
+    "additional": "ZUSÄTZLICHES",
+    "spokenLanguages": "Sprachen:",
+    "english": "Englisch (Muttersprache)",
+    "spanish": "Spanisch (Fließend)",
+    "references": "Referenzen auf Anfrage erhältlich",
     "job0": {
-      "title": "EXCLAIM RECOVERY, Remote",
-      "duration": "April 2025 - Gegenwärtig",
-      "role1": {
-        "title": "TECHNISCHER LEITER | ANWENDUNGSENTWICKLUNG",
-        "bullets": [
-          "Leitung der Entwicklung einer Anwendung mit Fokus auf Unterstützungsdienste für Spielsucht.",
-          "Architektur von KI-gesteuerten Gesprächsanalysesystemen mit LangGraph, OpenAI und LangChain zur Bereitstellung personalisierter Suchtbehandlungsberatung.",
-          "Aufbau intelligenter Agentensysteme mit LangGraph für Echtzeit-Gesprächsanalyse.",
-          "Entwicklung von KI-Pipelines zur Analyse von Stimmungen, Erkennung von Krisenereignissen und Verfolgung des Genesungsfortschritts.",
-          "Nutzung von Prisma Vector DB für effiziente Speicherung und Abruf von Embeddings zur Verbesserung des KI-Kontextverständnisses.",
-          "Implementierung von serverseitigem Rendering und ISG mit Next.js 15 und TypeScript.",
-          "Erstellung von Datenworkflows mit Prisma ORM und PostgreSQL.",
-          "Einrichtung von Echtzeit-Kommunikation über Ably websockets.",
-          "Gestaltung responsiver Benutzeroberflächen für optimale Benutzererfahrung.",
-          "Pionierarbeit bei Technologieanwendungen im Bereich der psychischen Gesundheit zur Unterstützung von Menschen bei der Überwindung von Spielsucht.",
-          "Funktionsübergreifende Zusammenarbeit mit klinischen Experten zur Entwicklung einfühlsamer, effektiver digitaler Unterstützungssysteme."
-        ]
-      }
+      "title": "EXCLAIM RECOVERY — CTO (Remote)",
+      "duration": "September 2025 – Heute",
+      "bullets": [
+        "Led architecture and full refactor of a multi-platform system (web, mobile, AI backend), significantly improving performance, scalability, and maintainability.",
+        "Built and scaled a peer-support platform for gambling addiction, supporting hundreds of active users and processing thousands of messages, including real-time chat, AI-assisted guidance, and a full reporting and moderation system; stress-tested by Gaming Laboratories International (GLI) and referenced in external publications.",
+        "Improved AI system performance by ~90%, optimizing latency and throughput for real-time LLM-driven interactions.",
+        "Designed and deployed a monorepo powering a Next.js web app, React Native mobile app, and AI services backed by PostgreSQL/Prisma.",
+        "Built and scaled \"Hope AI,\" an LLM-powered system using LangGraph with multi-source RAG, long-term memory, and behavioral analysis pipelines.",
+        "Implemented real-time systems (Ably) and full authentication architecture (NextAuth, OAuth, JWT) across platforms.",
+        "Delivered 500+ production PRs, driving rapid iteration and system reliability."
+      ]
     },
     "job1": {
-      "title": "CGI FEDERAL, Remote — BERATER",
-      "duration": "Juni 2022 - Dezember 2023",
-      "role1": {
-        "title": "FSG, Atlas— BERATER (Aug 2022 - Dezember 2023)",
-        "bullets": [
-          "Aktiver Entwickler in einem Agile Scrum-Team für einen US-Regierungsauftrag an CGI.",
-          "Entwicklung eines Systems, das erfolgreich die Bearbeitung von über 15 Millionen US-Pässen und über 4 Millionen Visa in 70 Ländern jährlich unterstützt.",
-          "Optimierung des Case-Managements durch Verbesserung eines React-Front-Ends, das mit Microsoft Dynamics 365 verbunden war und CRM-Case-Daten sowie eine Python-gesteuerte API für Referenzdatenzugriff nutzte.",
-          "Nutzung von maschinellem Lernen mit Pythons FastText-Bibliothek zur Verbesserung der Reaktionseffizienz um 40%, was die Fähigkeit der Sachbearbeiter zur Verwaltung und Bearbeitung von US-Visa-Anträgen erheblich verbesserte. Erweiterung der Referenzdaten und Hinzufügung von Trainingsbeispielen, um FastText zu befähigen, Case-Typen basierend auf nuancierten Texteingaben zu klassifizieren. Implementierung einer Benutzerfeedback-Schleife zur Verfeinerung der Modellgenauigkeit, die kontinuierliches Lernen und Anpassung in der prädiktiven Textklassifikation ermöglicht.",
-          "Refaktorierung des bestehenden Salesforce-Systems zu Microsoft Dynamics für die US-Regierung unter Einhaltung der FedRAMP High-Sicherheitsstandards mit fortschrittlicher Verschlüsselung und sicherer Zugriffskontrolle.",
-          "Optimierung der Entwicklungsumgebung durch Skripterstellung für den Import von Zertifikaten, Installation von Azure CLI, Docker und Durchführung von Post-Installations-Konfiguration und -Tests.",
-          "Umfassende Dokumentation von Prozessen in Confluence, einschließlich Deployment-Lebenszyklen, technischen Notizen, Werkzeugnutzungsrichtlinien und hochrangiger Dokumentation für verschiedene Anwendungen und Workflows.",
-          "Durchführung von Infrastrukturaufgaben, einschließlich Versionskontrolle von Node- und Flask-Bibliotheken, Docker-Images, Manipulation von Kubernetes-Ressourcen und Fehlerbehebung bei Jenkins-Pipelines.",
-          "Erstellung umfassender Hilfsdokumentation und Überwachung von Endbenutzer-Tests zur Gewährleistung einer benutzerfreundlichen Erfahrung.",
-          "Erstellung und Modifikation benutzerdefinierter Dynamics 365-Tabellen, Festlegung von Attributen, Datenstrukturen, Beziehungen, Entitätsformularen, Ansichten, Geschäftsregeln und Workflows.",
-          "Verwaltung von Sicherheitsrollen, Aktualisierung von Team-Privilegien und Kontrolle des Zugriffs auf Datenressourcen.",
-          "Implementierung von Zahlungskonfigurationen, dynamischen Quittungen und Visa-Anweisungen für verschiedene Länder. Erstellung von Konstanten über Code-Snippets zur Gewährleistung nahtloser Übersetzungen für mehrere Sprachen."
-        ]
-      },
-      "role2": {
-        "title": "ESG, CAST— BERATER (Juni 2022 – Aug 2022)",
-        "bullets": [
-          "Zusammenarbeit in einem kleinen Team zur Führung der Entwicklung einer internen Anwendung von Grund auf. Zweimonatige intensive Beteiligung mit Expertise in verschiedenen Bereichen, einschließlich visueller Gestaltung, REST-API-Design und -Implementierung, Datenmodellierung und Front-End-Entwicklung.",
-          "Erlernung von Java im laufenden Betrieb, um Anpassungsfähigkeit zu demonstrieren und eine robuste REST-API mit dem Spring Boot-Framework zu architekturieren und zu implementieren.",
-          "Implementierung von Object-Relational Mapping mit JPA zur Optimierung des Datenmanagements und Verbesserung der Anwendungseffizienz.",
-          "Entwicklung umfassender Unit-Tests mit Mockito und JUnit zur rigorosen Bewertung der Geschäftslogik in der Service-Schicht. Einrichtung von Testklassen und Nutzung von InjectMocks für Objekterstellung, um minimale Abhängigkeitsinterferenz sicherzustellen und eine lose gekoppelte Architektur zu fördern, die effektives Testen begünstigt.",
-          "Nutzung von Swagger zur Generierung detaillierter REST-API-Dokumentation und Verbesserung der Projekttransparenz und -zugänglichkeit.",
-          "Verwaltung von Abhängigkeiten über ein zentrales Maven-Repository zur Gewährleistung nahtloser Updates und Beschaffung neuer Ressourcen.",
-          "Entwicklung wiederverwendbarer Angular-Komponenten mit TypeScript und Interfaces zur Förderung einer robusten und stark typisierten Programmierumgebung.",
-          "Nahtlose Zusammenarbeit mit Material UI zur Gestaltung benutzerdefinierter Tabellen und Implementierung von Stilen zur Verbesserung der Benutzeroberfläche für eine optimale Benutzererfahrung."
-        ]
-      }
+      "title": "Tulane School of Architecture — SEO & Analytics Consultant",
+      "duration": "September 2025 – Heute",
+      "bullets": [
+        "Conducted large-scale technical SEO audits across 4,000+ URLs, identifying and resolving crawl errors, metadata inconsistencies, and indexation issues.",
+        "Reduced crawl inefficiencies by removing low-value and broken pages from sitemap, improving site health and search visibility.",
+        "Implemented GA4 + GTM event tracking for admissions funnels and user engagement, enabling end-to-end visibility into user journeys and conversion intent.",
+        "Built analytics dashboards (Looker Studio) to track program interest, admissions funnel performance, and student engagement.",
+        "Improved site structure and content organization to better capture and analyze prospective student behavior."
+      ]
     },
     "job2": {
-      "title": "OPERATION SPARK, Remote — UNTERRICHTSASSISTENT",
-      "duration": "Juni 2021 – Juli 2022",
+      "title": "EXCLAIM RECOVERY — Technischer Leiter, Anwendungsentwicklung (Remote)",
+      "duration": "April 2025 – September 2025",
       "bullets": [
-        "Unterstützung von Studenten beim Studium der Softwareentwicklung.",
-        "Mentoring und Nachhilfe für einzelne Studenten, die Schwierigkeiten beim Verstehen der Vorlesungsziele hatten.",
-        "Unterrichtung von Studenten verschiedener Hintergründe und Lernstile durch Einsatz verschiedener Unterrichtsressourcen."
+        "Built AI-driven systems for sentiment analysis, crisis detection, and behavioral tracking, enabling real-time intervention and improved user safety.",
+        "Developed agent-based architectures using LangGraph, OpenAI, and LangChain.",
+        "Designed scalable backend services with Node.js, Prisma, and PostgreSQL."
       ]
     },
     "job3": {
-      "title": "SELBSTSTÄNDIG, Remote — ZEICHNER",
-      "duration": "Januar 2017 – Februar 2022",
-      "bullets": [
-        "Zusammenarbeit mit Kunden zur Gestaltung maßgeschneiderter Hauslayouts entsprechend ihren Bedürfnissen.",
-        "Erstellung detaillierter Pläne zur Vorlage bei Ingenieuren und Kreisverwaltungen.",
-        "Nutzung von AutoCAD zur Erstellung präziser architektonischer Zeichnungen, einschließlich 3D-Renderings und Höhenansichten.",
-        "Sicherstellung, dass alle Entwürfe lokalen Vorschriften und strukturellen Anforderungen entsprechen."
-      ]
+      "title": "CGI FEDERAL — Berater (Remote)",
+      "duration": "Juni 2022 – Dezember 2023",
+      "role1": {
+        "title": "FSG, Atlas360 — Berater",
+        "duration": "August 2022 – Dezember 2023",
+        "bullets": [
+          "Contributed to a distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries, ensuring high availability at global scale.",
+          "Built and optimized React-based UI integrated with Microsoft Dynamics 365 and Python APIs, enabling real-time, ML-assisted customer service workflows.",
+          "Improved ML-driven response classification accuracy by ~70% using FastText, delivering instant, context-aware responses and significantly increasing caseworker efficiency.",
+          "Engineered messaging and queue-based systems using Azure (including dead-letter queue handling) to support high-volume automated communications.",
+          "Developed a comprehensive automated testing suite for Microsoft Dynamics CRM, reducing manual QA effort and accelerating feature delivery and UX validation.",
+          "Supported global production deployments across multiple regions, collaborating with international teams under high-demand conditions.",
+          "Contributed to large-scale operational rollouts across countries, supporting customer service teams with extended coverage during critical launches."
+        ]
+      },
+      "role2": {
+        "title": "ESG, CAST — Berater",
+        "duration": "Juni 2022 – August 2022",
+        "bullets": [
+          "Designed and implemented REST APIs using Java Spring Boot for a greenfield internal platform.",
+          "Developed Angular frontend components and integrated backend services.",
+          "Built unit testing suite (JUnit, Mockito) ensuring reliability of core business logic.",
+          "Modeled relational data using JPA and optimized data access patterns."
+        ]
+      }
     },
     "job4": {
-      "title": "RAINBOW GROCERY, San Francisco, CA — ARBEITER / EIGENTÜMER",
-      "duration": "Januar 2010 – Juli 2016",
-      "bullets": [
-        "Zusammenarbeit mit lokalen Landwirten und Verkäufern zur Aufrechterhaltung einer konstanten Versorgung mit frischen Produkten.",
-        "Teilnahme an Abteilungs- und gesamtgeschäftlichen Besprechungen, Diskussion über Geschäftsrichtlinien und Sicherstellung der Einhaltung des Leitbilds.",
-        "Übernahme vollständiger Eigentumsverantwortlichkeiten in einer arbeitergeführten Genossenschaft, Beitrag zum effizienten Betrieb des Lebensmittelgeschäfts."
-      ]
+      "title": "OPERATION SPARK — Unterrichtsassistent (Remote)",
+      "duration": "Juni 2021 – Juli 2022",
+      "bullets": ["Mentored students in software engineering, debugging, and problem-solving techniques."]
     },
     "projectDescriptions": {
-      "atlas360": "Eine umfassende konsularische Dienstleistungslösung, die vom US-Außenministerium zur Bearbeitung von über 15 Millionen Pässen und 4 Millionen Visa jährlich verwendet wird. Atlas360 bietet eine End-to-End-Sicht auf den Visa-Antragsprozess, verbessert Sicherheit und Flexibilität und bekämpft Betrug. Als Teil des Entwicklungsteams trug ich zur Optimierung der Systemleistung, Rationalisierung des Case-Managements und Bereitstellung einer robusten, benutzerfreundlichen Plattform bei.",
-      "distortNewYork": "Ihre Live-Event-Hilfe in New York. Automatische Aggregation von Events aus einer Vielzahl von Veranstaltungsorten.",
-      "realWorldNews": "Real World News ist eine innovative App, die Nachrichten aus verschiedenen Quellen wie Al Jazeera, BBC, Democracy Now und NPR aggregiert und sie alle an einem durchsuchbaren Ort zusammenbringt.",
-      "odnu": "ODNU bietet tägliche NASA-Einblicke mit einem Space-Bot-Chat, der von einem feinabgestimmten LLM angetrieben wird und Benutzern ansprechende, weltraumbezogene Updates und Interaktionen bietet.",
-      "ica": "Eine innovative Bildungsplattform, die Programmierausbildung in ein Weltraumerkundungsabenteuer verwandelt. Gebaut mit Next.js, TypeScript und MongoDB, bietet sie eine immersive canvas-basierte Umgebung, in der Lernende zwischen benutzerdefinierten Himmelskörpern navigieren, die verschiedene Programmierdisziplinen mit spezialisierten Herausforderungen repräsentieren, die progressiv Entwicklungsfähigkeiten aufbauen.",
-      "starfleet": "Ein 2D-Spiel mit simulierten 3D-Visuals, gebaut mit TypeScript und einer benutzerdefinierten Rendering-Engine. ＳＴＡＲＦＬＥＥＴ nutzt HTML5 Canvas mit CanvasRenderingContext2D zur Erstellung immersiver visueller Effekte und demonstriert fortgeschrittene Front-End-Entwicklungsfähigkeiten und interaktives Webanwendungsdesign."
+      "portfolio": "Persönliches Portfolio mit Full-Stack- und KI-gesteuerten Anwendungen.",
+      "ica": "Weltraum-Coding-Lernspiel mit immersiver Navigation und progressivem Lernen.",
+      "distortNewYork": "Live-Event-Aggregationsplattform für Events in NYC.",
+      "realWorldNews": "Nachrichtenplattform, die mehrere globale Quellen in einer einheitlichen Sucherfahrung zusammenfasst."
     }
   },
   "architectureBullets": {
