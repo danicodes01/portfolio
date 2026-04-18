@@ -72,111 +72,97 @@
   "resume": {
     "metaTitle": "السيرة الذاتية",
     "metaDescription": "السيرة الذاتية لدانيال نولز، مهندس برمجيات",
-    "jobTitle": "مهندس برمجيات",
+    "jobTitle": "مهندس برمجيات أول | أنظمة الذكاء الاصطناعي | Full-Stack | التحليلات",
     "email": "البريد الإلكتروني:",
     "phone": "الهاتف:",
     "portfolio": "المحفظة:",
-    "languages": "لغات البرمجة",
-    "frameworks": "الإطارات/ المكتبات",
-    "tools": "الأدوات",
+    "summary": "مهندس برمجيات ذو خبرة في بناء أنظمة قابلة للتوسع وجاهزة للإنتاج عبر الذكاء الاصطناعي والبنية التحتية للواجهة الخلفية والتطبيقات الموجهة للمستخدم. قدرة مثبتة على تصميم وتسليم أنظمة معقدة من البداية إلى النهاية، مع تأثير قابل للقياس على الأداء والنطاق وتجربة المستخدم.",
+    "education": "التعليم",
+    "coreSkills": "المهارات الأساسية",
+    "keyAchievementsTitle": "الإنجازات الرئيسية",
+    "keyAchievements": [
+      "Improved ML-driven customer service response accuracy by ~70% using FastText at enterprise scale",
+      "Increased AI system performance by ~90%, enabling real-time LLM-powered interactions in production",
+      "Contributed to distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries",
+      "Built and scaled a real-time peer-support platform handling thousands of messages with moderation and AI systems"
+    ],
     "workExperience": "الخبرة العملية",
     "projects": "المشاريع",
-    "spokenLanguages": "اللغات المنطوقة",
-    "english": "الإنجليزية - لغة أم",
-    "spanish": "الإسبانية - بطلاقة",
-    "references": "المراجع",
-    "referenceTitle": {
-      "david": "مدير الاستشارات، CGI"
-    },
+    "additional": "معلومات إضافية",
+    "spokenLanguages": "اللغات:",
+    "english": "الإنجليزية (لغة أم)",
+    "spanish": "الإسبانية (بطلاقة)",
+    "references": "المراجع متاحة عند الطلب",
     "job0": {
-      "title": "EXCLAIM RECOVERY، عن بُعد",
-      "duration": "أبريل 2025 - الحاضر",
-      "role1": {
-        "title": "قائد تقني | تطوير التطبيقات",
-        "bullets": [
-          "قيادة تطوير تطبيق يركز على خدمات دعم إدمان القمار.",
-          "تصميم أنظمة تحليل المحادثات المدفوعة بالذكاء الاصطناعي باستخدام LangGraph وOpenAI وLangChain لتقديم إرشادات شخصية للتعافي من الإدمان.",
-          "بناء أنظمة وكلاء ذكية مع LangGraph لتحليل المحادثات في الوقت الفعلي.",
-          "تطوير خطوط أنابيب الذكاء الاصطناعي التي تحلل المشاعر وتكتشف مؤشرات الأزمات وتتبع تقدم التعافي.",
-          "الاستفادة من Prisma Vector DB للتخزين والاسترجاع الفعال للتضمينات لتعزيز الفهم السياقي للذكاء الاصطناعي.",
-          "تنفيذ العرض من جانب الخادم وISG باستخدام Next.js 15 وTypeScript.",
-          "إنشاء مسارات عمل البيانات باستخدام Prisma ORM وPostgreSQL.",
-          "تأسيس اتصالات في الوقت الفعلي عبر Ably websockets.",
-          "صياغة واجهات مستجيبة لتجربة مستخدم مثلى.",
-          "ريادة تطبيقات التكنولوجيا في مجال الصحة النفسية لمساعدة الأفراد على التغلب على إدمان القمار.",
-          "التعاون متعدد الوظائف مع الخبراء السريريين لتطوير أنظمة دعم رقمية متعاطفة وفعالة."
-        ]
-      }
+      "title": "EXCLAIM RECOVERY — المدير التقني (عن بُعد)",
+      "duration": "سبتمبر 2025 – الحاضر",
+      "bullets": [
+        "Led architecture and full refactor of a multi-platform system (web, mobile, AI backend), significantly improving performance, scalability, and maintainability.",
+        "Built and scaled a peer-support platform for gambling addiction, supporting hundreds of active users and processing thousands of messages, including real-time chat, AI-assisted guidance, and a full reporting and moderation system; stress-tested by Gaming Laboratories International (GLI) and referenced in external publications.",
+        "Improved AI system performance by ~90%, optimizing latency and throughput for real-time LLM-driven interactions.",
+        "Designed and deployed a monorepo powering a Next.js web app, React Native mobile app, and AI services backed by PostgreSQL/Prisma.",
+        "Built and scaled \"Hope AI,\" an LLM-powered system using LangGraph with multi-source RAG, long-term memory, and behavioral analysis pipelines.",
+        "Implemented real-time systems (Ably) and full authentication architecture (NextAuth, OAuth, JWT) across platforms.",
+        "Delivered 500+ production PRs, driving rapid iteration and system reliability."
+      ]
     },
     "job1": {
-      "title": "CGI FEDERAL، عن بُعد — استشاري",
-      "duration": "يونيو 2022 - ديسمبر 2023",
-      "role1": {
-        "title": "FSG، Atlas— استشاري (أغسطس 2022 - ديسمبر 2023)",
-        "bullets": [
-          "مطور نشط في فريق Agile Scrum لعقد حكومي أمريكي ممنوح لـ CGI.",
-          "طور نظاماً يدعم بنجاح معالجة أكثر من 15 مليون جواز سفر أمريكي وأكثر من 4 ملايين تأشيرة في 70 دولة سنوياً.",
-          "تبسيط إدارة الحالات من خلال تحسين واجهة أمامية React تتفاعل مع Microsoft Dynamics 365، باستخدام بيانات حالة CRM وAPI مدفوع بـ Python للوصول إلى البيانات المرجعية.",
-          "استفد من التعلم الآلي مع مكتبة FastText في Python لتعزيز كفاءة الاستجابة بنسبة 40%، مما يحسن بشكل كبير قدرة العاملين في الحالات على إدارة والاستجابة لطلبات التأشيرة الأمريكية. وسع البيانات المرجعية وأضاف أمثلة تدريبية لتمكين FastText من تصنيف أنواع الحالات بناءً على مدخلات النص الدقيقة. نفذ حلقة تغذية راجعة للمستخدم لتحسين دقة النموذج، مما يسمح بالتعلم المستمر والتكيف في تصنيف النص التنبؤي.",
-          "أعاد هيكلة نظام Salesforce الحالي إلى Microsoft Dynamics للحكومة الأمريكية، مما يضمن الامتثال لمعايير الأمان FedRAMP High، وتوفير التشفير المتقدم والتحكم الآمن في الوصول.",
-          "تبسيط إعداد بيئة التطوير من خلال كتابة نص لاستيراد الشهادات، تثبيت Azure CLI، Docker، وإجراء التكوين والاختبار بعد التثبيت.",
-          "موثق عمليات شاملة في Confluence، تغطي دورات حياة النشر، الملاحظات التقنية، إرشادات استخدام الأدوات، والوثائق عالية المستوى لمختلف التطبيقات ومسارات العمل.",
-          "أجرى مهام البنية التحتية، بما في ذلك التحكم في إصدارات مكتبات Node وFlask، صور Docker، معالجة موارد Kubernetes، واستكشاف أخطاء خطوط أنابيب Jenkins.",
-          "ألف وثائق مساعدة شاملة وأشرف على اختبار المستخدم النهائي، مما يضمن تجربة سهلة الاستخدام.",
-          "أنشأ وعدل جداول Dynamics 365 المخصصة، وضع السمات، هياكل البيانات، العلاقات، نماذج الكيانات، المشاهد، قواعد العمل، ومسارات العمل.",
-          "أدار أدوار الأمان، وتحديث امتيازات الفريق والتحكم في الوصول إلى موارد البيانات.",
-          "نفذ تكوينات الدفع، إيصالات ديناميكية، وتعليمات التأشيرة لمختلف البلدان. أنشأ ثوابت عبر مقاطع الكود لضمان الترجمات السلسة للغات متعددة."
-        ]
-      },
-      "role2": {
-        "title": "ESG، CAST— استشاري (يونيو 2022 – أغسطس 2022)",
-        "bullets": [
-          "تعاون ضمن فريق صغير لقيادة تطوير تطبيق داخلي، صُمم من البداية. شارك في مشاركة مكثفة لمدة شهرين، ساهم بالخبرة عبر جوانب متنوعة، بما في ذلك التصميم البصري، تصميم وتنفيذ REST API، نمذجة البيانات، وتطوير الواجهة الأمامية.",
-          "اكتسب الكفاءة في Java بسرعة، مما يظهر القدرة على التكيف لتصميم وتنفيذ REST API قوي باستخدام إطار Spring Boot.",
-          "نفذ Object-Relational Mapping مع JPA لتحسين إدارة البيانات وتعزيز كفاءة التطبيق.",
-          "طور اختبارات وحدة شاملة باستخدام Mockito وJUnit لتقييم صارم للمنطق التجاري المدمج في طبقة الخدمة. أسس فئات الاختبار واستفاد من InjectMocks لإنشاء الكائنات، مما يضمن الحد الأدنى من تداخل التبعية ويعزز هندسة مترابطة بشكل فضفاض مؤاتية للاختبار الفعال.",
-          "استخدم Swagger لتوليد وثائق REST API مفصلة، مما يعزز شفافية المشروع وإمكانية الوصول إليه.",
-          "أدار التبعيات من خلال مستودع Maven المركزي، مما يضمن تحديثات سلسة واكتساب موارد جديدة.",
-          "طور مكونات Angular قابلة لإعادة الاستخدام باستخدام TypeScript والواجهات، مما يعزز بيئة برمجة قوية ومكتوبة بقوة.",
-          "تعاون بسلاسة مع Material UI لتصميم جداول مخصصة وتنفيذ الأنماط، مما يعزز واجهة المستخدم لتجربة مستخدم مثلى."
-        ]
-      }
+      "title": "Tulane School of Architecture — SEO & Analytics Consultant",
+      "duration": "سبتمبر 2025 – الحاضر",
+      "bullets": [
+        "Conducted large-scale technical SEO audits across 4,000+ URLs, identifying and resolving crawl errors, metadata inconsistencies, and indexation issues.",
+        "Reduced crawl inefficiencies by removing low-value and broken pages from sitemap, improving site health and search visibility.",
+        "Implemented GA4 + GTM event tracking for admissions funnels and user engagement, enabling end-to-end visibility into user journeys and conversion intent.",
+        "Built analytics dashboards (Looker Studio) to track program interest, admissions funnel performance, and student engagement.",
+        "Improved site structure and content organization to better capture and analyze prospective student behavior."
+      ]
     },
     "job2": {
-      "title": "OPERATION SPARK، عن بُعد — مساعد تدريس",
-      "duration": "يونيو 2021 – يوليو 2022",
+      "title": "EXCLAIM RECOVERY — قائد تقني (عن بُعد)",
+      "duration": "أبريل 2025 – سبتمبر 2025",
       "bullets": [
-        "ساعد الطلاب الذين يدرسون تطوير البرمجيات.",
-        "أرشد ودرّس الطلاب الفرديين الذين يواجهون صعوبة في فهم أهداف المحاضرة.",
-        "درّس طلاباً من خلفيات وأساليب تعلم متنوعة من خلال استخدام مجموعة متنوعة من الموارد التعليمية."
+        "Built AI-driven systems for sentiment analysis, crisis detection, and behavioral tracking, enabling real-time intervention and improved user safety.",
+        "Developed agent-based architectures using LangGraph, OpenAI, and LangChain.",
+        "Designed scalable backend services with Node.js, Prisma, and PostgreSQL."
       ]
     },
     "job3": {
-      "title": "عمل حر، عن بُعد — رسام تقني",
-      "duration": "يناير 2017 – فبراير 2022",
-      "bullets": [
-        "تعاون مع العملاء لتصميم تخطيطات منازل مخصصة تناسب احتياجاتهم.",
-        "أنشأ خطط مفصلة للتقديم للمهندسين ومسؤولي المقاطعة.",
-        "استخدم AutoCAD لإنتاج رسومات معمارية دقيقة، بما في ذلك التصيير ثلاثي الأبعاد ومناظر الارتفاع.",
-        "ضمن أن جميع التصاميم تلبي اللوائح المحلية والمتطلبات الهيكلية."
-      ]
+      "title": "CGI FEDERAL — استشاري (عن بُعد)",
+      "duration": "يونيو 2022 – ديسمبر 2023",
+      "role1": {
+        "title": "FSG, Atlas360 — استشاري",
+        "duration": "أغسطس 2022 – ديسمبر 2023",
+        "bullets": [
+          "Contributed to a distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries, ensuring high availability at global scale.",
+          "Built and optimized React-based UI integrated with Microsoft Dynamics 365 and Python APIs, enabling real-time, ML-assisted customer service workflows.",
+          "Improved ML-driven response classification accuracy by ~70% using FastText, delivering instant, context-aware responses and significantly increasing caseworker efficiency.",
+          "Engineered messaging and queue-based systems using Azure (including dead-letter queue handling) to support high-volume automated communications.",
+          "Developed a comprehensive automated testing suite for Microsoft Dynamics CRM, reducing manual QA effort and accelerating feature delivery and UX validation.",
+          "Supported global production deployments across multiple regions, collaborating with international teams under high-demand conditions.",
+          "Contributed to large-scale operational rollouts across countries, supporting customer service teams with extended coverage during critical launches."
+        ]
+      },
+      "role2": {
+        "title": "ESG, CAST — استشاري",
+        "duration": "يونيو 2022 – أغسطس 2022",
+        "bullets": [
+          "Designed and implemented REST APIs using Java Spring Boot for a greenfield internal platform.",
+          "Developed Angular frontend components and integrated backend services.",
+          "Built unit testing suite (JUnit, Mockito) ensuring reliability of core business logic.",
+          "Modeled relational data using JPA and optimized data access patterns."
+        ]
+      }
     },
     "job4": {
-      "title": "RAINBOW GROCERY، سان فرانسيسكو، كاليفورنيا — عامل / مالك",
-      "duration": "يناير 2010 – يوليو 2016",
-      "bullets": [
-        "تعاون مع المزارعين والبائعين المحليين للحفاظ على إمداد ثابت من المنتجات الطازجة.",
-        "شارك في اجتماعات القسم والمتجر، وناقش سياسات المتجر وضمان الحفاظ على بيان المهمة.",
-        "تولى مسؤوليات الملكية الكاملة في تعاونية مملوكة للعمال، مساهماً في التشغيل الفعال لمتجر البقالة."
-      ]
+      "title": "OPERATION SPARK — مساعد تدريس (عن بُعد)",
+      "duration": "يونيو 2021 – يوليو 2022",
+      "bullets": ["Mentored students in software engineering, debugging, and problem-solving techniques."]
     },
     "projectDescriptions": {
-      "atlas360": "حل شامل للخدمات القنصلية يستخدمه وزارة الخارجية الأمريكية لمعالجة أكثر من 15 مليون جواز سفر و4 ملايين تأشيرة سنوياً. يوفر Atlas360 رؤية شاملة لعملية طلب التأشيرة، مما يعزز الأمان والمرونة بينما يحارب الاحتيال. كجزء من فريق التطوير، ساهمت في تحسين أداء النظام، وتبسيط إدارة الحالات، وتقديم منصة قوية وسهلة الاستخدام.",
-      "distortNewYork": "مساعد الأحداث المباشرة في نيويورك. يجمع الأحداث تلقائياً من مجموعة من الأماكن.",
-      "realWorldNews": "Real World News هو تطبيق مبتكر يجمع الأخبار من مصادر مختلفة مثل الجزيرة وBBC وDemocracy Now وNPR، ويجمعها كلها في مكان واحد قابل للبحث.",
-      "odnu": "ODNU يوفر رؤى يومية من NASA، مع روبوت فضاء للدردشة مدعوم بنموذج لغة مُحسَّن، يقدم للمستخدمين تحديثات وتفاعلات جذابة ومركزة على الفضاء.",
-      "ica": "منصة تعليمية مبتكرة تحول تعليم البرمجة إلى مغامرة استكشاف الفضاء. مبني باستخدام Next.js وTypeScript وMongoDB، ويتميز ببيئة غامرة قائمة على الكانفاس حيث يتنقل المتعلمون بين الأجرام السماوية المصممة خصيصاً، كل منها يمثل تخصصات برمجة مختلفة مع تحديات متخصصة تبني مهارات التطوير تدريجياً.",
-      "starfleet": "لعبة ثنائية الأبعاد مع مرئيات محاكية ثلاثية الأبعاد مبنية باستخدام TypeScript ومحرك عرض مخصص. يستفيد ＳＴＡＲＦＬＥＥＴ من HTML5 Canvas مع CanvasRenderingContext2D لإنشاء تأثيرات بصرية غامرة، مما يُظهر مهارات تطوير الواجهة الأمامية المتقدمة وتصميم تطبيقات الويب التفاعلية."
+      "portfolio": "محفظة شخصية تعرض تطبيقات full-stack ومدفوعة بالذكاء الاصطناعي.",
+      "ica": "لعبة تعليمية لتعلم البرمجة بموضوع الفضاء مع تنقل غامر وتعلم تدريجي.",
+      "distortNewYork": "منصة تجميع الأحداث الحية لاكتشاف الفعاليات في نيويورك.",
+      "realWorldNews": "منصة تجميع الأخبار التي تدمج مصادر عالمية متعددة في تجربة بحث موحدة."
     }
   },
   "architectureBullets": {

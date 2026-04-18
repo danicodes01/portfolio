@@ -1,74 +1,56 @@
-
 .header {
-  display: flex;
-  flex-direction: column; 
-  margin: 1rem auto;
-  max-width: 30rem;
-  box-shadow: 0 0 3px rgba(var(--box-shadow-rgba));
-  border-radius: 4px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  width: 100%;
   overflow: hidden;
-  background-color:var(--item-background);
-  
-
+  background-color: var(--item-background);
+  box-shadow: 0 0 3px rgba(var(--box-shadow-rgba));
 }
 
 .image {
   position: relative;
-  width: 100%; 
-  height: 20rem; 
-  margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 4 / 3;
 }
 
 .header img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .info {
-  padding: 0.5rem 1rem 0 1rem;
-  letter-spacing: 0.10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem 0;
+  letter-spacing: 0.1rem;
 }
 
 .info p {
   margin: 0;
   font-size: 0.75rem;
   color: rgb(177, 177, 177);
-  
+}
+
+.info a:hover,
+.info a:active {
+  color: rgb(177, 177, 177);
+  opacity: 65%;
 }
 
 .title {
   font-family: "Press Start 2P", system-ui;
 }
 
-.instructions {
-  padding: 1rem;
-  max-width: 60rem;
-  font-size: 0.75rem;
-  text-align: left;
-}
-
-
-
-
-@media (max-width: 600px) {
-  .header {
-    max-width: 20rem;
-  }
-}
-
 .description {
   font-size: 0.75rem;
   padding: 1rem;
-  max-width: 60rem;
-
 }
 
 .description ul {
   list-style: none;
-  text-align: center;
-  margin: 1;
   padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .description li {
@@ -76,28 +58,30 @@
 }
 
 .description h2 {
-  margin-bottom: auto;
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .description h3 {
-  margin: .5rem;
-  margin: .5rem;
   font-size: 1.2rem;
   text-transform: uppercase;
+  margin: 0.5rem;
 }
 
 .description h4 {
-  margin: .5rem;
-  margin: .5rem;
   font-size: 1rem;
   text-transform: uppercase;
+  margin: 0.5rem;
+}
+
+.description p {
+  margin: 0.5rem;
+  font-size: 0.75rem;
 }
 
 .description a {
-  background: var(--color-primary-600); 
+  background: var(--color-primary-600);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -108,32 +92,30 @@
 .description a:hover,
 .description a:active,
 .description a.active {
-opacity: 50%;
+  opacity: 50%;
 }
 
-.description p {
-  margin: .5rem;
-  font-size: 0.75rem;
-}
-
-.description em, 
+.description em,
 .description i {
-      font-family: "Fira Code", monospace;
-      font-optical-sizing: auto;
-      font-weight: 300;
-      font-style: normal;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .description hr {
-  border: dotted var(--color-grey-500) .25rem;
+  border: dotted var(--color-grey-500) 0.25rem;
   border-bottom: none;
   width: 75%;
   margin: 1rem auto;
 }
 
-
-.info a:hover,
-.info a:active {
-  color: rgb(177, 177, 177);
-  opacity: 65%;
+/* tablet+ */
+@media (min-width: 480px) {
+  .header {
+    max-width: 30rem;
+    border-radius: 4px;
+    margin: 1rem auto;
+  }
 }
+

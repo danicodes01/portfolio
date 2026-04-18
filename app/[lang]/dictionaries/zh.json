@@ -72,111 +72,97 @@
     "resume": {
       "metaTitle": "简历",
       "metaDescription": "Daniel Knowles软件工程师简历",
-      "jobTitle": "软件工程师",
+      "jobTitle": "高级软件工程师 | AI系统 | 全栈 | 数据分析",
       "email": "电子邮箱：",
       "phone": "电话：",
       "portfolio": "作品集：",
-      "languages": "编程语言",
-      "frameworks": "框架/库",
-      "tools": "工具",
+      "summary": "具有构建可扩展、生产级系统经验的软件工程师，涵盖AI、后端基础设施和面向用户的应用程序。具备端到端设计和交付复杂系统的能力，在性能、规模和用户体验方面取得了可衡量的影响。",
+      "education": "教育背景",
+      "coreSkills": "核心技能",
+      "keyAchievementsTitle": "主要成就",
+      "keyAchievements": [
+        "Improved ML-driven customer service response accuracy by ~70% using FastText at enterprise scale",
+        "Increased AI system performance by ~90%, enabling real-time LLM-powered interactions in production",
+        "Contributed to distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries",
+        "Built and scaled a real-time peer-support platform handling thousands of messages with moderation and AI systems"
+      ],
       "workExperience": "工作经历",
       "projects": "项目",
-      "spokenLanguages": "语言能力",
-      "english": "英语 - 母语",
-      "spanish": "西班牙语 - 流利",
-      "references": "推荐人",
-      "referenceTitle": {
-        "david": "CGI咨询总监"
-      },
+      "additional": "其他信息",
+      "spokenLanguages": "语言能力：",
+      "english": "英语（母语）",
+      "spanish": "西班牙语（流利）",
+      "references": "参考人信息可按要求提供",
       "job0": {
-        "title": "EXCLAIM RECOVERY，远程",
-        "duration": "2025年4月 - 至今",
-        "role1": {
-          "title": "技术负责人 | 应用开发",
-          "bullets": [
-            "领导开发专注于赌博成瘾支持服务的应用程序。",
-            "使用LangGraph、OpenAI和LangChain架构AI驱动的对话分析系统，提供个性化的成瘾康复指导。",
-            "使用LangGraph构建智能代理系统进行实时对话分析。",
-            "开发AI管道，分析情感、检测危机指标并跟踪康复进展。",
-            "利用Prisma Vector DB高效存储和检索嵌入向量，增强AI上下文理解。",
-            "使用Next.js 15和TypeScript实现服务器端渲染和ISG。",
-            "使用Prisma ORM和PostgreSQL创建数据工作流。",
-            "通过Ably websockets建立实时通信。",
-            "制作响应式界面以获得最佳用户体验。",
-            "在心理健康领域开创技术应用，帮助个人克服赌博成瘾。",
-            "与临床专家跨职能合作，开发富有同理心、有效的数字支持系统。"
-          ]
-        }
+        "title": "EXCLAIM RECOVERY — 首席技术官（远程）",
+        "duration": "2025年9月 – 至今",
+        "bullets": [
+          "Led architecture and full refactor of a multi-platform system (web, mobile, AI backend), significantly improving performance, scalability, and maintainability.",
+          "Built and scaled a peer-support platform for gambling addiction, supporting hundreds of active users and processing thousands of messages, including real-time chat, AI-assisted guidance, and a full reporting and moderation system; stress-tested by Gaming Laboratories International (GLI) and referenced in external publications.",
+          "Improved AI system performance by ~90%, optimizing latency and throughput for real-time LLM-driven interactions.",
+          "Designed and deployed a monorepo powering a Next.js web app, React Native mobile app, and AI services backed by PostgreSQL/Prisma.",
+          "Built and scaled \"Hope AI,\" an LLM-powered system using LangGraph with multi-source RAG, long-term memory, and behavioral analysis pipelines.",
+          "Implemented real-time systems (Ably) and full authentication architecture (NextAuth, OAuth, JWT) across platforms.",
+          "Delivered 500+ production PRs, driving rapid iteration and system reliability."
+        ]
       },
       "job1": {
-        "title": "CGI FEDERAL，远程 — 顾问",
-        "duration": "2022年6月 - 2023年12月",
-        "role1": {
-          "title": "FSG，Atlas — 顾问（2022年8月 - 2023年12月）",
-          "bullets": [
-            "作为敏捷Scrum团队的活跃开发者，参与CGI获得的美国政府合同。",
-            "开发的系统成功支持每年在70个国家处理超过1500万份美国护照和400万份签证。",
-            "通过优化与Microsoft Dynamics 365接口的React前端来简化案件管理，利用CRM案件数据和Python驱动的API进行参考数据访问。",
-            "利用Python的FastText库进行机器学习，将响应效率提高40%，显著改善案件工作人员管理和响应美国签证申请的能力。扩展参考数据并添加训练示例，使FastText能够基于细致的文本输入对案件类型进行分类。实施用户反馈循环以改进模型准确性，允许预测文本分类中的持续学习和适应。",
-            "将现有的Salesforce系统重构为Microsoft Dynamics以服务美国政府，确保符合FedRAMP高安全标准，提供高级加密和安全访问控制。",
-            "通过编写脚本导入证书、安装Azure CLI、Docker并进行安装后配置和测试，简化开发环境设置。",
-            "在Confluence中记录综合流程，涵盖部署生命周期、技术说明、工具使用指南以及各种应用程序和工作流的高级文档。",
-            "执行基础设施任务，包括版本控制node和Flask库、Docker镜像、操作Kubernetes资源和排除Jenkins管道故障。",
-            "编写综合帮助文档并监督最终用户测试，确保用户友好的体验。",
-            "创建和修改自定义Dynamics 365表，建立属性、数据结构、关系、实体表单、视图、业务规则和工作流。",
-            "管理安全角色，更新团队权限并控制对数据资源的访问。",
-            "为各个国家实施付款配置、动态收据和签证说明。通过代码片段创建常量以确保多种语言的无缝翻译。"
-          ]
-        },
-        "role2": {
-          "title": "ESG，CAST — 顾问（2022年6月 - 2022年8月）",
-          "bullets": [
-            "在小团队内协作，主导从构思开始开发的内部应用程序。参与为期两个月的深度参与，在各个方面贡献专业知识，包括视觉设计、REST API设计和实现、数据建模和前端开发。",
-            "即时掌握Java熟练程度，展现适应性，使用Spring Boot框架架构和实现强大的REST API。",
-            "使用JPA实现对象关系映射，优化数据管理并提高应用程序效率。",
-            "使用Mockito和JUnit开发综合单元测试，严格评估Service层中嵌入的业务逻辑。建立测试类并利用InjectMocks进行对象创建，确保最小依赖干扰并培养有利于有效测试的松耦合架构。",
-            "利用Swagger生成详细的REST API文档，增强项目的透明度和可访问性。",
-            "通过中央Maven存储库管理依赖关系，确保无缝更新和获取新资源。",
-            "使用TypeScript和接口开发可重用的Angular组件，培养强大且强类型编程环境。",
-            "与Material UI无缝协作设计自定义表格并实现样式，增强用户界面以获得最佳用户体验。"
-          ]
-        }
+        "title": "Tulane School of Architecture — SEO & Analytics Consultant",
+        "duration": "2025年9月 – 至今",
+        "bullets": [
+          "Conducted large-scale technical SEO audits across 4,000+ URLs, identifying and resolving crawl errors, metadata inconsistencies, and indexation issues.",
+          "Reduced crawl inefficiencies by removing low-value and broken pages from sitemap, improving site health and search visibility.",
+          "Implemented GA4 + GTM event tracking for admissions funnels and user engagement, enabling end-to-end visibility into user journeys and conversion intent.",
+          "Built analytics dashboards (Looker Studio) to track program interest, admissions funnel performance, and student engagement.",
+          "Improved site structure and content organization to better capture and analyze prospective student behavior."
+        ]
       },
       "job2": {
-        "title": "OPERATION SPARK，远程 — 助教",
-        "duration": "2021年6月 - 2022年7月",
+        "title": "EXCLAIM RECOVERY — 技术负责人（远程）",
+        "duration": "2025年4月 – 2025年9月",
         "bullets": [
-          "协助学习软件开发的学生。",
-          "指导和辅导在理解课程目标方面有困难的个别学生。",
-          "通过使用各种教学资源指导来自不同背景和学习风格的学生。"
+          "Built AI-driven systems for sentiment analysis, crisis detection, and behavioral tracking, enabling real-time intervention and improved user safety.",
+          "Developed agent-based architectures using LangGraph, OpenAI, and LangChain.",
+          "Designed scalable backend services with Node.js, Prisma, and PostgreSQL."
         ]
       },
       "job3": {
-        "title": "自由职业，远程 — 制图员",
-        "duration": "2017年1月 - 2022年2月",
-        "bullets": [
-          "与客户合作设计符合其需求的定制家居布局。",
-          "创建详细计划以提交给工程师和县政府官员。",
-          "利用AutoCAD制作精确的建筑图纸，包括3D渲染和立面图。",
-          "确保所有设计符合当地法规和结构要求。"
-        ]
+        "title": "CGI FEDERAL — 顾问（远程）",
+        "duration": "2022年6月 – 2023年12月",
+        "role1": {
+          "title": "FSG, Atlas360 — 顾问",
+          "duration": "2022年8月 – 2023年12月",
+          "bullets": [
+            "Contributed to a distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries, ensuring high availability at global scale.",
+            "Built and optimized React-based UI integrated with Microsoft Dynamics 365 and Python APIs, enabling real-time, ML-assisted customer service workflows.",
+            "Improved ML-driven response classification accuracy by ~70% using FastText, delivering instant, context-aware responses and significantly increasing caseworker efficiency.",
+            "Engineered messaging and queue-based systems using Azure (including dead-letter queue handling) to support high-volume automated communications.",
+            "Developed a comprehensive automated testing suite for Microsoft Dynamics CRM, reducing manual QA effort and accelerating feature delivery and UX validation.",
+            "Supported global production deployments across multiple regions, collaborating with international teams under high-demand conditions.",
+            "Contributed to large-scale operational rollouts across countries, supporting customer service teams with extended coverage during critical launches."
+          ]
+        },
+        "role2": {
+          "title": "ESG, CAST — 顾问",
+          "duration": "2022年6月 – 2022年8月",
+          "bullets": [
+            "Designed and implemented REST APIs using Java Spring Boot for a greenfield internal platform.",
+            "Developed Angular frontend components and integrated backend services.",
+            "Built unit testing suite (JUnit, Mockito) ensuring reliability of core business logic.",
+            "Modeled relational data using JPA and optimized data access patterns."
+          ]
+        }
       },
       "job4": {
-        "title": "RAINBOW GROCERY，加利福尼亚州旧金山 — 员工/所有者",
-        "duration": "2010年1月 - 2016年7月",
-        "bullets": [
-          "与当地农民和供应商合作，保持新鲜农产品的稳定供应。",
-          "参加部门和全店会议，讨论店铺政策并确保使命宣言得到维护。",
-          "在工人拥有的合作社中承担完全所有权责任，为杂货店的高效运营做出贡献。"
-        ]
+        "title": "OPERATION SPARK — 助教（远程）",
+        "duration": "2021年6月 – 2022年7月",
+        "bullets": ["Mentored students in software engineering, debugging, and problem-solving techniques."]
       },
       "projectDescriptions": {
-        "atlas360": "美国国务院使用的综合领事服务解决方案，每年处理超过1500万份护照和400万份签证。Atlas360提供签证申请流程的端到端视图，增强安全性和灵活性，同时打击欺诈。作为开发团队的一员，我为优化系统性能、简化案件管理和交付强大、用户友好的平台做出了贡献。",
-        "distortNewYork": "您在纽约的现场活动助手。从一系列场馆自动聚合活动。",
-        "realWorldNews": "Real World News是一款创新应用，聚合来自半岛电视台、BBC、Democracy Now和NPR等各种来源的新闻，将它们全部带到一个可搜索的地方。",
-        "odnu": "ODNU提供每日NASA见解，配有由微调LLM驱动的太空机器人聊天，为用户提供引人入胜的、以太空为重点的更新和互动。",
-        "ica": "一个创新的教育平台，将编程教育转变为太空探索冒险。使用Next.js、TypeScript和MongoDB构建，它具有沉浸式基于画布的环境，学习者在其中导航定制设计的天体之间，每个天体代表不同的编程学科，具有逐步构建开发技能的专业挑战。",
-        "starfleet": "使用TypeScript和自定义渲染引擎构建的具有模拟3D视觉效果的2D游戏。ＳＴＡＲＦＬＥＥＴ利用带有CanvasRenderingContext2D的HTML5 Canvas创建沉浸式视觉效果，展示高级前端开发技能和交互式Web应用程序设计。"
+        "portfolio": "展示全栈和AI驱动应用程序的个人作品集。",
+        "ica": "具有沉浸式导航和渐进式学习的太空主题编程教育游戏。",
+        "distortNewYork": "纽约现场活动聚合平台。",
+        "realWorldNews": "将多个全球来源整合到统一搜索体验的新闻聚合平台。"
       }
     },
     "architectureBullets": {

@@ -72,111 +72,97 @@
     "resume": {
       "metaTitle": "Резюме",
       "metaDescription": "Резюме Даниэля Ноулза, инженера-программиста",
-      "jobTitle": "Инженер-программист",
+      "jobTitle": "Старший инженер-программист | AI-системы | Full-Stack | Аналитика",
       "email": "Email:",
       "phone": "Телефон:",
       "portfolio": "Портфолио:",
-      "languages": "ЯЗЫКИ ПРОГРАММИРОВАНИЯ",
-      "frameworks": "ФРЕЙМВОРКИ/ БИБЛИОТЕКИ",
-      "tools": "ИНСТРУМЕНТЫ",
+      "summary": "Инженер-программист с опытом создания масштабируемых, производственных систем в области AI, бэкенд-инфраструктуры и пользовательских приложений. Доказанная способность проектировать и поставлять сложные системы сквозным образом с измеримым влиянием на производительность, масштаб и пользовательский опыт.",
+      "education": "ОБРАЗОВАНИЕ",
+      "coreSkills": "КЛЮЧЕВЫЕ НАВЫКИ",
+      "keyAchievementsTitle": "КЛЮЧЕВЫЕ ДОСТИЖЕНИЯ",
+      "keyAchievements": [
+        "Improved ML-driven customer service response accuracy by ~70% using FastText at enterprise scale",
+        "Increased AI system performance by ~90%, enabling real-time LLM-powered interactions in production",
+        "Contributed to distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries",
+        "Built and scaled a real-time peer-support platform handling thousands of messages with moderation and AI systems"
+      ],
       "workExperience": "ОПЫТ РАБОТЫ",
       "projects": "ПРОЕКТЫ",
-      "spokenLanguages": "РАЗГОВОРНЫЕ ЯЗЫКИ",
-      "english": "Английский - Родной",
-      "spanish": "Испанский - Свободно",
-      "references": "РЕКОМЕНДАЦИИ",
-      "referenceTitle": {
-        "david": "Директор по консультированию, CGI"
-      },
+      "additional": "ДОПОЛНИТЕЛЬНО",
+      "spokenLanguages": "Языки:",
+      "english": "Английский (Родной)",
+      "spanish": "Испанский (Свободно)",
+      "references": "Рекомендации предоставляются по запросу",
       "job0": {
-        "title": "EXCLAIM RECOVERY, Удаленно",
-        "duration": "Апрель 2025 - Настоящее время",
-        "role1": {
-          "title": "ТЕХНИЧЕСКИЙ РУКОВОДИТЕЛЬ | РАЗРАБОТКА ПРИЛОЖЕНИЙ",
-          "bullets": [
-            "Руковожу разработкой приложения, ориентированного на службы поддержки при игровой зависимости.",
-            "Проектирую системы анализа разговоров на основе ИИ, используя LangGraph, OpenAI и LangChain для предоставления персонализированного руководства по восстановлению от зависимости.",
-            "Создаю интеллектуальные агентские системы с LangGraph для анализа разговоров в реальном времени.",
-            "Разрабатываю конвейеры ИИ, которые анализируют настроение, обнаруживают индикаторы кризиса и отслеживают прогресс восстановления.",
-            "Использую Prisma Vector DB для эффективного хранения и извлечения эмбеддингов для улучшения контекстного понимания ИИ.",
-            "Реализую серверный рендеринг и ISG с Next.js 15 и TypeScript.",
-            "Создаю потоки данных с Prisma ORM и PostgreSQL.",
-            "Устанавливаю связь в реальном времени через веб-сокеты Ably.",
-            "Создаю адаптивные интерфейсы для оптимального пользовательского опыта.",
-            "Пионер в применении технологий в сфере психического здоровья для помощи людям в преодолении игровой зависимости.",
-            "Сотрудничаю с клиническими экспертами для разработки эмпатичных, эффективных цифровых систем поддержки."
-          ]
-        }
+        "title": "EXCLAIM RECOVERY — Технический директор (Удаленно)",
+        "duration": "Сентябрь 2025 – Настоящее время",
+        "bullets": [
+          "Led architecture and full refactor of a multi-platform system (web, mobile, AI backend), significantly improving performance, scalability, and maintainability.",
+          "Built and scaled a peer-support platform for gambling addiction, supporting hundreds of active users and processing thousands of messages, including real-time chat, AI-assisted guidance, and a full reporting and moderation system; stress-tested by Gaming Laboratories International (GLI) and referenced in external publications.",
+          "Improved AI system performance by ~90%, optimizing latency and throughput for real-time LLM-driven interactions.",
+          "Designed and deployed a monorepo powering a Next.js web app, React Native mobile app, and AI services backed by PostgreSQL/Prisma.",
+          "Built and scaled \"Hope AI,\" an LLM-powered system using LangGraph with multi-source RAG, long-term memory, and behavioral analysis pipelines.",
+          "Implemented real-time systems (Ably) and full authentication architecture (NextAuth, OAuth, JWT) across platforms.",
+          "Delivered 500+ production PRs, driving rapid iteration and system reliability."
+        ]
       },
       "job1": {
-        "title": "CGI FEDERAL, Удаленно — КОНСУЛЬТАНТ",
-        "duration": "Июнь 2022 - Декабрь 2023",
-        "role1": {
-          "title": "FSG, Atlas— КОНСУЛЬТАНТ (Август 2022 - Декабрь 2023)",
-          "bullets": [
-            "Активный разработчик в команде Agile Scrum по государственному контракту США, присужденному CGI.",
-            "Разработал систему, которая успешно поддерживает обработку более 15 миллионов паспортов США и более 4 миллионов виз в 70 странах ежегодно.",
-            "Оптимизировал управление делами путем оптимизации React-фронтенда, который взаимодействовал с Microsoft Dynamics 365, используя данные CRM и API на Python для доступа к справочным данным.",
-            "Использовал машинное обучение с библиотекой FastText Python для повышения эффективности ответов на 40%, значительно улучшив способность сотрудников управлять и отвечать на заявления на визы США. Расширил справочные данные и добавил обучающие примеры, чтобы позволить FastText классифицировать типы дел на основе нюансированных текстовых входов. Реализовал цикл обратной связи пользователей для улучшения точности модели, обеспечивая непрерывное обучение и адаптацию в прогностической текстовой классификации.",
-            "Рефакторил существующую систему Salesforce в Microsoft Dynamics для правительства США, обеспечивая соответствие стандартам безопасности FedRAMP High, предоставляя продвинутое шифрование и безопасный контроль доступа.",
-            "Оптимизировал настройку среды разработки путем написания скриптов для импорта сертификатов, установки Azure CLI, Docker и проведения настройки и тестирования после установки.",
-            "Документировал комплексные процессы в Confluence, охватывая жизненные циклы развертывания, технические заметки, руководства по использованию инструментов и высокоуровневую документацию для различных приложений и рабочих процессов.",
-            "Выполнял инфраструктурные задачи, включая версионирование node и Flask библиотек, Docker-образов, манипулирование ресурсами Kubernetes и устранение неполадок конвейеров Jenkins.",
-            "Создавал комплексную справочную документацию и руководил тестированием конечных пользователей, обеспечивая удобный пользовательский опыт.",
-            "Создавал и модифицировал пользовательские таблицы Dynamics 365, устанавливая атрибуты, структуры данных, отношения, формы сущностей, представления, бизнес-правила и рабочие процессы.",
-            "Управлял ролями безопасности, обновляя привилегии команды и контролируя доступ к ресурсам данных.",
-            "Реализовывал конфигурации платежей, динамические квитанции и инструкции по визам для различных стран. Создавал константы через фрагменты кода для обеспечения бесшовных переводов на несколько языков."
-          ]
-        },
-        "role2": {
-          "title": "ESG, CAST— КОНСУЛЬТАНТ (Июнь 2022 – Август 2022)",
-          "bullets": [
-            "Сотрудничал в небольшой команде для руководства разработкой внутреннего приложения, созданного с нуля. Участвовал в двухмесячной интенсивной работе, внося экспертизу в различные аспекты, включая визуальный дизайн, дизайн и реализацию REST API, моделирование данных и фронтенд-разработку.",
-            "Изучил Java на ходу, демонстрируя адаптивность для проектирования и реализации надежного REST API с использованием фреймворка Spring Boot.",
-            "Реализовал объектно-реляционное отображение с JPA для оптимизации управления данными и повышения эффективности приложения.",
-            "Разработал комплексные модульные тесты с использованием Mockito и JUnit для тщательной оценки бизнес-логики, встроенной в слой Service. Создал тестовые классы и использовал InjectMocks для создания объектов, обеспечивая минимальное вмешательство зависимостей и способствуя слабо связанной архитектуре, способствующей эффективному тестированию.",
-            "Использовал Swagger для генерации подробной документации REST API, повышая прозрачность и доступность проекта.",
-            "Управлял зависимостями через центральный репозиторий Maven, обеспечивая бесшовные обновления и получение новых ресурсов.",
-            "Разработал многоразовые компоненты Angular с использованием TypeScript и интерфейсов, способствуя надежной и строго типизированной среде программирования.",
-            "Бесшовно сотрудничал с Material UI для проектирования пользовательских таблиц и реализации стилей, улучшая пользовательский интерфейс для оптимального пользовательского опыта."
-          ]
-        }
+        "title": "Tulane School of Architecture — SEO & Analytics Consultant",
+        "duration": "Сентябрь 2025 – Настоящее время",
+        "bullets": [
+          "Conducted large-scale technical SEO audits across 4,000+ URLs, identifying and resolving crawl errors, metadata inconsistencies, and indexation issues.",
+          "Reduced crawl inefficiencies by removing low-value and broken pages from sitemap, improving site health and search visibility.",
+          "Implemented GA4 + GTM event tracking for admissions funnels and user engagement, enabling end-to-end visibility into user journeys and conversion intent.",
+          "Built analytics dashboards (Looker Studio) to track program interest, admissions funnel performance, and student engagement.",
+          "Improved site structure and content organization to better capture and analyze prospective student behavior."
+        ]
       },
       "job2": {
-        "title": "OPERATION SPARK, Удаленно — АССИСТЕНТ ПРЕПОДАВАТЕЛЯ",
-        "duration": "Июнь 2021 – Июль 2022",
+        "title": "EXCLAIM RECOVERY — Технический руководитель (Удаленно)",
+        "duration": "Апрель 2025 – Сентябрь 2025",
         "bullets": [
-          "Помогал студентам, изучающим разработку программного обеспечения.",
-          "Наставлял и обучал отдельных студентов, испытывающих трудности с пониманием целей лекций.",
-          "Обучал студентов различного происхождения и стилей обучения, используя разнообразные учебные ресурсы."
+          "Built AI-driven systems for sentiment analysis, crisis detection, and behavioral tracking, enabling real-time intervention and improved user safety.",
+          "Developed agent-based architectures using LangGraph, OpenAI, and LangChain.",
+          "Designed scalable backend services with Node.js, Prisma, and PostgreSQL."
         ]
       },
       "job3": {
-        "title": "ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ, Удаленно — ЧЕРТЕЖНИК",
-        "duration": "Январь 2017 – Февраль 2022",
-        "bullets": [
-          "Сотрудничал с клиентами для проектирования индивидуальных планировок домов в соответствии с их потребностями.",
-          "Создавал подробные планы для подачи инженерам и окружным чиновникам.",
-          "Использовал AutoCAD для создания точных архитектурных чертежей, включая 3D-рендеры и виды в разрезе.",
-          "Обеспечивал соответствие всех проектов местным нормам и структурным требованиям."
-        ]
+        "title": "CGI FEDERAL — Консультант (Удаленно)",
+        "duration": "Июнь 2022 – Декабрь 2023",
+        "role1": {
+          "title": "FSG, Atlas360 — Консультант",
+          "duration": "Август 2022 – Декабрь 2023",
+          "bullets": [
+            "Contributed to a distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries, ensuring high availability at global scale.",
+            "Built and optimized React-based UI integrated with Microsoft Dynamics 365 and Python APIs, enabling real-time, ML-assisted customer service workflows.",
+            "Improved ML-driven response classification accuracy by ~70% using FastText, delivering instant, context-aware responses and significantly increasing caseworker efficiency.",
+            "Engineered messaging and queue-based systems using Azure (including dead-letter queue handling) to support high-volume automated communications.",
+            "Developed a comprehensive automated testing suite for Microsoft Dynamics CRM, reducing manual QA effort and accelerating feature delivery and UX validation.",
+            "Supported global production deployments across multiple regions, collaborating with international teams under high-demand conditions.",
+            "Contributed to large-scale operational rollouts across countries, supporting customer service teams with extended coverage during critical launches."
+          ]
+        },
+        "role2": {
+          "title": "ESG, CAST — Консультант",
+          "duration": "Июнь 2022 – Август 2022",
+          "bullets": [
+            "Designed and implemented REST APIs using Java Spring Boot for a greenfield internal platform.",
+            "Developed Angular frontend components and integrated backend services.",
+            "Built unit testing suite (JUnit, Mockito) ensuring reliability of core business logic.",
+            "Modeled relational data using JPA and optimized data access patterns."
+          ]
+        }
       },
       "job4": {
-        "title": "RAINBOW GROCERY, Сан-Франциско, Калифорния — РАБОТНИК / ВЛАДЕЛЕЦ",
-        "duration": "Январь 2010 – Июль 2016",
-        "bullets": [
-          "Сотрудничал с местными фермерами и поставщиками для поддержания постоянного снабжения свежими продуктами.",
-          "Участвовал в отделенческих и общемагазинных собраниях, обсуждая политику магазина и обеспечивая соблюдение миссии.",
-          "Взял на себя полные обязанности владельца в рабочем кооперативе, способствуя эффективному функционированию продуктового магазина."
-        ]
+        "title": "OPERATION SPARK — Ассистент преподавателя (Удаленно)",
+        "duration": "Июнь 2021 – Июль 2022",
+        "bullets": ["Mentored students in software engineering, debugging, and problem-solving techniques."]
       },
       "projectDescriptions": {
-        "atlas360": "Комплексное решение консульских услуг, используемое Государственным департаментом США для обработки более 15 миллионов паспортов и 4 миллионов виз ежегодно. Atlas360 предоставляет сквозной обзор процесса подачи заявления на визу, повышая безопасность и гибкость при борьбе с мошенничеством. Как часть команды разработчиков, я способствовал оптимизации производительности системы, оптимизации управления делами и созданию надежной, удобной для пользователя платформы.",
-        "distortNewYork": "Ваш помощник для живых мероприятий в Нью-Йорке. Автоматически агрегирует события из множества площадок.",
-        "realWorldNews": "Real World News - это инновационное приложение, которое агрегирует новости из различных источников, таких как Al Jazeera, BBC, Democracy Now и NPR, объединяя их все в одном месте для поиска.",
-        "odnu": "ODNU предоставляет ежедневные инсайты NASA с чат-ботом Space-Bot, работающим на тонко настроенной LLM, предлагая пользователям увлекательные, космически-ориентированные обновления и взаимодействия.",
-        "ica": "Инновационная образовательная платформа, которая превращает обучение программированию в приключение исследования космоса. Построенная с Next.js, TypeScript и MongoDB, она включает иммерсивную среду на основе холста, где учащиеся перемещаются между специально разработанными небесными телами, каждое из которых представляет различные дисциплины программирования со специализированными вызовами, которые прогрессивно развивают навыки разработки.",
-        "starfleet": "2D-игра с симулированной 3D-визуализацией, построенная с использованием TypeScript и пользовательского движка рендеринга. ＳＴＡＲＦＬＥＥＴ использует HTML5 Canvas с CanvasRenderingContext2D для создания иммерсивных визуальных эффектов, демонстрируя продвинутые навыки фронтенд-разработки и дизайна интерактивных веб-приложений."
+        "portfolio": "Персональное портфолио с full-stack и AI-приложениями.",
+        "ica": "Инновационная образовательная платформа, которая превращает обучение программированию в приключение исследования космоса.",
+        "distortNewYork": "Платформа агрегации живых мероприятий для поиска событий в Нью-Йорке.",
+        "realWorldNews": "Новостная платформа, объединяющая несколько глобальных источников в едином поиске."
       }
     },
     "architectureBullets": {

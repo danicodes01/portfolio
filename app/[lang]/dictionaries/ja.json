@@ -72,111 +72,97 @@
     "resume": {
       "metaTitle": "履歴書",
       "metaDescription": "ダニエル・ノウルズ、ソフトウェアエンジニアの履歴書",
-      "jobTitle": "ソフトウェアエンジニア",
+      "jobTitle": "シニアソフトウェアエンジニア | AIシステム | フルスタック | アナリティクス",
       "email": "メール：",
       "phone": "電話：",
       "portfolio": "ポートフォリオ：",
-      "languages": "プログラミング言語",
-      "frameworks": "フレームワーク/ライブラリ",
-      "tools": "ツール",
+      "summary": "AI、バックエンドインフラ、ユーザー向けアプリケーションにわたるスケーラブルな本番グレードシステムの構築経験を持つソフトウェアエンジニア。データモデリングやAPIから知能エージェントシステムや分析パイプラインまで、複雑なシステムをエンドツーエンドで設計・提供する能力を実証済み。",
+      "education": "学歴",
+      "coreSkills": "コアスキル",
+      "keyAchievementsTitle": "主な実績",
+      "keyAchievements": [
+        "Improved ML-driven customer service response accuracy by ~70% using FastText at enterprise scale",
+        "Increased AI system performance by ~90%, enabling real-time LLM-powered interactions in production",
+        "Contributed to distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries",
+        "Built and scaled a real-time peer-support platform handling thousands of messages with moderation and AI systems"
+      ],
       "workExperience": "職歴",
       "projects": "プロジェクト",
-      "spokenLanguages": "話せる言語",
-      "english": "英語 - ネイティブ",
-      "spanish": "スペイン語 - 流暢",
-      "references": "推薦者",
-      "referenceTitle": {
-        "david": "コンサルティングディレクター、CGI"
-      },
+      "additional": "その他",
+      "spokenLanguages": "言語：",
+      "english": "英語（ネイティブ）",
+      "spanish": "スペイン語（流暢）",
+      "references": "推薦者情報は要望に応じて提供",
       "job0": {
-        "title": "EXCLAIM RECOVERY、リモート",
-        "duration": "2025年4月 - 現在",
-        "role1": {
-          "title": "テクニカルリード | アプリケーション開発",
-          "bullets": [
-            "ギャンブル依存症サポートサービスに焦点を当てたアプリケーションの開発をリード。",
-            "LangGraph、OpenAI、LangChainを使用してAI駆動の会話分析システムを設計し、パーソナライズされた依存症回復ガイダンスを提供。",
-            "リアルタイム会話分析のためのLangGraphを使用したインテリジェントエージェントシステムを構築。",
-            "感情分析、危機指標検出、回復進捗追跡を行うAIパイプラインを開発。",
-            "AI の文脈理解を向上させるためにPrisma Vector DBを活用して埋め込みの効率的な保存と検索を実現。",
-            "Next.js 15とTypeScriptを使用してサーバーサイドレンダリングとISGを実装。",
-            "Prisma ORMとPostgreSQLを使用してデータワークフローを作成。",
-            "Ably websocketsを介してリアルタイム通信を確立。",
-            "最適なユーザーエクスペリエンスのためのレスポンシブインターフェースを作成。",
-            "ギャンブル依存症を克服する個人を支援するメンタルヘルス分野での技術応用を開拓。",
-            "共感的で効果的なデジタルサポートシステムを開発するために臨床専門家と機能横断的に協力。"
-          ]
-        }
+        "title": "EXCLAIM RECOVERY — CTO（リモート）",
+        "duration": "2025年9月 – 現在",
+        "bullets": [
+          "Led architecture and full refactor of a multi-platform system (web, mobile, AI backend), significantly improving performance, scalability, and maintainability.",
+          "Built and scaled a peer-support platform for gambling addiction, supporting hundreds of active users and processing thousands of messages, including real-time chat, AI-assisted guidance, and a full reporting and moderation system; stress-tested by Gaming Laboratories International (GLI) and referenced in external publications.",
+          "Improved AI system performance by ~90%, optimizing latency and throughput for real-time LLM-driven interactions.",
+          "Designed and deployed a monorepo powering a Next.js web app, React Native mobile app, and AI services backed by PostgreSQL/Prisma.",
+          "Built and scaled \"Hope AI,\" an LLM-powered system using LangGraph with multi-source RAG, long-term memory, and behavioral analysis pipelines.",
+          "Implemented real-time systems (Ably) and full authentication architecture (NextAuth, OAuth, JWT) across platforms.",
+          "Delivered 500+ production PRs, driving rapid iteration and system reliability."
+        ]
       },
       "job1": {
-        "title": "CGI FEDERAL、リモート — コンサルタント",
-        "duration": "2022年6月 - 2023年12月",
-        "role1": {
-          "title": "FSG、Atlas— コンサルタント（2022年8月 - 2023年12月）",
-          "bullets": [
-            "CGIに授与された米国政府契約のアジャイルスクラムチームの積極的な開発者として従事。",
-            "年間1500万件以上の米国パスポートと70か国で400万件以上のビザの処理を成功裏にサポートするシステムを開発。",
-            "Microsoft Dynamics 365とインターフェースするReactフロントエンドを最適化し、CRMケースデータとPython駆動APIを参照データアクセスに活用してケース管理を合理化。",
-            "PythonのFastTextライブラリを使用した機械学習を活用して応答効率を40%向上させ、ケースワーカーの米国ビザ申請の管理と応答能力を大幅に改善。参照データを拡張し、トレーニング例を追加してFastTextがニュアンスのあるテキスト入力に基づいてケースタイプを分類できるよう支援。予測テキスト分類における継続的な学習と適応を可能にするユーザーフィードバックループを実装。",
-            "既存のSalesforceシステムを米国政府向けのMicrosoft Dynamicsにリファクタリングし、FedRAMP High セキュリティ標準への準拠を確保し、高度な暗号化と安全なアクセス制御を提供。",
-            "証明書のインポート、Azure CLI、Dockerのインストール、インストール後の設定とテストを行うスクリプトを作成して開発環境セットアップを合理化。",
-            "デプロイメントライフサイクル、技術ノート、ツール使用ガイドライン、さまざまなアプリケーションとワークフローの高レベル文書を含む包括的なプロセスをConfluenceで文書化。",
-            "nodeとFlaskライブラリのバージョン管理、Dockerイメージ、Kubernetesリソースの操作、Jenkinsパイプラインのトラブルシューティングなどのインフラストラクチャタスクを実施。",
-            "包括的なヘルプドキュメントを作成し、エンドユーザーテストを監督して、ユーザーフレンドリーな体験を確保。",
-            "カスタムDynamics 365テーブルを作成・修正し、属性、データ構造、関係、エンティティフォーム、ビュー、ビジネスルール、ワークフローを確立。",
-            "セキュリティロールを管理し、チーム権限を更新してデータリソースへのアクセスを制御。",
-            "さまざまな国の支払い設定、動的レシート、ビザ指示を実装。複数言語のシームレスな翻訳を確保するためにコードスニペットを介して定数を作成。"
-          ]
-        },
-        "role2": {
-          "title": "ESG、CAST— コンサルタント（2022年6月 – 2022年8月）",
-          "bullets": [
-            "小チーム内で協力して、創設から作り上げられた内部アプリケーションの開発を指揮。2か月間の集中的な関与で、ビジュアルデザイン、REST API設計と実装、データモデリング、フロントエンド開発など多様な側面で専門知識を提供。",
-            "その場でJavaの習熟度を習得し、Spring Bootフレームワークを使用して堅牢なREST APIを設計・実装する適応性を実証。",
-            "データ管理を最適化し、アプリケーションの効率を向上させるためにJPAでオブジェクトリレーショナルマッピングを実装。",
-            "サービス層に組み込まれたビジネスロジックを厳密に評価するためにMockitoとJUnitを使用した包括的な単体テストを開発。テストクラスを確立し、オブジェクト作成にInjectMocksを活用して、依存関係の干渉を最小限に抑え、効果的なテストに適した疎結合アーキテクチャを促進。",
-            "詳細なREST APIドキュメント生成にSwaggerを利用し、プロジェクトの透明性とアクセシビリティを向上。",
-            "中央Mavenリポジトリを通じて依存関係を管理し、シームレスな更新と新しいリソースの取得を確保。",
-            "TypeScriptとインターフェースを使用して再利用可能なAngularコンポーネントを開発し、堅牢で強く型付けされたプログラミング環境を促進。",
-            "Material UIとシームレスに協力してカスタムテーブルを設計しスタイルを実装し、最適なユーザーエクスペリエンスのためのユーザーインターフェースを向上。"
-          ]
-        }
+        "title": "Tulane School of Architecture — SEO & Analytics Consultant",
+        "duration": "2025年9月 – 現在",
+        "bullets": [
+          "Conducted large-scale technical SEO audits across 4,000+ URLs, identifying and resolving crawl errors, metadata inconsistencies, and indexation issues.",
+          "Reduced crawl inefficiencies by removing low-value and broken pages from sitemap, improving site health and search visibility.",
+          "Implemented GA4 + GTM event tracking for admissions funnels and user engagement, enabling end-to-end visibility into user journeys and conversion intent.",
+          "Built analytics dashboards (Looker Studio) to track program interest, admissions funnel performance, and student engagement.",
+          "Improved site structure and content organization to better capture and analyze prospective student behavior."
+        ]
       },
       "job2": {
-        "title": "OPERATION SPARK、リモート — ティーチングアシスタント",
-        "duration": "2021年6月 – 2022年7月",
+        "title": "EXCLAIM RECOVERY — テクニカルリード（リモート）",
+        "duration": "2025年4月 – 2025年9月",
         "bullets": [
-          "ソフトウェア開発を学ぶ学生をサポート。",
-          "講義の目標理解に苦労している個々の学生をメンタリングし指導。",
-          "様々なバックグラウンドと学習スタイルの学生に対して、多様な教育リソースを活用して指導。"
+          "Built AI-driven systems for sentiment analysis, crisis detection, and behavioral tracking, enabling real-time intervention and improved user safety.",
+          "Developed agent-based architectures using LangGraph, OpenAI, and LangChain.",
+          "Designed scalable backend services with Node.js, Prisma, and PostgreSQL."
         ]
       },
       "job3": {
-        "title": "個人事業主、リモート — 設計技師",
-        "duration": "2017年1月 – 2022年2月",
-        "bullets": [
-          "クライアントと協力して、ニーズに合わせたカスタム住宅レイアウトを設計。",
-          "エンジニアと郡職員への提出用の詳細な図面を作成。",
-          "AutoCADを活用して、3Dレンダリングと立面図を含む精密な建築図面を作成。",
-          "すべての設計が地方の規制と構造要件を満たすことを確保。"
-        ]
+        "title": "CGI FEDERAL — コンサルタント（リモート）",
+        "duration": "2022年6月 – 2023年12月",
+        "role1": {
+          "title": "FSG, Atlas360 — コンサルタント",
+          "duration": "2022年8月 – 2023年12月",
+          "bullets": [
+            "Contributed to a distributed system supporting 15M+ passports and 4M+ visas annually across 70+ countries, ensuring high availability at global scale.",
+            "Built and optimized React-based UI integrated with Microsoft Dynamics 365 and Python APIs, enabling real-time, ML-assisted customer service workflows.",
+            "Improved ML-driven response classification accuracy by ~70% using FastText, delivering instant, context-aware responses and significantly increasing caseworker efficiency.",
+            "Engineered messaging and queue-based systems using Azure (including dead-letter queue handling) to support high-volume automated communications.",
+            "Developed a comprehensive automated testing suite for Microsoft Dynamics CRM, reducing manual QA effort and accelerating feature delivery and UX validation.",
+            "Supported global production deployments across multiple regions, collaborating with international teams under high-demand conditions.",
+            "Contributed to large-scale operational rollouts across countries, supporting customer service teams with extended coverage during critical launches."
+          ]
+        },
+        "role2": {
+          "title": "ESG, CAST — コンサルタント",
+          "duration": "2022年6月 – 2022年8月",
+          "bullets": [
+            "Designed and implemented REST APIs using Java Spring Boot for a greenfield internal platform.",
+            "Developed Angular frontend components and integrated backend services.",
+            "Built unit testing suite (JUnit, Mockito) ensuring reliability of core business logic.",
+            "Modeled relational data using JPA and optimized data access patterns."
+          ]
+        }
       },
       "job4": {
-        "title": "RAINBOW GROCERY、サンフランシスコ、CA — 労働者/オーナー",
-        "duration": "2010年1月 – 2016年7月",
-        "bullets": [
-          "地元の農家とベンダーと協力して、新鮮な農産物の安定した供給を維持。",
-          "部門と店舗全体の会議に参加し、店舗ポリシーを議論し、ミッションステートメントの維持を確保。",
-          "労働者所有協同組合での完全な所有権責任を担い、食料品店の効率的な運営に貢献。"
-        ]
+        "title": "OPERATION SPARK — ティーチングアシスタント（リモート）",
+        "duration": "2021年6月 – 2022年7月",
+        "bullets": ["Mentored students in software engineering, debugging, and problem-solving techniques."]
       },
       "projectDescriptions": {
-        "atlas360": "米国国務省が年間1500万件以上のパスポートと400万件のビザを処理するために使用する包括的な領事サービスソリューション。Atlas360はビザ申請プロセスのエンドツーエンドビューを提供し、詐欺と戦いながらセキュリティと柔軟性を向上させます。開発チームの一員として、システムのパフォーマンス最適化、ケース管理の合理化、堅牢でユーザーフレンドリーなプラットフォームの提供に貢献しました。",
-        "distortNewYork": "ニューヨークでのライブイベント支援。様々な会場からイベントを自動的に集約。",
-        "realWorldNews": "アルジャジーラ、BBC、Democracy Now、NPRなどの様々なソースからニュースを集約し、すべてを検索可能な1つの場所にまとめる革新的なアプリ。",
-        "odnu": "ODNUは毎日のNASAインサイトを提供し、ファインチューニングされたLLMによって動力を得たSpace-Botチャットで、ユーザーに魅力的な宇宙関連の更新と相互作用を提供。",
-        "ica": "コーディング教育を宇宙探検の冒険に変える革新的な教育プラットフォーム。Next.js、TypeScript、MongoDBで構築され、学習者がカスタム設計された天体間を移動する没入型キャンバスベース環境を特徴とし、各天体は異なるプログラミング分野を表し、開発スキルを段階的に構築する専門的な課題を提供。",
-        "starfleet": "TypeScriptとカスタムレンダリングエンジンを使用して構築されたシミュレートされた3Dビジュアルを持つ2Dゲーム。ＳＴＡＲＦＬＥＥＴはHTML5 CanvasをCanvasRenderingContext2Dと共に活用して没入型の視覚効果を作成し、高度なフロントエンド開発スキルとインタラクティブなWebアプリケーション設計を実証。"
+        "portfolio": "フルスタックおよびAI駆動アプリケーションを紹介する個人ポートフォリオ。",
+        "ica": "没入型ナビゲーションと段階的学習を備えた宇宙テーマのコーディング教育ゲーム。",
+        "distortNewYork": "NYCのイベントを発見するライブイベント集約プラットフォーム。",
+        "realWorldNews": "複数のグローバルソースを統合した検索体験のニュース集約プラットフォーム。"
       }
     },
     "architectureBullets": {
