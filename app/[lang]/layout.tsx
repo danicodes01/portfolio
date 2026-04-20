@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { getDictionary } from "./dictionaries";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
@@ -12,7 +12,7 @@ const SITE_TITLE = "Daniel Knowles — Senior Software Engineer";
 const SITE_DESCRIPTION =
   "Senior Software Engineer shipping AI systems, full-stack apps, and scalable backends end-to-end — from data modeling and APIs to LLM-powered agents.";
 
-export const viewport: Viewport = {
+export const viewport = {
   themeColor: "#FF385C",
   colorScheme: "dark light",
 };
