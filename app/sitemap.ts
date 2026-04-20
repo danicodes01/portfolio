@@ -50,9 +50,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     for (const project of projects) {
       const path = `/projects/${project.slug}`;
+      const projectDate = project.date ? new Date(project.date) : null;
+      const lastModified =
+        projectDate && projectDate.getTime() > 0 ? projectDate : now;
       entries.push({
         url: `${SITE_URL}/${lang}${path}`,
-        lastModified: new Date(project.date),
+        lastModified,
         changeFrequency: 'weekly',
         priority: 0.7,
         alternates: { languages: languageAlternates(path) },
