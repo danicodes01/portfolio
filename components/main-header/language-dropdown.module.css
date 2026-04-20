@@ -13,7 +13,7 @@
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-family: inherit;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: bold;
   transition: all 0.2s ease;
   
@@ -35,7 +35,7 @@
 }
 
 .currentLang {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: bold;
   letter-spacing: 0.05em;
 }
@@ -137,17 +137,13 @@
   .menu {
     border-color: #333;
   }
-  
+
   .moreOption {
     border-color: #333;
   }
-  
+
   .submenu {
     border-color: #333;
-  }
-  
-  .option {
-    color: #fff;
   }
 }
 

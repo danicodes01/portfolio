@@ -4,23 +4,9 @@
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
-  padding: 5rem;
-  max-width: 30rem;
-
-  /* Add the same glow effect as project cards */
-  box-shadow: 0 0 32px 8px rgba(var(--card-glow), var(--card-glow-alpha)),
-    0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(var(--card-glow), 0.15);
-  border-radius: 16px;
+  padding: 3rem 2rem;
+  max-width: 52rem;
   text-align: center;
-  transition: box-shadow 0.2s, border-color 0.2s;
-}
-
-/* Add hover effect like project cards */
-.contact:hover {
-  box-shadow: 0 0 48px 12px rgba(var(--card-glow), 0.22),
-    0 4px 16px rgba(0, 0, 0, 0.14);
-  border-color: rgba(var(--card-glow), 0.22);
 }
 
 .header {
@@ -29,22 +15,12 @@
 
 .header h1 {
   text-decoration: none;
-  letter-spacing: 0.15rem;
-  opacity: 55%;
-  /* font-family: "Press Start 2P", system-ui; */
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 2.2rem;
-  color: var(--header-contact);
+  letter-spacing: 0.05rem;
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+  color: rgb(var(--foreground-rgb));
   margin-bottom: 1rem;
-  font-weight: normal;
-  text-shadow: 0 0 12px
-      rgba(var(--contact-header-glow), var(--contact-header-glow-alpha)),
-    0 0 32px
-      rgba(
-        var(--contact-header-glow),
-        calc(var(--contact-header-glow-alpha) * 0.5)
-      );
-  transition: text-shadow 0.2s;
+  font-weight: 600;
 }
 
 .header p {
@@ -67,86 +43,99 @@
 }
 
 .highlight {
-  color: var(--text);
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.15rem;
-  font-size: 1rem;
-  font-weight: bold;
-  /* Balanced text glow using alpha variables */
-  text-shadow: 0 0 8px rgba(var(--text-glow), var(--text-glow-alpha)),
-    0 0 16px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 0.7)),
-    0 0 24px rgba(var(--text-glow), calc(var(--text-glow-alpha) * 0.5));
-  transition: text-shadow 0.2s ease;
+  color: rgb(var(--foreground-rgb));
+  font-family: "Fira Code", monospace;
+  letter-spacing: 0.05rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .link {
-  background: var(--color-primary-600);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--color-primary-500); /* fallback */
+  color: var(--color-primary-500);
   text-decoration: none;
-  transition: opacity 0.3s ease, color 0.2s;
+  transition: opacity 0.2s;
   display: inline-block;
+  font-weight: 500;
 }
 
 .link:hover,
 .link:active {
-  opacity: 0.85;
-  text-shadow: 0 0 8px var(--color-primary-500),
-    0 0 16px var(--color-primary-500);
+  opacity: 0.8;
 }
 
 /* Form styling */
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  margin-top: 2rem;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  text-align: left;
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 640px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
 }
 
 .label {
   font-weight: 600;
   color: var(--color-primary-500);
-  margin-bottom: 0.3rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.5rem;
   display: block;
+  text-align: left;
 }
 
 .input {
-  border: 1px solid var(--color-grey-300);
+  border: 1px solid rgba(128, 128, 128, 0.3);
   border-radius: 8px;
-  padding: 0.3rem;
-  font-size: 1rem;
+  padding: 0.75rem 0.875rem;
+  font-size: 0.95rem;
   background: var(--item-background);
   color: rgb(var(--foreground-rgb));
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 400;
   box-sizing: border-box;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s, background 0.2s;
   width: 100%;
-  max-width: 30rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.input::placeholder {
-  color: #b0b0b0;
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(128, 128, 128, 0.8);
   opacity: 1;
 }
 
 .textarea {
-  border: 1px solid var(--color-grey-300);
+  border: 1px solid rgba(128, 128, 128, 0.3);
   border-radius: 8px;
-  padding: 3rem;
-  font-size: 1rem;
+  padding: 0.875rem;
+  font-size: 0.95rem;
   resize: vertical;
   background: var(--item-background);
-  color: var(--foreground-rgb);
-  min-height: 80px;
+  color: rgb(var(--foreground-rgb));
+  font-family: inherit;
+  min-height: 120px;
   width: 100%;
-  max-width: 30rem;
-  margin-left: auto;
-  margin-right: auto;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background 0.2s;
 }
 
 /* Architecture section styling */
@@ -159,9 +148,10 @@
 }
 
 .architectureSection legend {
-  font-weight: bold;
+  font-weight: 600;
   padding: 0 0.5rem;
   color: var(--color-primary-500);
+  font-size: 0.9rem;
 }
 
 /* Collapsible question groups */
@@ -185,12 +175,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.25rem;
-  background: rgba(var(--card-glow), 0.08);
+  background: rgba(var(--card-glow), 0.06);
   color: var(--color-primary-500);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s;
   position: relative;
   list-style: none;
 }
@@ -202,7 +192,7 @@
 /* Custom dropdown arrow */
 .groupHeader::after {
   content: '▼';
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   transition: transform 0.2s ease;
   color: var(--color-primary-500);
 }
@@ -346,23 +336,6 @@
   font-weight: 500;
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  .input,
-  .textarea {
-    color: #fff;
-    background: #18181b;
-    border: 1px solid #333;
-  }
-  .input::placeholder {
-    color: #888;
-  }
-  .architectureQuestions input[type='checkbox'] {
-    accent-color: #ff003c;
-    border-color: #ff003c;
-    background: #18181b;
-  }
-}
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
@@ -493,8 +466,10 @@
 .input:focus,
 .textarea:focus {
   border-color: var(--color-primary-500);
-  box-shadow: 0 0 0 2px rgba(var(--card-glow), 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 0 3px rgba(var(--card-glow), 0.15);
 }
+
 
 .architectureQuestions input[type="checkbox"]:focus {
   box-shadow: 0 0 0 2px rgba(var(--card-glow), 0.4);

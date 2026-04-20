@@ -70,7 +70,6 @@ export default async function ProjectItem({
       <Link href={`/${lang}/projects/${slug}`} className=''>
         <li className={classes.post}>
           <div className={classes.border}>
-            <h1>{title}</h1>
             <div className={classes.images}>
               {mediaIsVideo ? (
                 <Video media={media[0]} />
@@ -85,6 +84,7 @@ export default async function ProjectItem({
                 />
               )}
             </div>
+            <h1>{title}</h1>
             <div className={classes.content}>
               <p>{displaySummary}</p>
             </div>
