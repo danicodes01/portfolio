@@ -25,9 +25,18 @@ function getLocale(request: NextRequest): string {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-  
-  // Check if this is an image request - if so, skip the redirect
-  if (pathname.match(/\.(png|jpg|jpeg|gif|webp|svg|ico|PNG)$/)) {
+
+  // Skip locale redirect for static assets and SEO files that must live at the root.
+  if (pathname.match(/\.(png|jpg|jpeg|gif|webp|svg|ico|PNG|txt|xml)$/)) {
+    return NextResponse.next();
+  }
+  if (
+    pathname === '/robots.txt' ||
+    pathname === '/sitemap.xml' ||
+    pathname === '/apple-icon' ||
+    pathname === '/icon' ||
+    pathname === '/manifest.webmanifest'
+  ) {
     return NextResponse.next();
   }
 

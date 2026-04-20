@@ -10,8 +10,27 @@ export async function generateMetadata({
   const dict = await getDictionary(lang);
 
   return {
-    title: `Daniel Knowles | ${dict.resume.metaTitle}`,
+    title: dict.resume.metaTitle,
     description: dict.resume.metaDescription,
+    alternates: {
+      canonical: `/${lang}/resume`,
+      languages: {
+        en: '/en/resume',
+        es: '/es/resume',
+        'x-default': '/en/resume',
+      },
+    },
+    openGraph: {
+      title: `${dict.resume.metaTitle} — Daniel Knowles`,
+      description: dict.resume.metaDescription,
+      url: `/${lang}/resume`,
+      type: 'profile',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${dict.resume.metaTitle} — Daniel Knowles`,
+      description: dict.resume.metaDescription,
+    },
   };
 }
 

@@ -1,6 +1,0 @@
-# Allow all crawlers
-User-agent: *
-Allow: /
-
-
-Sitemap: https://www.danicodes.org/sitemap.xml
