@@ -3,7 +3,7 @@ import { getProjects } from '@/lib/projects';
 
 export const revalidate = 3600;
 
-const SITE_URL = 'https://danicodes.org';
+const SITE_URL = 'https://www.danicodes.org';
 const supportedLanguages = ['en', 'es'] as const;
 
 type Lang = (typeof supportedLanguages)[number];

@@ -6,7 +6,7 @@ import MainHeader from "@/components/main-header/main-header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const SITE_URL = "https://danicodes.org";
+const SITE_URL = "https://www.danicodes.org";
 const SITE_NAME = "Daniel Knowles";
 const SITE_TITLE = "Daniel Knowles — Senior Software Engineer";
 const SITE_DESCRIPTION =
