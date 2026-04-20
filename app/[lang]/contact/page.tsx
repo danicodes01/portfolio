@@ -12,9 +12,30 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
   const dict = await getDictionary(lang);
+  const description = dict.contact.intro.replace(/[:\s]+$/, '');
 
   return {
     title: dict.contact.title,
+    description,
+    alternates: {
+      canonical: `/${lang}/contact`,
+      languages: {
+        en: '/en/contact',
+        es: '/es/contact',
+        'x-default': '/en/contact',
+      },
+    },
+    openGraph: {
+      title: `${dict.contact.title} — Daniel Knowles`,
+      description,
+      url: `/${lang}/contact`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${dict.contact.title} — Daniel Knowles`,
+      description,
+    },
   };
 }
 

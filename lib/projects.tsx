@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { Project } from "../types/project";
 
@@ -5,7 +6,7 @@ export async function getProjects(): Promise<Project[]> {
     try {
         const projects = await prisma.project.findMany({
             orderBy: {
-               
+
                 id: "desc"
             }
         });
@@ -19,20 +20,12 @@ export async function getProjects(): Promise<Project[]> {
 }
 
 export async function getProject(slug: string): Promise<Project> {
-    try {
-      const project = await prisma.project.findUnique({
-        where: {
-          slug: slug,
-        },
-      });
-      await prisma.$disconnect();
-      if (project === null) {
-        throw new Error(`Project with slug '${slug}' not found.`);
-      }
-      return project;
-    } catch (error) {
-      console.error(error);
-      await prisma.$disconnect();
-      throw error; 
+    const project = await prisma.project.findUnique({
+      where: { slug },
+    });
+    await prisma.$disconnect();
+    if (project === null) {
+      notFound();
     }
+    return project;
   }
