@@ -138,47 +138,61 @@ export default async function ContactPage({
             {/* Add this line */}
             <input type='hidden' name='lang' value={lang} />
 
-            <label htmlFor='name' className={classes.label}>
-              {dict.contact.nameLabel}
-            </label>
-            <input id='name' name='name' required className={classes.input} />
+            <div className={classes.formRow}>
+              <div className={classes.field}>
+                <label htmlFor='name' className={classes.label}>
+                  {dict.contact.nameLabel}
+                </label>
+                <input id='name' name='name' required className={classes.input} />
+              </div>
 
-            <label htmlFor='company' className={classes.label}>
-              {dict.contact.companyLabel}
-            </label>
-            <input id='company' name='company' className={classes.input} />
+              <div className={classes.field}>
+                <label htmlFor='company' className={classes.label}>
+                  {dict.contact.companyLabel}
+                </label>
+                <input id='company' name='company' className={classes.input} />
+              </div>
+            </div>
 
-            <label htmlFor='preferredContact' className={classes.label}>
-              {dict.contact.preferredContactLabel}
-            </label>
-            <input
-              id='preferredContact'
-              name='preferredContact'
-              required
-              className={classes.input}
-            />
+            <div className={classes.field}>
+              <label htmlFor='preferredContact' className={classes.label}>
+                {dict.contact.preferredContactLabel}
+              </label>
+              <input
+                id='preferredContact'
+                name='preferredContact'
+                required
+                className={classes.input}
+              />
+            </div>
 
-            <label htmlFor='what' className={classes.label}>
-              {dict.contact.whatLabel}
-            </label>
-            <textarea
-              id='what'
-              name='what'
-              required
-              className={classes.textarea}
-              rows={2}
-            />
+            <div className={classes.formRow}>
+              <div className={classes.field}>
+                <label htmlFor='what' className={classes.label}>
+                  {dict.contact.whatLabel}
+                </label>
+                <textarea
+                  id='what'
+                  name='what'
+                  required
+                  className={classes.textarea}
+                  rows={4}
+                />
+              </div>
 
-            <label htmlFor='why' className={classes.label}>
-              {dict.contact.whyLabel}
-            </label>
-            <textarea
-              id='why'
-              name='why'
-              required
-              className={classes.textarea}
-              rows={2}
-            />
+              <div className={classes.field}>
+                <label htmlFor='why' className={classes.label}>
+                  {dict.contact.whyLabel}
+                </label>
+                <textarea
+                  id='why'
+                  name='why'
+                  required
+                  className={classes.textarea}
+                  rows={4}
+                />
+              </div>
+            </div>
 
             <fieldset
               className={classes.architectureSection}

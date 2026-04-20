@@ -29,17 +29,17 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --header-end-rgb: 0, 0, 0;
+    --background-start-rgb: 18, 18, 20;
+    --background-end-rgb: 18, 18, 20;
+    --header-end-rgb: 18, 18, 20;
     --text: var(--color-grey-100);
     --box-shadow-rgba: 255, 255, 255, 0.1;
-    --item-background: black;
+    --item-background: #18181b;
     --logo-rgb: 177, 177, 177;
-    --contact-text-rgb: 177, 177, 177;
+    --contact-text-rgb: 200, 200, 200;
     --header-contact: var(--color-primary-600);
     --contact-background: #1c1c1e;
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 247, 247, 247;
     --card-glow: 255, 56, 92; 
     --card-glow-alpha: 0.18;
     --text-glow: 255, 120, 170;
