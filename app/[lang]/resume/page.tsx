@@ -54,7 +54,7 @@ export default async function Resume({
         <div className={styles.contact}>
           <p><a href="tel:7188736651" className={styles.link}>(718) 873-6651</a></p>
           <p><a href="mailto:danielgene.dev@gmail.com" className={styles.link}>danielgene.dev@gmail.com</a></p>
-          <p><a href="https://danicodes.org" target="_blank" rel="noopener noreferrer" className={styles.link}>danicodes.org</a></p>
+          <p><a href="https://www.danicodes.org" target="_blank" rel="noopener noreferrer" className={styles.link}>danicodes.org</a></p>
           <p><a href="https://github.com/danicodes01" target="_blank" rel="noopener noreferrer" className={styles.link}>github.com/danicodes01</a></p>
           <p><a href="https://linkedin.com/in/danicodes01" target="_blank" rel="noopener noreferrer" className={styles.link}>linkedin.com/in/danicodes01</a></p>
         </div>
@@ -115,7 +115,7 @@ export default async function Resume({
             <p><strong>RealWorldNews:</strong> <a href="https://realworldnews.org" target="_blank" rel="noopener noreferrer" className={styles.link}>https://realworldnews.org</a> — {r.projectDescriptions.realWorldNews}</p>
           </div>
           <div className={styles.project}>
-            <p><strong>Portfolio:</strong> <a href="https://danicodes.org" target="_blank" rel="noopener noreferrer" className={styles.link}>https://danicodes.org</a> — {r.projectDescriptions.portfolio}</p>
+            <p><strong>Portfolio:</strong> <a href="https://www.danicodes.org" target="_blank" rel="noopener noreferrer" className={styles.link}>https://danicodes.org</a> — {r.projectDescriptions.portfolio}</p>
           </div>
         </div>
 

@@ -122,13 +122,13 @@ export default async function ProjectDetailPage({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: `https://danicodes.org/${lang}`,
+        item: `https://www.danicodes.org/${lang}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: project.title,
-        item: `https://danicodes.org/${lang}/projects/${project.slug}`,
+        item: `https://www.danicodes.org/${lang}/projects/${project.slug}`,
       },
     ],
   };
