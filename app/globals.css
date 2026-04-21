@@ -11,7 +11,7 @@
   --background-end-rgb: 255, 255, 255;
   --header-end-rgb: 255, 255, 255;
   --logo-rgb: 113, 113, 113;
-  --text: var(--color-grey-400);
+  --text: var(--color-grey-500);
   --box-shadow-rgba: 0, 0, 0, 0.3; 
   --item-background: var(--color-grey-50);
   --contact-text-rgb: 0, 0, 0;
@@ -27,7 +27,7 @@
   --dropdown-background: #ffffff; /* solid white for light mode */
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background-start-rgb: 18, 18, 20;
     --background-end-rgb: 18, 18, 20;
