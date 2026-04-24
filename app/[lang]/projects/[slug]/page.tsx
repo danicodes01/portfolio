@@ -49,6 +49,7 @@ export async function generateMetadata({ params }: ProjectDetailParams) {
   return {
     title: project.title,
     description,
+    robots: { index: false, follow: true },
     alternates: {
       canonical: path,
       languages: {
