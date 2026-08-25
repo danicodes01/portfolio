@@ -5,6 +5,8 @@ import ProjectGrid from '@/components/projects/project-grid'
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import classes from './page.module.css'
 
+export const revalidate = 3600;
+
 export default async function Home({ 
   params
 }: { 
