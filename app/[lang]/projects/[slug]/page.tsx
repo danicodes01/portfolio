@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Video from '@/components/video/video';
 import Link from 'next/link';
 
+export const revalidate = 3600;
+
 type ProjectDetailParams = {
   params: Promise<{
     lang: string;
